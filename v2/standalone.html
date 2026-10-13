@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f0e8">
   <meta name="description" content="City Bank Invisible Banking: a connected, intelligent and proactive transformation story.">
-  <title>Invisible Banking | Editorial presentation</title>
+  <title>Invisible Banking | Transformation story</title>
   <style>
 :root {
   --paper:#f4f0e8;
@@ -450,6 +450,193 @@ button:focus-visible,a:focus-visible { outline:2px solid var(--red); outline-off
   *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
 
+/* Invisible Banking rebuild: City Bank Next Chapter visual system. */
+:root{--paper:#f4f0e8;--paper-light:#fcfaf6;--ink:#151515;--muted:#6d6964;--red:#d71920;--red-deep:#b30d15;--rule:rgba(21,21,21,.16);--card:rgba(255,255,255,.48);--slide-left:clamp(72px,10vw,170px);--slide-right:clamp(30px,6vw,100px)}
+html,body{overflow:hidden;background:var(--paper)}
+body{-webkit-font-smoothing:antialiased}
+.app{height:100dvh;min-height:0;display:block;background:var(--paper)}
+.topbar{position:fixed;z-index:35;inset:0 0 auto;height:64px;display:grid;grid-template-columns:1fr auto 1fr;padding:0 clamp(28px,6vw,100px);border-bottom:1px solid var(--rule);background:rgba(244,240,232,.91);backdrop-filter:blur(15px)}
+.brand{font-size:13px;letter-spacing:.17em}.brand-rule{width:5px;height:25px}.brand small{display:none}
+.presentation-title{text-align:center;text-transform:uppercase}.presentation-title strong{display:block;font-size:9px;letter-spacing:.16em}.presentation-title span{display:block;margin-top:3px;color:var(--muted);font-size:8px;letter-spacing:.11em}
+.chapter-label{justify-self:end;color:var(--red);font-size:9px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+.story-rail{position:fixed;z-index:36;left:22px;top:50%;display:flex;flex-direction:column;gap:13px;transform:translateY(-50%)}
+.story-rail:before{content:"";position:absolute;z-index:-1;left:10px;top:11px;bottom:11px;width:1px;background:var(--rule)}
+.story-rail button{width:120px;padding:0;display:flex;align-items:center;gap:10px;border:0;background:transparent;color:var(--muted);text-align:left;cursor:pointer}
+.story-rail span{flex:none;width:21px;height:21px;display:grid;place-items:center;border:1px solid var(--rule);border-radius:50%;background:var(--paper);font-size:7px;font-weight:800;transition:.2s ease}
+.story-rail b{opacity:0;transform:translateX(-4px);font-size:8px;letter-spacing:.09em;text-transform:uppercase;transition:.2s ease}
+.story-rail button:hover b,.story-rail button.is-active b{opacity:1;transform:none}.story-rail button.is-active span{border-color:var(--red);background:var(--red);color:white}
+.stage{position:absolute;inset:0;padding:0;display:block;perspective:none;overflow:hidden}
+.slide{width:100%;height:100dvh;max-height:none;aspect-ratio:auto;border:0;box-shadow:none;container-type:normal;overflow:hidden}
+.slide.tone-paper,.slide.cover.tone-dark{background:var(--paper);color:var(--ink)}
+.slide.tone-dark{background:var(--ink);color:#fff;box-shadow:none;border:0}.slide.tone-red{background:var(--red);color:#fff;box-shadow:none;border:0}
+.slide::after,.signal-rail{display:none!important}
+.slide-canvas,.cover .slide-canvas{height:100%;padding:clamp(91px,12vh,130px) var(--slide-right) clamp(102px,13vh,139px) var(--slide-left)}
+.scene-header{max-width:100%}.eyebrow{gap:14px;font-size:10px;letter-spacing:.2em}.eyebrow::before{width:34px}
+.title{max-width:1100px;margin:19px 0 0;font-size:clamp(39px,4.65vw,76px);line-height:.94;font-weight:800;letter-spacing:-.058em}
+.subtitle{max-width:880px;margin:18px 0 0;font-size:clamp(14px,1.18vw,19px);line-height:1.4}
+.scene-body{margin-top:clamp(22px,4vh,44px)}.scene-footer{font-size:9px;letter-spacing:.12em;padding-top:16px}
+.controls{position:fixed;z-index:40;left:50%;bottom:max(19px,env(safe-area-inset-bottom));display:flex;align-items:center;gap:7px;padding:7px;border:1px solid rgba(21,21,21,.12);border-radius:999px;background:rgba(255,255,255,.91);box-shadow:0 12px 40px rgba(0,0,0,.11);backdrop-filter:blur(16px);transform:translateX(-50%)}
+.controls .nav,.controls .control{width:38px;min-width:38px;height:38px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--ink);box-shadow:none;font-size:17px}
+.controls .nav:hover,.controls .control:hover{background:var(--red);color:#fff;transform:none}
+.controls .nav:disabled{opacity:.25;background:transparent;color:var(--ink)}
+.controls .navgroup{gap:4px}.controls .counter{min-width:61px;font-size:10px;letter-spacing:.1em}
+.controls .progress-group{width:215px;padding:0 7px;display:grid;gap:8px}.controls .progress{position:static;height:2px;background:var(--rule);border-radius:2px;overflow:hidden}.controls .progress span{background:var(--red)}
+.slide-dots{display:flex;justify-content:center;gap:4px}.slide-dots button{width:5px;height:5px;padding:0;border:0;border-radius:50%;background:rgba(21,21,21,.21);cursor:pointer}.slide-dots button.is-active{background:var(--red);transform:scale(1.45)}
+.controls .motion-toggle{width:auto;min-width:0;padding:0 11px;border-left:1px solid var(--rule);border-radius:0;font-size:8px;letter-spacing:.08em;white-space:nowrap}.controls .motion-toggle:hover{border-radius:20px}
+.controls .icon-control svg{width:17px;height:17px}
+.key-hint{position:fixed;z-index:30;right:clamp(25px,6vw,100px);bottom:34px;color:var(--muted);font-size:8px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+.slide.tone-dark~.key-hint{color:#fff}
+/* Motion is intentional and finite: no decorative perpetual loops. */
+.slide,.slide *, .slide::before,.slide::after,.slide *::before,.slide *::after{animation:none!important}
+::view-transition-old(root),::view-transition-new(root){animation:none!important}
+
+/* 01 — one glowing hub, four smaller satellites, then the connections. */
+.cover-grid{grid-template-columns:1.08fr .92fr;gap:2%}.cover-title{font-size:clamp(68px,9.6vw,156px);line-height:.77;color:var(--ink)}.cover-title span{color:var(--red)}.cover-copy{color:var(--muted);font-size:clamp(16px,1.4vw,22px)}
+.cover-outcomes{margin-top:clamp(25px,3vw,42px)}.cover-outcome{border-color:var(--red)}.cover-outcome span{color:var(--muted)}.cover .scene-footer{border-color:var(--rule);color:var(--muted)}
+.cover-orbit{width:min(39vw,500px);aspect-ratio:1}.cover-orbit .ring{inset:5%;border-color:rgba(215,25,32,.15)}.cover-orbit .ring:nth-child(2){inset:20%}.cover-orbit .ring:nth-child(3){inset:36%}
+.cover-orbit .core{inset:36%;z-index:3;background:radial-gradient(circle at 35% 30%,#ff8587 0,#e62931 35%,#b50b13 100%);box-shadow:0 0 34px rgba(215,25,32,.42),0 0 90px rgba(215,25,32,.17)}
+.cover-orbit .orbit-dot{z-index:3;background:var(--red);box-shadow:0 0 0 8px rgba(215,25,32,.11),0 0 25px rgba(215,25,32,.28)}
+.cover-orbit .orbit-dot:nth-of-type(5){left:19%;top:19%;width:25px;transform:translate(-50%,-50%)}.cover-orbit .orbit-dot:nth-of-type(6){left:85%;top:25%;width:17px;right:auto;transform:translate(-50%,-50%)}.cover-orbit .orbit-dot:nth-of-type(7){left:80%;top:81%;width:30px;bottom:auto;transform:translate(-50%,-50%)}.cover-orbit .orbit-dot:nth-of-type(8){left:18%;top:78%;width:13px;bottom:auto;transform:translate(-50%,-50%)}
+.orb-links{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.orb-links path{fill:none;stroke:var(--red);stroke-width:1.6;stroke-dasharray:320;stroke-dashoffset:320;opacity:.75}
+body:not(.motion-paused):not(.tab-hidden) .cover-orbit .orb-links path{animation:draw-orb .72s ease-out forwards!important}.orb-links path:nth-child(1){animation-delay:.2s!important}.orb-links path:nth-child(2){animation-delay:.45s!important}.orb-links path:nth-child(3){animation-delay:.7s!important}.orb-links path:nth-child(4){animation-delay:.95s!important}
+@keyframes draw-orb{to{stroke-dashoffset:0}}
+
+/* 02 — simultaneous joins, followed by a shared colour state. */
+.capability-scene{grid-template-columns:.7fr 1.3fr;gap:5%}.advantage-line{font-size:clamp(27px,2.8vw,46px)}.quiet{max-width:410px;font-size:15px;line-height:1.45}
+.capability-field{min-height:270px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-content:center}.capability-field::before{display:none}
+.capability{min-height:116px;padding:22px 11px;display:grid;place-items:center;border:1px solid var(--rule);border-radius:20px;background:var(--card);font-size:clamp(12px,1.05vw,17px);line-height:1.1;box-shadow:0 12px 28px rgba(21,21,21,.035)}
+.capability:nth-child(-n+3)::after{content:"";position:absolute;z-index:1;left:100%;top:50%;width:12px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left}
+.capability-bridge{display:none}.capability-result{grid-column:1/-1;padding:13px 16px;border-left:3px solid var(--red);color:var(--muted);font-size:13px}
+body:not(.motion-paused):not(.tab-hidden) .capability:nth-child(-n+3)::after{animation:connect-boxes .75s .25s ease-out forwards!important}
+body:not(.motion-paused):not(.tab-hidden) .capability{animation:connected-box 1.8s ease-out forwards!important}
+@keyframes connect-boxes{to{transform:scaleX(1)}}@keyframes connected-box{0%,57%{border-color:var(--rule);background:var(--card);color:var(--ink)}100%{border-color:var(--red);background:var(--red);color:white}}
+
+/* 03 — distinct service cards and a clearly isolated shared capability. */
+.overlap-scene{grid-template-columns:1fr .64fr 1fr;gap:12px;align-items:stretch}
+.service-lane{position:relative;z-index:1;padding:26px;border:1px solid var(--rule);border-radius:24px;background:var(--card)}.service-lane::after{display:none}.service-lane h3{font-size:clamp(23px,2.2vw,34px)}.service-lane ul{font-size:clamp(12px,1vw,16px);line-height:1.75}.service-lane li{padding:4px 0}.service-lane .shared-feature{color:var(--red);font-weight:800}
+.overlap-core{position:relative;z-index:3;width:calc(100% + 48px);min-height:235px;margin-inline:-24px;aspect-ratio:auto;display:flex;flex-direction:column;justify-content:center;gap:17px;padding:22px;border-radius:24px;background:var(--red);font-size:12px;letter-spacing:0;line-height:1.35;box-shadow:0 14px 38px rgba(215,25,32,.19)}.overlap-core b{font-size:10px;letter-spacing:.16em}.overlap-core span{font-size:clamp(16px,1.45vw,23px);font-weight:800;letter-spacing:-.04em}.overlap-core small{color:rgba(255,255,255,.78);font-size:11px;text-transform:none}
+body:not(.motion-paused):not(.tab-hidden) .overlap-core{animation:shared-reveal .7s .65s ease-out both!important}
+body:not(.motion-paused):not(.tab-hidden) .service-lane.left{animation:service-left .8s .2s ease-out both!important}
+body:not(.motion-paused):not(.tab-hidden) .service-lane.right{animation:service-right .8s .2s ease-out both!important}
+body:not(.motion-paused):not(.tab-hidden) .shared-feature{animation:feature-converge 1s .25s ease-out both!important}
+@keyframes shared-reveal{from{opacity:.15;transform:scale(.9)}to{opacity:1;transform:scale(1)}}
+@keyframes service-left{from{transform:translateX(-18px)}to{transform:translateX(10px)}}@keyframes service-right{from{transform:translateX(18px)}to{transform:translateX(-10px)}}@keyframes feature-converge{from{opacity:1}to{opacity:.45}}
+
+/* 04 — stronger hierarchy, not more motion. */
+.consequence-scene{grid-template-columns:1fr 60px 1fr;gap:12px}.consequence{min-height:290px;padding:27px;justify-content:flex-start;border:1px solid var(--rule);border-radius:24px;background:var(--card)}
+.consequence-no{color:var(--red);font-size:10px;font-weight:800;letter-spacing:.15em}.consequence-word{margin-top:auto;font-size:clamp(50px,6.4vw,102px)}.consequence h3{margin:20px 0 6px;font-size:17px}.consequence p{max-width:400px;font-size:13px}.consequence-divider{height:auto;display:grid;place-items:center;background:none;color:var(--red);font-size:34px;font-weight:300}
+.consequence-divider::after{display:none}
+
+/* 05 — connected tablet cards originate behind the customer need. */
+.ecosystem-scene{grid-template-columns:.58fr 1.42fr;gap:4%}.ecosystem-copy{font-size:clamp(27px,2.9vw,48px)}.ecosystem-map{min-height:340px}.ecosystem-map::before,.ecosystem-map::after{display:none}
+.ecosystem-map svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}.ecosystem-map svg path{fill:none;stroke:rgba(215,25,32,.55);stroke-width:1.4;stroke-dasharray:1250;stroke-dashoffset:1250}
+.ecosystem-core{z-index:5;width:152px;height:152px;aspect-ratio:auto;border-radius:50%;box-shadow:0 10px 34px rgba(215,25,32,.25);font-size:20px}
+.ecosystem-node{min-width:135px;min-height:57px;display:grid;place-items:center;border:1px solid var(--rule);border-radius:18px;background:var(--paper-light);box-shadow:0 10px 30px rgba(21,21,21,.07);font-size:10px}
+.ecosystem-node:nth-of-type(2){top:0;left:38%;--dx:0px;--dy:145px}.ecosystem-node:nth-of-type(3){top:41%;right:0;--dx:-210px;--dy:0px}.ecosystem-node:nth-of-type(4){bottom:0;left:38%;--dx:0px;--dy:-145px}.ecosystem-node:nth-of-type(5){top:41%;left:0;--dx:210px;--dy:0px}
+body:not(.motion-paused):not(.tab-hidden) .ecosystem-map svg path{animation:ecosystem-draw 1.5s .5s ease-out forwards!important}
+body:not(.motion-paused):not(.tab-hidden) .ecosystem-node{animation:tablet-emerge .9s ease-out both!important}.ecosystem-node:nth-of-type(2){animation-delay:.05s!important}.ecosystem-node:nth-of-type(3){animation-delay:.2s!important}.ecosystem-node:nth-of-type(4){animation-delay:.35s!important}.ecosystem-node:nth-of-type(5){animation-delay:.5s!important}
+@keyframes ecosystem-draw{to{stroke-dashoffset:0}}@keyframes tablet-emerge{from{opacity:0;transform:translate(var(--dx),var(--dy)) scale(.55)}to{opacity:1;transform:none}}
+
+/* 06, 07, 10 — line pauses at each station and the station fills. */
+.journey-scene{justify-content:center}.journey-track{gap:7px}.journey-track::before{top:17px;height:2px;background:var(--rule)}.journey-track::after{top:17px;width:0;height:2px;border-radius:0;background:var(--red)}
+.journey-step{padding:54px 14px 14px 0}.journey-step::before{top:11px;z-index:2;width:14px;height:14px;background:var(--paper)}.journey-step h3{font-size:clamp(22px,2.1vw,34px)}.journey-step p{max-width:210px;font-size:clamp(12px,1vw,15px)}.journey-close{font-size:clamp(18px,1.6vw,26px)}
+body:not(.motion-paused):not(.tab-hidden) .journey-track::after{animation:journey-stops 5.3s ease-in-out forwards!important}
+body:not(.motion-paused):not(.tab-hidden) .journey-step::before,body:not(.motion-paused):not(.tab-hidden) .role-step::before{animation:station-fill 5.3s linear forwards!important}
+.journey-step:nth-child(1)::before,.role-step:nth-child(1)::before{--station:0}.journey-step:nth-child(2)::before,.role-step:nth-child(2)::before{--station:1}.journey-step:nth-child(3)::before,.role-step:nth-child(3)::before{--station:2}.journey-step:nth-child(4)::before,.role-step:nth-child(4)::before{--station:3}
+@keyframes journey-stops{0%,14%{width:0}22%,37%{width:33.333%}45%,60%{width:66.666%}68%,100%{width:100%}}
+@keyframes station-fill{0%,14%{background:var(--paper);box-shadow:none}22%,100%{background:var(--red);box-shadow:0 0 0 5px rgba(215,25,32,.13)}}
+/* Per-stop delays keep the fill in step with the paused line. */
+.journey-step:nth-child(1)::before,.role-step:nth-child(1)::before{animation-delay:-.75s!important}.journey-step:nth-child(2)::before,.role-step:nth-child(2)::before{animation-delay:.35s!important}.journey-step:nth-child(3)::before,.role-step:nth-child(3)::before{animation-delay:1.65s!important}.journey-step:nth-child(4)::before,.role-step:nth-child(4)::before{animation-delay:2.95s!important}
+
+/* 08 — relationship matrix. */
+.network-scene{grid-template-columns:.38fr .62fr;gap:4%}.network-lead{font-size:clamp(25px,2.7vw,43px)}
+.network-matrix{display:grid;grid-template-columns:1.05fr repeat(3,1fr);border:1px solid var(--rule);border-radius:22px;overflow:hidden;background:var(--paper-light);box-shadow:0 12px 32px rgba(21,21,21,.04)}
+.network-matrix>div{min-height:61px;padding:14px 12px;display:flex;align-items:center;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);font-size:clamp(10px,.85vw,13px);line-height:1.25}.network-matrix>div:nth-child(4n){border-right:0}.network-matrix>div:nth-last-child(-n+4){border-bottom:0}
+.network-matrix .matrix-head,.network-matrix .matrix-corner{background:var(--ink);color:white;font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.network-matrix .matrix-corner{background:var(--red)}.network-matrix .matrix-rowhead{color:var(--red);font-weight:800}
+
+/* 09 — a visible, animated gap and a readable label at all sizes. */
+.gap-scene{grid-template-columns:1fr .56fr 1fr;gap:3%}.mandate-row{font-size:clamp(11px,.9vw,14px)}.mandate-row b{font-size:10px}
+.gap-space{height:82%;min-height:230px;border:1px dashed rgba(215,25,32,.4);border-radius:22px;background:linear-gradient(90deg,rgba(215,25,32,.025),rgba(215,25,32,.11),rgba(215,25,32,.025));overflow:visible}
+.gap-space::before{left:-6%;right:-6%;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;z-index:2}
+.gap-space::after{content:"";position:absolute;inset:12px;border:1px solid rgba(215,25,32,.14);border-radius:16px}
+.gap-bridge{position:absolute;z-index:1;inset:20% 14%;border:1px solid rgba(215,25,32,.32);border-radius:50%;opacity:0}
+.gap-label{padding:14px 12px;border:1px solid rgba(215,25,32,.25);border-radius:14px;background:var(--paper-light);font-size:13px;line-height:1.3;box-shadow:0 12px 30px rgba(215,25,32,.11)}
+.gap-callout{font-size:clamp(26px,2.55vw,42px)}.gap-callout span{font-size:clamp(12px,1vw,16px)}
+body:not(.motion-paused):not(.tab-hidden) .gap-space::before{animation:gap-cross 1.5s .35s ease-out forwards!important}
+body:not(.motion-paused):not(.tab-hidden) .gap-bridge{animation:gap-emphasis 1s .8s ease-out forwards!important}
+@keyframes gap-cross{0%{transform:scaleX(0)}70%,100%{transform:scaleX(1)}}@keyframes gap-emphasis{from{opacity:0;transform:scale(.55)}to{opacity:1;transform:scale(1)}}
+
+/* 10 — operational path and the two transformation domains. */
+.role-scene{grid-template-columns:1.22fr .78fr;gap:5%}.role-process::before{top:24px;height:2px}.role-process::after{top:24px;left:4%;width:0;height:2px;border-radius:0}
+.role-step{padding-top:57px}.role-step::before{top:18px;z-index:2;background:var(--paper)}.role-step b{font-size:clamp(18px,1.5vw,24px)}.role-step span{font-size:clamp(11px,.85vw,14px)}
+body:not(.motion-paused):not(.tab-hidden) .role-process::after{animation:journey-stops 5.3s ease-in-out forwards!important}
+.role-domains{gap:10px}.role-domain{min-height:122px;padding:15px;border:1px solid var(--rule);border-radius:18px;background:var(--card)}.role-domain b{font-size:10px}.role-domain p{font-size:clamp(11px,.88vw,14px)}
+.domain-visual{position:relative;width:100%;height:23px;margin-bottom:10px}.domain-visual i{position:absolute;top:8px;width:16px;height:10px;border-radius:4px;background:var(--red)}.horizontal-visual i:nth-child(1){left:6%}.horizontal-visual i:nth-child(2){left:42%}.horizontal-visual i:nth-child(3){left:80%}.horizontal-visual em{position:absolute;left:7%;right:11%;top:13px;height:1px;background:var(--red)}
+.ecosystem-visual i:nth-child(1){left:7%;top:1px}.ecosystem-visual i:nth-child(2){left:45%;top:13px}.ecosystem-visual i:nth-child(3){left:82%;top:1px}.ecosystem-visual em{position:absolute;left:10%;right:12%;top:12px;height:1px;background:var(--red);transform:skewY(8deg)}
+
+/* 11 — explicit opportunity-explorer role, ownership intact. */
+.boundary-list{border-top:0}.boundary-row{min-height:48px;padding:11px 0;font-size:clamp(10px,.9vw,14px)}.boundary-bridge::before,.boundary-bridge::after{display:none}.bridge-copy{width:255px;height:255px;aspect-ratio:auto;display:flex;flex-direction:column;gap:14px;justify-content:center;border-radius:50%;font-size:20px;line-height:1.2;box-shadow:0 0 0 18px rgba(215,25,32,.08)}.bridge-copy small{font-size:9px;letter-spacing:.15em}
+
+/* 12 — a substantial, legible portfolio with no bobbing. */
+.evidence-scene{height:auto;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;align-items:stretch}.evidence-scene::before,.evidence-item::after{display:none}
+.evidence-item{min-height:240px;height:auto;padding:23px 20px;border:1px solid var(--rule);border-radius:20px;background:var(--card)}.evidence-item b{font-size:9px}.evidence-item p{margin-top:21px;font-size:clamp(12px,1vw,16px);line-height:1.58;font-weight:650}
+
+/* 13 — the shift travels across the divider and lands on a more systematic model. */
+.shift-scene{height:clamp(265px,36vh,320px);grid-template-columns:1fr 90px 1fr;gap:2%}.shift-column{padding:18px;border:1px solid var(--rule);border-radius:22px;background:var(--card)}.shift-column.structured{border-color:rgba(215,25,32,.35);background:rgba(215,25,32,.045)}
+.shift-column h3{display:flex;justify-content:space-between;gap:15px;font-size:11px}.shift-column h3 small{color:var(--muted);font-size:9px;letter-spacing:.05em;text-transform:none}.shift-oneliner{min-height:49px;margin:4px 0 9px;font-size:clamp(14px,1.25vw,20px);font-weight:750;line-height:1.2;letter-spacing:-.02em}
+.shift-item{padding:8px 0;font-size:clamp(11px,.88vw,14px)}.shift-column.today .shift-item:nth-child(n){transform:none}
+.shift-transform{height:auto}.shift-transform::before{left:0;right:0;top:50%;bottom:auto;width:auto;height:2px;background:var(--red)}.shift-transform span{width:66px;height:66px;aspect-ratio:auto;font-size:34px;transform:none;box-shadow:0 0 0 11px var(--paper)}.shift-transform small{position:absolute;top:calc(50% + 43px);color:var(--red);font-size:9px;font-weight:800;letter-spacing:.15em}
+body:not(.motion-paused):not(.tab-hidden) .shift-transform span{animation:shift-across 1.1s .25s ease-out both!important}
+@keyframes shift-across{from{transform:translateX(-52px);opacity:.3}to{transform:translateX(0);opacity:1}}
+
+/* 14, 15, 16 — outcome, mandate statement, AI prospects bridge. */
+.outcome-scene{gap:12px}.outcome{min-height:230px;padding:24px;border:1px solid var(--rule);border-radius:20px;background:var(--card)}.outcome+.outcome{padding-left:24px;border-left:1px solid var(--rule)}.outcome::after{display:none}.outcome p{font-size:clamp(12px,1vw,16px)}
+.reveal .title{max-width:760px;font-size:clamp(28px,2.4vw,38px);opacity:.75}.reveal-scene{max-width:1100px}.reveal-quote{font-size:clamp(31px,3.6vw,57px);line-height:1.08}.reveal-close{font-size:clamp(17px,1.7vw,27px);opacity:.72}.reveal-word{opacity:.45}
+.section-intro .title{max-width:1050px;font-size:clamp(47px,5.5vw,88px)}.section-intro .title .accent{color:#ff555a}.intro-scene{display:grid;grid-template-columns:.4fr 1fr;gap:5%;align-items:center}.intro-number{color:var(--red);font-size:clamp(150px,20vw,300px);font-weight:900;letter-spacing:-.13em;line-height:.75}.intro-scene p{max-width:600px;font-size:clamp(23px,2.5vw,40px);line-height:1.08;font-weight:750;letter-spacing:-.045em}.intro-path{display:flex;align-items:center;gap:12px;margin-top:27px;color:#fff;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.intro-path i{flex:1;height:1px;background:var(--red)}
+
+/* 17–20 — concise scenarios and benefits, expandable evidence. */
+.prospects .title{font-size:clamp(35px,4vw,62px)}.prospects .scene-body{justify-content:center}.prospect-scene{height:clamp(260px,37vh,320px);flex:none;min-height:0;gap:16px}.prospect-card{min-height:0;padding:20px;border-radius:24px;background:var(--card)}.tone-dark .prospect-card{background:rgba(255,255,255,.07)}.prospect-card::before{display:none}.prospect-card:hover{transform:translateY(-2px)}
+.prospect-card h3{margin:17px 0;font-size:clamp(23px,2vw,34px)}.prospect-card .prospect-story{display:grid;grid-template-columns:65px 1fr;gap:10px;align-items:start;margin:0 0 10px;color:var(--ink);font-size:clamp(11px,.96vw,15px);line-height:1.38}.tone-dark .prospect-card .prospect-story{color:#fff}.prospect-story b{color:var(--red);font-size:9px;letter-spacing:.12em;text-transform:uppercase}.tone-dark .prospect-story b{color:#ff7f83}.prospect-benefit{opacity:.8}.causal-flow{padding-top:12px}.flow-line i{animation:none!important}.explore{font-size:9px}.prospect-takeaway{font-size:clamp(13px,1.15vw,18px)}
+
+/* 21 — role-led path to the future, with the original audience outcomes. */
+.conclusion-scene{grid-template-columns:.8fr 1.2fr;gap:6%}.final-lockup h2{font-size:clamp(61px,7vw,113px)}.final-cycle{border-color:var(--rule-light)}.final-step{grid-template-columns:78px 1fr;padding:12px 0}.final-step::after{display:none}.final-step span{font-size:clamp(13px,1.08vw,17px)}.audience-row{gap:10px}.audience-row span{font-size:clamp(9px,.75vw,12px)}
+
+.overlay{background:rgba(21,21,21,.96)}.thumb{border-radius:18px}.detail-shell{border-radius:24px}
+@media(max-width:1100px){
+ :root{--slide-left:clamp(34px,6vw,85px);--slide-right:clamp(28px,5vw,70px)}
+ .story-rail,.key-hint{display:none}
+ .title{font-size:clamp(36px,4.55vw,55px)}
+ .cover-title{font-size:clamp(62px,9vw,104px)}
+ .evidence-scene{grid-template-columns:repeat(2,1fr);gap:9px}.evidence-item{min-height:145px;padding:16px 18px}.evidence-item p{margin-top:10px;font-size:12px;line-height:1.45}
+ .network-scene{grid-template-columns:.28fr .72fr;gap:3%}.network-lead{font-size:clamp(23px,2.5vw,30px)}
+ .slide-canvas,.cover .slide-canvas{padding-top:clamp(86px,10vh,110px);padding-bottom:clamp(95px,11vh,120px)}
+}
+@media(max-width:700px){
+ .topbar{height:55px;padding:0 18px;grid-template-columns:1fr auto}.presentation-title{display:none}.chapter-label{font-size:8px}
+ .controls{gap:2px;bottom:10px;padding:5px}.controls .progress-group{width:100px}.controls .motion-toggle{display:none}.controls .nav,.controls .control{width:34px;min-width:34px;height:34px}.controls .counter{min-width:50px;font-size:8px}
+ html,body{overflow:auto}.app{min-height:100dvh}.stage{position:relative;inset:auto;overflow:auto}.slide{height:auto;min-height:100dvh;max-height:none;overflow:visible}.slide-canvas,.cover .slide-canvas{height:auto;min-height:100dvh;padding:82px 22px 104px}
+ .scene-body{flex:none;margin-top:28px}.scene-footer{margin-top:32px}.title{font-size:clamp(35px,8.5vw,54px)}.subtitle{font-size:14px}
+ .cover-grid,.capability-scene,.ecosystem-scene,.network-scene,.role-scene,.boundary-scene,.conclusion-scene,.intro-scene{grid-template-columns:1fr;gap:25px}
+ .cover-grid{align-content:start}.cover-title{font-size:clamp(63px,17vw,95px)}.cover-orbit{display:block;width:min(74vw,380px);margin:auto}.cover-outcomes{gap:7px}
+ .capability-field{min-height:0;grid-template-columns:repeat(2,1fr)}.capability{min-height:75px}.capability:nth-child(-n+3)::after{display:none}
+ .overlap-scene{grid-template-columns:1fr;gap:10px}.service-lane{padding:18px}.overlap-core{width:100%;min-height:120px;margin-inline:0}
+ .consequence-scene{grid-template-columns:1fr;gap:8px}.consequence{min-height:185px}.consequence-divider{height:34px}.consequence-word{font-size:60px}
+ .ecosystem-map{min-height:330px}.ecosystem-node{min-width:96px;font-size:8px}.ecosystem-core{width:125px;height:125px;font-size:17px}
+ .journey-track{grid-template-columns:repeat(2,1fr);gap:9px}.journey-track::before,.journey-track::after{display:none}.journey-step{min-height:145px;padding:15px;border:1px solid var(--rule);border-radius:17px;background:var(--card)}.journey-step::before{display:none}.journey-step h3{font-size:24px}
+ .network-matrix{overflow-x:auto;min-width:0}.network-matrix>div{min-height:65px;padding:9px 7px;font-size:10px}.network-matrix .matrix-head,.network-matrix .matrix-corner{font-size:8px}
+ .gap-scene{grid-template-columns:1fr;gap:16px}.gap-space{height:145px;min-height:145px}.gap-callout{font-size:31px}
+ .role-process{grid-template-columns:repeat(4,1fr)}.role-step{padding:45px 5px 0 0}.role-step b{font-size:15px}.role-step span{font-size:10px}
+ .boundary-bridge{min-height:220px}.bridge-copy{width:190px;height:190px;font-size:16px}
+ .evidence-scene{grid-template-columns:1fr 1fr}.evidence-item{min-height:200px}.evidence-item p{font-size:11px}
+ .shift-scene{height:auto;grid-template-columns:1fr;gap:5px}.shift-column{padding:18px}.shift-transform{height:55px}.shift-transform span{width:45px;height:45px;font-size:23px}.shift-transform small{display:none}
+ .outcome-scene{grid-template-columns:1fr}.outcome{min-height:0;padding:18px}.outcome+.outcome{padding-left:18px}
+ .reveal-scene{margin-top:20px}.reveal-quote{font-size:clamp(31px,7vw,46px)}.reveal-word{display:none}
+ .section-intro .title{font-size:clamp(43px,10vw,65px)}.intro-number{font-size:140px}.intro-scene p{font-size:26px}
+ .prospect-scene{height:auto;grid-template-columns:1fr}.prospect-card{min-height:230px}.prospect-card h3{font-size:26px}.prospect-card .prospect-story{font-size:13px}
+ .final-lockup h2{font-size:75px}.audience-row{grid-template-columns:1fr 1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){.slide,.slide *, .slide::before,.slide::after,.slide *::before,.slide *::after{animation:none!important;transition-duration:.01ms!important}}
+
   </style>
 </head>
 <body>
@@ -462,35 +649,39 @@ button:focus-visible,a:focus-visible { outline:2px solid var(--red); outline-off
         <span>City Bank</span>
         <small>Invisible Banking</small>
       </div>
-      <div class="top-actions">
-        <span class="toplabel">Transformation story</span>
-        <button class="control motion-toggle" id="motionBtn" type="button" aria-label="Pause animation" aria-pressed="false">Pause motion</button>
-        <button class="control icon-control" id="overviewBtn" type="button" title="Slide overview (O)" aria-label="Open slide overview">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-        </button>
-        <button class="control icon-control" id="fullBtn" type="button" title="Full screen (F)" aria-label="Toggle full screen">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg>
-        </button>
-      </div>
+      <div class="presentation-title"><strong>Invisible Banking</strong><span>Transformation story</span></div>
+      <div class="chapter-label" id="chapter"></div>
     </header>
+
+    <aside class="story-rail" aria-label="Story chapters">
+      <button type="button" data-target="1"><span>01</span><b>Vision</b></button>
+      <button type="button" data-target="2"><span>02</span><b>Opportunity</b></button>
+      <button type="button" data-target="5"><span>03</span><b>Ecosystem</b></button>
+      <button type="button" data-target="9"><span>04</span><b>Mandate</b></button>
+      <button type="button" data-target="12"><span>05</span><b>Evidence</b></button>
+      <button type="button" data-target="16"><span>06</span><b>AI prospects</b></button>
+      <button type="button" data-target="21"><span>07</span><b>Future</b></button>
+    </aside>
 
     <main class="stage" id="stage" tabindex="-1" aria-live="polite"></main>
 
-    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
-    <footer class="bottom">
-      <div class="chapter" id="chapter"></div>
+    <footer class="controls" aria-label="Presentation controls">
       <div class="navgroup">
         <button class="nav" id="prev" type="button" aria-label="Previous slide">←</button>
         <span class="counter" id="counter"></span>
         <button class="nav" id="next" type="button" aria-label="Next slide">→</button>
       </div>
-      <div class="hint">← → navigate &nbsp; · &nbsp; O overview</div>
+      <div class="progress-group"><div class="progress" aria-hidden="true"><span id="progress"></span></div><div class="slide-dots" id="slideDots" aria-label="Go to slide"></div></div>
+      <button class="control icon-control" id="overviewBtn" type="button" title="Slide overview (O)" aria-label="Open slide overview"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button>
+      <button class="control motion-toggle" id="motionBtn" type="button" aria-label="Pause animation" aria-pressed="false">Pause motion</button>
+      <button class="control icon-control" id="fullBtn" type="button" title="Full screen (F)" aria-label="Toggle full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg></button>
     </footer>
+    <div class="key-hint">← → Navigate · O Overview</div>
   </div>
 
   <div class="overlay" id="overview" role="dialog" aria-modal="true" aria-labelledby="overviewTitle">
     <div class="overlay-head">
-      <div><p class="overlay-kicker">20-slide narrative</p><h2 id="overviewTitle">Presentation overview</h2></div>
+      <div><p class="overlay-kicker">21-slide narrative</p><h2 id="overviewTitle">Presentation overview</h2></div>
       <button class="close" type="button" data-close aria-label="Close overview">×</button>
     </div>
     <div class="overview-grid" id="overviewGrid"></div>
@@ -517,7 +708,8 @@ const slides = [
             <div class="cover-outcome"><b>Bank</b><span>One connected institution.</span></div>
           </div>
         </div>
-        <div class="cover-orbit" aria-hidden="true">
+        <div class="cover-orbit" aria-label="Connected capabilities around one central customer need">
+          <svg class="orb-links" viewBox="0 0 500 500" preserveAspectRatio="none" aria-hidden="true"><path d="M250 250 L95 98"/><path d="M250 250 L425 126"/><path d="M250 250 L400 405"/><path d="M250 250 L92 390"/></svg>
           <i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="core"></i>
           <i class="orbit-dot"></i><i class="orbit-dot"></i><i class="orbit-dot"></i><i class="orbit-dot"></i>
         </div>
@@ -534,10 +726,10 @@ const slides = [
           <div class="advantage-line">More value from<br><span>what already exists.</span></div>
           <p class="quiet">The next opportunity is not another platform. AI can make existing capabilities more intelligent, responsive and connected.</p>
         </div>
-        <div class="capability-field" aria-label="Existing City Bank capabilities">
-          <div class="capability">Citytouch</div><div class="capability">Blink</div><div class="capability">Blueprint</div><div class="capability">Cards + POS</div>
-          <div class="capability">Branches + CX</div><div class="capability">Corporate</div><div class="capability">SME + Medium</div><div class="capability">Treasury</div>
-          <div class="capability ai">Data + AI + IT connect the field</div>
+        <div class="capability-field" aria-label="Connected City Bank capabilities">
+          <div class="capability">Citytouch</div><div class="capability">Blink</div><div class="capability">Cards + POS</div><div class="capability">Corporate</div>
+          <div class="capability-bridge" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="capability-result">Shared data, AI and technology make each capability more valuable.</div>
         </div>
       </div>`,
     foot:'Existing capabilities · Connected value'
@@ -548,21 +740,21 @@ const slides = [
     subtitle:'When channels evolve separately, the same capability can appear in more than one place.',
     body:`
       <div class="overlap-scene">
-        <section class="service-lane left"><span class="micro">Citytouch</span><h3>Digital banking services</h3><ul><li>EMI conversion</li><li>Cheque book request</li><li>Statements</li><li>Address update</li></ul></section>
-        <div class="overlap-core">Repeated<br>build</div>
-        <section class="service-lane right"><span class="micro">CityAssist</span><h3>Customer support</h3><ul><li>Customer queries</li><li>Service requests</li><li>Assisted resolution</li><li>Relationship context</li></ul></section>
+        <section class="service-lane left"><span class="micro">Citytouch</span><h3>Digital self-service</h3><ul><li>EMI conversion</li><li class="shared-feature">Cheque book request</li><li class="shared-feature">Statements</li><li>Payments and cards</li></ul></section>
+        <div class="overlap-core"><b>SHARED</b><span>Cheque book request<br>Statements</span><small>One capability. Two routes.</small></div>
+        <section class="service-lane right"><span class="micro">CityAssist</span><h3>Assisted service</h3><ul><li>Customer queries</li><li class="shared-feature">Cheque book request</li><li class="shared-feature">Statements</li><li>Assisted resolution</li></ul></section>
       </div>`,
     foot:'Two customer routes · Divided context'
   },
   {
     chapter:'The opportunity', tone:'paper', layout:'consequence', eyebrow:'The business consequence',
-    title:'Disconnected work can <span class="accent">cost twice.</span>',
+    title:'Fragmentation has two costs. <span class="accent">One visible. One hidden.</span>',
     subtitle:'The issue is not only duplication. Useful signals and relationships may also fail to connect to the next business opportunity.',
     body:`
       <div class="consequence-scene">
-        <section class="consequence"><div class="consequence-word">Repeat</div><h3>Repeated effort</h3><p>Teams may design, build and maintain similar capabilities more than once.</p></section>
-        <div class="consequence-divider" aria-hidden="true"></div>
-        <section class="consequence"><div class="consequence-word">Miss</div><h3>Missed growth</h3><p>POS data, corporate relationships or merchant networks may never connect to the next opportunity.</p></section>
+        <section class="consequence"><span class="consequence-no">01 / THE VISIBLE COST</span><div class="consequence-word">Repeat.</div><h3>Repeated effort</h3><p>Teams may design, build and maintain similar capabilities more than once.</p></section>
+        <div class="consequence-divider" aria-hidden="true">+</div>
+        <section class="consequence"><span class="consequence-no">02 / THE HIDDEN COST</span><div class="consequence-word">Miss.</div><h3>Missed growth</h3><p>POS data, corporate relationships or merchant networks may never connect to the next opportunity.</p></section>
       </div>`,
     foot:'Lost effort · Lost time · Lost potential'
   },
@@ -573,7 +765,8 @@ const slides = [
     body:`
       <div class="ecosystem-scene">
         <div class="ecosystem-copy">The City Bank ecosystem organises complexity around the customer.</div>
-        <div class="ecosystem-map" aria-label="City Bank ecosystem model">
+        <div class="ecosystem-map" aria-label="Interconnected City Bank ecosystem model">
+          <svg viewBox="0 0 600 380" preserveAspectRatio="none" aria-hidden="true"><path d="M300 190 L300 40 M300 190 L530 190 M300 190 L300 340 M300 190 L70 190 M300 40 L530 190 L300 340 L70 190 Z"/></svg>
           <div class="ecosystem-core">Customer<br>need</div>
           <div class="ecosystem-node">Businesses</div><div class="ecosystem-node">Channels</div><div class="ecosystem-node">Partners</div><div class="ecosystem-node">Data + AI</div>
         </div>
@@ -618,12 +811,12 @@ const slides = [
     subtitle:'A corporate relationship can connect employees, suppliers and distributors to multiple City Bank capabilities.',
     body:`
       <div class="network-scene">
-        <div class="network-lead">A relationship becomes more valuable when the whole network becomes visible.</div>
-        <div class="network-map" aria-label="Corporate ecosystem network">
-          <div class="network-hub">Corporate<br>client</div>
-          <div class="network-node">Suppliers</div><div class="network-node">Employees</div><div class="network-node">Distributors</div>
-          <i class="network-link l1"></i><i class="network-link l2"></i><i class="network-link l3"></i>
-          <div class="capability-line"><span>Payroll</span><span>Payments</span><span>Trade + FX</span><span>Cards</span><span>Financing</span></div>
+        <div class="network-lead">A corporate relationship becomes an ecosystem when each stakeholder has a relevant banking connection.</div>
+        <div class="network-matrix" aria-label="Corporate client and stakeholder relationship matrix">
+          <div class="matrix-corner">CORPORATE CLIENT</div><div class="matrix-head">Employees</div><div class="matrix-head">Suppliers</div><div class="matrix-head">Distributors</div>
+          <div class="matrix-rowhead">Relationship</div><div>Payroll &amp; benefits</div><div>Payables &amp; trade</div><div>Collections &amp; settlement</div>
+          <div class="matrix-rowhead">City Bank link</div><div>Accounts · cards</div><div>Payments · FX</div><div>POS · working capital</div>
+          <div class="matrix-rowhead">Shared value</div><div>Convenience</div><div>Cash-flow visibility</div><div>Growth insight</div>
         </div>
       </div>`,
     foot:'One relationship · Multiple connected opportunities'
@@ -640,7 +833,7 @@ const slides = [
           <div class="mandate-row"><b>EPMO</b><span>Delivery governance</span></div>
           <div class="mandate-row"><b>Functions</b><span>IT, Operations, CX and Data</span></div>
         </div>
-        <div class="gap-space"><span class="gap-label">The gap<br>sits here</span></div>
+        <div class="gap-space"><i class="gap-bridge" aria-hidden="true"></i><span class="gap-label">The gap<br>sits here</span></div>
         <div class="gap-callout">Cross-bank opportunity.<span>Including AI integration where intelligence from one business or function could create value elsewhere.</span></div>
       </div>`,
     foot:'The gap sits between established mandates'
@@ -658,8 +851,8 @@ const slides = [
           <div class="role-step"><b>Move</b><span>To natural ownership.</span></div>
         </div>
         <div class="role-domains">
-          <div class="role-domain"><b>Horizontal transformation</b><p>Cross-bank opportunities in service, operations, data, AI integration and relationship intelligence.</p></div>
-          <div class="role-domain"><b>Ecosystem transformation</b><p>Connected journeys, partnerships, embedded services and new business opportunities.</p></div>
+          <div class="role-domain"><div class="domain-visual horizontal-visual" aria-hidden="true"><i></i><i></i><i></i><em></em></div><b>Horizontal transformation</b><p>Join capabilities across businesses: service, operations, data, AI and relationship intelligence.</p></div>
+          <div class="role-domain"><div class="domain-visual ecosystem-visual" aria-hidden="true"><i></i><i></i><i></i><em></em></div><b>Ecosystem transformation</b><p>Connect the bank to customer journeys, partners and embedded opportunities.</p></div>
         </div>
       </div>`,
     foot:'Transformation connects · Businesses own · EPMO governs delivery'
@@ -667,7 +860,7 @@ const slides = [
   {
     chapter:'The proposed mandate', tone:'paper', layout:'boundaries', eyebrow:'Clear boundaries',
     title:'The role complements <span class="accent">what already exists.</span>',
-    subtitle:'It should make existing ownership work better across boundaries, not create another layer of ownership.',
+    subtitle:'The transformation role is an opportunity explorer: it discovers cross-bank value, shapes a case and brings it to the natural owner.',
     body:`
       <div class="boundary-scene">
         <div class="boundary-list">
@@ -677,22 +870,22 @@ const slides = [
           <div class="boundary-row"><b>EPMO</b><span>Execution governance</span></div>
           <div class="boundary-row"><b>IT / CX / Operations / Data</b><span>Specialist ownership, including AI and technology capabilities</span></div>
         </div>
-        <div class="boundary-bridge"><div class="bridge-copy">Transformation connects cross-bank opportunities to natural owners</div></div>
+        <div class="boundary-bridge"><div class="bridge-copy"><small>OPPORTUNITY EXPLORER</small>Discover → frame → connect → hand over</div></div>
       </div>`,
     foot:'Subject to internal mandate validation'
   },
   {
     chapter:'Why this leader', tone:'paper', layout:'evidence', eyebrow:'Already happening',
-    title:'I am already doing parts of this, <span class="accent">informally.</span>',
-    subtitle:'These began with a customer or business opportunity and involved connecting the relevant teams.',
+    title:'A substantial transformation portfolio began <span class="accent">without a formal mandate.</span>',
+    subtitle:'Initiatives and proposals I surfaced, shaped or connected across teams — beyond my core remit.',
     body:`
       <div class="evidence-scene">
-        <div class="evidence-item"><b>Service</b><p>DigiBox<br>Traceable courier</p></div>
-        <div class="evidence-item"><b>Digital + sales</b><p>Citytouch features<br>Digital sales<br>Central offer site</p></div>
-        <div class="evidence-item"><b>Ecosystem</b><p>Foreign Education Hub</p></div>
-        <div class="evidence-item"><b>Connection</b><p>Citytouch × Blink</p></div>
+        <div class="evidence-item"><b>Service &amp; operations</b><p>DigiBox · traceable courier<br>Purchase SMS optimisation<br>Removing OTP for City Bank accounts</p></div>
+        <div class="evidence-item"><b>Digital &amp; loyalty</b><p>Citytouch features · digital sales<br>Citytouch loyalty programme<br>Central offer site</p></div>
+        <div class="evidence-item"><b>Merchant &amp; data</b><p>POS information carried from sales software at purchase<br>Citytouch × Blink</p></div>
+        <div class="evidence-item"><b>Ecosystem</b><p>Foreign Education Hub<br>Cross-division propositions</p></div>
       </div>`,
-    foot:'Identify the opportunity · Connect the teams · Help move it forward'
+    foot:'Initiated or proposed by the presenter · Status and ownership vary · Imagine this with an official mandate'
   },
   {
     chapter:'Why this leader', tone:'paper', layout:'shift', eyebrow:'From informal to structured',
@@ -700,9 +893,9 @@ const slides = [
     subtitle:'A structured model creates earlier ownership, clearer handover and measurable outcomes.',
     body:`
       <div class="shift-scene">
-        <section class="shift-column today"><h3>Today</h3><div class="shift-item">Opportunities surface unevenly</div><div class="shift-item">Connections happen informally</div><div class="shift-item">Progress relies on individual coordination</div></section>
-        <div class="shift-transform"><span>SHIFT</span></div>
-        <section class="shift-column structured"><h3>More structured</h3><div class="shift-item">Systematic opportunity discovery</div><div class="shift-item">Business cases shaped early</div><div class="shift-item">Owners connected earlier</div><div class="shift-item">Clear execution handover</div><div class="shift-item">Business outcome tracked</div></section>
+        <section class="shift-column today"><h3>Today <small>Opportunity-led but informal</small></h3><p class="shift-oneliner">Good ideas depend on who happens to connect them.</p><div class="shift-item">Opportunities surface unevenly</div><div class="shift-item">Connections happen informally</div><div class="shift-item">Progress relies on individual coordination</div></section>
+        <div class="shift-transform"><span>→</span><small>SHIFT</small></div>
+        <section class="shift-column structured"><h3>More structured <small>Mandated and measurable</small></h3><p class="shift-oneliner">Opportunity discovery becomes a repeatable bank-wide practice.</p><div class="shift-item">Discover: scan customer and business signals</div><div class="shift-item">Shape: define value and a business case</div><div class="shift-item">Connect: align accountable owners early</div><div class="shift-item">Handover: execute through existing teams</div><div class="shift-item">Measure: track business outcomes</div></section>
       </div>`,
     foot:'AI can help surface changes and connections continuously'
   },
@@ -720,15 +913,22 @@ const slides = [
   },
   {
     chapter:'Why this leader', tone:'red', layout:'reveal', eyebrow:'The opportunity',
-    title:'Invisible Banking becomes real when City Bank works as one around the customer',
+    title:'The case for a formal mandate',
     body:`
       <div class="reveal-scene">
         <p class="reveal-quote">I would like to explore how I can make this more systematic, drawing on the cross-bank perspective developed through my current role, while businesses and functions retain ownership.</p>
         <div class="reveal-rule"></div>
-        <p class="reveal-close">A broader contribution to transformation and business.</p>
+        <p class="reveal-close">One bank. Better-connected opportunities.</p>
       </div>
       <div class="reveal-word" aria-hidden="true">Transform</div>`,
     foot:'The case for a formal mandate'
+  },
+  {
+    chapter:'The possibilities', tone:'dark', layout:'section-intro', eyebrow:'The next frontier',
+    title:'Possible AI prospects. <span class="accent">Driven by transformation.</span>',
+    subtitle:'The following concepts are not claims of live capability. They are opportunities a bank-wide transformation role could explore, validate and connect to accountable owners.',
+    body:`<div class="intro-scene"><div class="intro-number">04</div><div><p>From isolated use cases to a connected opportunity pipeline.</p><div class="intro-path"><span>Explore</span><i></i><span>Validate</span><i></i><span>Pilot</span><i></i><span>Scale with owners</span></div></div></div>`,
+    foot:'Illustrative concepts · Feasibility, consent and controls to validate'
   },
   {
     chapter:'The possibilities', tone:'dark', layout:'prospects', eyebrow:'Internal prospects · 01 + 02',
@@ -760,16 +960,16 @@ const slides = [
   },
   {
     chapter:'Conclusion', tone:'red', layout:'conclusion', eyebrow:'The conclusion',
-    title:'The future of Invisible Banking is connected, intelligent and continuous',
+    title:'Transformation can make Invisible Banking <span class="accent">the way the bank works.</span>',
     body:`
       <div class="conclusion-scene">
         <div class="final-lockup"><h2>Invisible<br>Banking.</h2><p>It just works.</p></div>
         <div>
-          <div class="final-cycle"><div class="final-step"><b>See</b><span>What others may miss</span></div><div class="final-step"><b>Connect</b><span>What already exists</span></div><div class="final-step"><b>Create</b><span>What comes next</span></div></div>
+          <div class="final-cycle"><div class="final-step"><b>Explore</b><span>Find signals and unmet needs across the bank</span></div><div class="final-step"><b>Connect</b><span>Bring capabilities, partners and owners together</span></div><div class="final-step"><b>Prove</b><span>Pilot the value with clear measures and controls</span></div><div class="final-step"><b>Embed</b><span>Hand over to owners and scale what works</span></div></div>
           <div class="audience-row"><div><b>Customers</b><span>A bank that quietly makes life easier.</span></div><div><b>Businesses</b><span>Deeper relationships and new value.</span></div><div><b>Bank</b><span>Capabilities and intelligence working together.</span></div></div>
         </div>
       </div>`,
-    foot:'Technology, data and AI make the complexity increasingly invisible'
+    foot:'The role drives the connection · Businesses and functions own the outcome'
   }
 ];
 
@@ -784,20 +984,31 @@ const prospects = {
   service:{number:'04 / Proactive service',title:'The bank starts fixing things first',summary:'A transaction mismatch can trigger investigation before a customer raises a request.',from:'Payment mismatch',to:'Case initiated',kind:'Customer journey 04 · Proactive service',lede:'The bank can detect a transaction problem, begin investigation and keep the customer informed.',moment:'A payment appears to fail, but the account is debited.',response:'Payment and settlement records are checked. A recovery or investigation opens where appropriate, with clear customer updates through resolution.',value:'Less chasing, lower uncertainty and more trust in the payment experience.',connections:'Payments + Operations + Service + transaction intelligence.',guardrail:'Transaction states can be ambiguous. The bank must distinguish pending, failed and settled payments before promising resolution.'}
 };
 
+const prospectStories = {
+  finance:{scenario:'A market shift changes the numbers after planning is done. Finance sees what moved and how the outlook changed.',benefit:'Decisions can respond sooner, with people still in control.'},
+  trade:{scenario:'A shipping disruption hits a client’s import corridor. Trade and Treasury see the exposure together.',benefit:'The team can contact the client before the disruption becomes a surprise.'},
+  dots:{scenario:'A payroll relationship grows while Retail and Cards plan separately. AI spots the shared opportunity.',benefit:'Owners can shape one joined-up proposition instead of parallel work.'},
+  operations:{scenario:'A lending campaign may exceed processing capacity. The bank sees the bottleneck before launch.',benefit:'Teams can adjust timing or capacity before service suffers.'},
+  health:{scenario:'A customer pays a hospital bill. With consent, City Bank checks whether an eligible benefit can help.',benefit:'The customer spends less effort on administration when it matters most.'},
+  travel:{scenario:'A customer books a flight. A verified itinerary and eligible card privilege meet in one journey.',benefit:'Useful travel services could be arranged without another search.'},
+  coffee:{scenario:'A customer buys their usual coffee. A permitted preference meets an eligible offer at payment.',benefit:'The benefit can be applied without asking them to hunt for it.'},
+  service:{scenario:'A payment appears to fail but the account is debited. City Bank spots the mismatch first.',benefit:'Investigation can start sooner, with clearer updates to the customer.'}
+};
+
 function prospectPair(firstKey,secondKey,takeaway) {
   return `<div class="prospect-scene">${prospectCard(firstKey)}${prospectCard(secondKey)}</div><div class="prospect-takeaway">${takeaway}</div>`;
 }
 
 function prospectCard(key) {
   const p=prospects[key];
-  return `<button class="prospect-card" type="button" data-prospect="${key}"><span class="prospect-number">${p.number}</span><h3>${p.title}</h3><p>${p.summary}</p><div class="causal-flow" aria-hidden="true"><span>${p.from}</span><i class="flow-line"><i></i></i><span>${p.to}</span></div><span class="explore">Explore the prospect</span></button>`;
+  const story=prospectStories[key];
+  return `<button class="prospect-card" type="button" data-prospect="${key}"><span class="prospect-number">${p.number}</span><h3>${p.title}</h3><p class="prospect-story"><b>Scenario</b>${story.scenario}</p><p class="prospect-story prospect-benefit"><b>Benefit</b>${story.benefit}</p><div class="causal-flow" aria-hidden="true"><span>${p.from}</span><i class="flow-line"><i></i></i><span>${p.to}</span></div><span class="explore">Explore the prospect ↗</span></button>`;
 }
 
 let current=0;
 let lastFocus=null;
 let touchX=0;
 let touchY=0;
-let transitionRunning=false;
 const stage=document.getElementById('stage');
 const overview=document.getElementById('overview');
 const detail=document.getElementById('detail');
@@ -820,23 +1031,21 @@ function render() {
   document.getElementById('chapter').textContent=slide.chapter;
   document.getElementById('counter').textContent=`${String(current+1).padStart(2,'0')} / ${slides.length}`;
   document.getElementById('progress').style.width=`${((current+1)/slides.length)*100}%`;
+  document.getElementById('slideDots').innerHTML=slides.map((_,index)=>`<button type="button" data-dot="${index}" class="${index===current?'is-active':''}" aria-label="Go to slide ${index+1}" ${index===current?'aria-current="true"':''}></button>`).join('');
+  document.querySelectorAll('.story-rail button').forEach(button=>button.classList.toggle('is-active',Number(button.dataset.target)<=current+1&&(!button.nextElementSibling||Number(button.nextElementSibling.dataset.target)>current+1)));
   document.getElementById('prev').disabled=current===0;
   document.getElementById('next').disabled=current===slides.length-1;
   stage.scrollTop=0;
+  window.scrollTo(0,0);
   history.replaceState(null,'',`#slide-${current+1}`);
   document.dispatchEvent(new CustomEvent('presentation:rendered',{detail:{index:current,slide:stage.querySelector('.slide')}}));
 }
 
 function go(next) {
   const bounded=Math.max(0,Math.min(slides.length-1,next));
-  if(bounded===current||transitionRunning) return;
-  document.documentElement.dataset.direction=bounded>current?'forward':'back';
-  const update=()=>{current=bounded;render();};
-  if(document.startViewTransition) {
-    transitionRunning=true;
-    const transition=document.startViewTransition(update);
-    transition.finished.catch(()=>{}).finally(()=>{transitionRunning=false;});
-  } else update();
+  if(bounded===current) return;
+  current=bounded;
+  render();
 }
 
 function showOverlay(element) {
@@ -871,6 +1080,10 @@ document.getElementById('overviewBtn').addEventListener('click',openOverview);
 document.getElementById('fullBtn').addEventListener('click',()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.());
 
 document.addEventListener('click',event=>{
+  const dot=event.target.closest('[data-dot]');
+  if(dot) go(Number(dot.dataset.dot));
+  const chapterTarget=event.target.closest('[data-target]');
+  if(chapterTarget) go(Number(chapterTarget.dataset.target)-1);
   const prospect=event.target.closest('[data-prospect]');
   if(prospect) openProspect(prospect.dataset.prospect);
   const thumb=event.target.closest('[data-slide]');

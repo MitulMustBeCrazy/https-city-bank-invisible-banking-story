@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f0e8">
   <meta name="description" content="City Bank Invisible Banking: a connected, intelligent and proactive transformation story.">
-  <title>Invisible Banking | Editorial presentation</title>
+  <title>Invisible Banking | Transformation story</title>
   <link rel="stylesheet" href="editorial.css">
+  <link rel="stylesheet" href="rebuild.css">
   <script src="presentation.js" defer></script>
   <script src="motion.js" defer></script>
 </head>
@@ -20,35 +21,39 @@
         <span>City Bank</span>
         <small>Invisible Banking</small>
       </div>
-      <div class="top-actions">
-        <span class="toplabel">Transformation story</span>
-        <button class="control motion-toggle" id="motionBtn" type="button" aria-label="Pause animation" aria-pressed="false">Pause motion</button>
-        <button class="control icon-control" id="overviewBtn" type="button" title="Slide overview (O)" aria-label="Open slide overview">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
-        </button>
-        <button class="control icon-control" id="fullBtn" type="button" title="Full screen (F)" aria-label="Toggle full screen">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg>
-        </button>
-      </div>
+      <div class="presentation-title"><strong>Invisible Banking</strong><span>Transformation story</span></div>
+      <div class="chapter-label" id="chapter"></div>
     </header>
+
+    <aside class="story-rail" aria-label="Story chapters">
+      <button type="button" data-target="1"><span>01</span><b>Vision</b></button>
+      <button type="button" data-target="2"><span>02</span><b>Opportunity</b></button>
+      <button type="button" data-target="5"><span>03</span><b>Ecosystem</b></button>
+      <button type="button" data-target="9"><span>04</span><b>Mandate</b></button>
+      <button type="button" data-target="12"><span>05</span><b>Evidence</b></button>
+      <button type="button" data-target="16"><span>06</span><b>AI prospects</b></button>
+      <button type="button" data-target="21"><span>07</span><b>Future</b></button>
+    </aside>
 
     <main class="stage" id="stage" tabindex="-1" aria-live="polite"></main>
 
-    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
-    <footer class="bottom">
-      <div class="chapter" id="chapter"></div>
+    <footer class="controls" aria-label="Presentation controls">
       <div class="navgroup">
         <button class="nav" id="prev" type="button" aria-label="Previous slide">←</button>
         <span class="counter" id="counter"></span>
         <button class="nav" id="next" type="button" aria-label="Next slide">→</button>
       </div>
-      <div class="hint">← → navigate &nbsp; · &nbsp; O overview</div>
+      <div class="progress-group"><div class="progress" aria-hidden="true"><span id="progress"></span></div><div class="slide-dots" id="slideDots" aria-label="Go to slide"></div></div>
+      <button class="control icon-control" id="overviewBtn" type="button" title="Slide overview (O)" aria-label="Open slide overview"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button>
+      <button class="control motion-toggle" id="motionBtn" type="button" aria-label="Pause animation" aria-pressed="false">Pause motion</button>
+      <button class="control icon-control" id="fullBtn" type="button" title="Full screen (F)" aria-label="Toggle full screen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg></button>
     </footer>
+    <div class="key-hint">← → Navigate · O Overview</div>
   </div>
 
   <div class="overlay" id="overview" role="dialog" aria-modal="true" aria-labelledby="overviewTitle">
     <div class="overlay-head">
-      <div><p class="overlay-kicker">20-slide narrative</p><h2 id="overviewTitle">Presentation overview</h2></div>
+      <div><p class="overlay-kicker">21-slide narrative</p><h2 id="overviewTitle">Presentation overview</h2></div>
       <button class="close" type="button" data-close aria-label="Close overview">×</button>
     </div>
     <div class="overview-grid" id="overviewGrid"></div>

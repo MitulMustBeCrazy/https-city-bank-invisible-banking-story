@@ -12,7 +12,8 @@ const slides = [
             <div class="cover-outcome"><b>Bank</b><span>One connected institution.</span></div>
           </div>
         </div>
-        <div class="cover-orbit" aria-hidden="true">
+        <div class="cover-orbit" aria-label="Connected capabilities around one central customer need">
+          <svg class="orb-links" viewBox="0 0 500 500" preserveAspectRatio="none" aria-hidden="true"><path d="M250 250 L95 98"/><path d="M250 250 L425 126"/><path d="M250 250 L400 405"/><path d="M250 250 L92 390"/></svg>
           <i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="core"></i>
           <i class="orbit-dot"></i><i class="orbit-dot"></i><i class="orbit-dot"></i><i class="orbit-dot"></i>
         </div>
@@ -29,10 +30,10 @@ const slides = [
           <div class="advantage-line">More value from<br><span>what already exists.</span></div>
           <p class="quiet">The next opportunity is not another platform. AI can make existing capabilities more intelligent, responsive and connected.</p>
         </div>
-        <div class="capability-field" aria-label="Existing City Bank capabilities">
-          <div class="capability">Citytouch</div><div class="capability">Blink</div><div class="capability">Blueprint</div><div class="capability">Cards + POS</div>
-          <div class="capability">Branches + CX</div><div class="capability">Corporate</div><div class="capability">SME + Medium</div><div class="capability">Treasury</div>
-          <div class="capability ai">Data + AI + IT connect the field</div>
+        <div class="capability-field" aria-label="Connected City Bank capabilities">
+          <div class="capability">Citytouch</div><div class="capability">Blink</div><div class="capability">Cards + POS</div><div class="capability">Corporate</div>
+          <div class="capability-bridge" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="capability-result">Shared data, AI and technology make each capability more valuable.</div>
         </div>
       </div>`,
     foot:'Existing capabilities · Connected value'
@@ -43,21 +44,21 @@ const slides = [
     subtitle:'When channels evolve separately, the same capability can appear in more than one place.',
     body:`
       <div class="overlap-scene">
-        <section class="service-lane left"><span class="micro">Citytouch</span><h3>Digital banking services</h3><ul><li>EMI conversion</li><li>Cheque book request</li><li>Statements</li><li>Address update</li></ul></section>
-        <div class="overlap-core">Repeated<br>build</div>
-        <section class="service-lane right"><span class="micro">CityAssist</span><h3>Customer support</h3><ul><li>Customer queries</li><li>Service requests</li><li>Assisted resolution</li><li>Relationship context</li></ul></section>
+        <section class="service-lane left"><span class="micro">Citytouch</span><h3>Digital self-service</h3><ul><li>EMI conversion</li><li class="shared-feature">Cheque book request</li><li class="shared-feature">Statements</li><li>Payments and cards</li></ul></section>
+        <div class="overlap-core"><b>SHARED</b><span>Cheque book request<br>Statements</span><small>One capability. Two routes.</small></div>
+        <section class="service-lane right"><span class="micro">CityAssist</span><h3>Assisted service</h3><ul><li>Customer queries</li><li class="shared-feature">Cheque book request</li><li class="shared-feature">Statements</li><li>Assisted resolution</li></ul></section>
       </div>`,
     foot:'Two customer routes · Divided context'
   },
   {
     chapter:'The opportunity', tone:'paper', layout:'consequence', eyebrow:'The business consequence',
-    title:'Disconnected work can <span class="accent">cost twice.</span>',
+    title:'Fragmentation has two costs. <span class="accent">One visible. One hidden.</span>',
     subtitle:'The issue is not only duplication. Useful signals and relationships may also fail to connect to the next business opportunity.',
     body:`
       <div class="consequence-scene">
-        <section class="consequence"><div class="consequence-word">Repeat</div><h3>Repeated effort</h3><p>Teams may design, build and maintain similar capabilities more than once.</p></section>
-        <div class="consequence-divider" aria-hidden="true"></div>
-        <section class="consequence"><div class="consequence-word">Miss</div><h3>Missed growth</h3><p>POS data, corporate relationships or merchant networks may never connect to the next opportunity.</p></section>
+        <section class="consequence"><span class="consequence-no">01 / THE VISIBLE COST</span><div class="consequence-word">Repeat.</div><h3>Repeated effort</h3><p>Teams may design, build and maintain similar capabilities more than once.</p></section>
+        <div class="consequence-divider" aria-hidden="true">+</div>
+        <section class="consequence"><span class="consequence-no">02 / THE HIDDEN COST</span><div class="consequence-word">Miss.</div><h3>Missed growth</h3><p>POS data, corporate relationships or merchant networks may never connect to the next opportunity.</p></section>
       </div>`,
     foot:'Lost effort · Lost time · Lost potential'
   },
@@ -68,7 +69,8 @@ const slides = [
     body:`
       <div class="ecosystem-scene">
         <div class="ecosystem-copy">The City Bank ecosystem organises complexity around the customer.</div>
-        <div class="ecosystem-map" aria-label="City Bank ecosystem model">
+        <div class="ecosystem-map" aria-label="Interconnected City Bank ecosystem model">
+          <svg viewBox="0 0 600 380" preserveAspectRatio="none" aria-hidden="true"><path d="M300 190 L300 40 M300 190 L530 190 M300 190 L300 340 M300 190 L70 190 M300 40 L530 190 L300 340 L70 190 Z"/></svg>
           <div class="ecosystem-core">Customer<br>need</div>
           <div class="ecosystem-node">Businesses</div><div class="ecosystem-node">Channels</div><div class="ecosystem-node">Partners</div><div class="ecosystem-node">Data + AI</div>
         </div>
@@ -113,12 +115,12 @@ const slides = [
     subtitle:'A corporate relationship can connect employees, suppliers and distributors to multiple City Bank capabilities.',
     body:`
       <div class="network-scene">
-        <div class="network-lead">A relationship becomes more valuable when the whole network becomes visible.</div>
-        <div class="network-map" aria-label="Corporate ecosystem network">
-          <div class="network-hub">Corporate<br>client</div>
-          <div class="network-node">Suppliers</div><div class="network-node">Employees</div><div class="network-node">Distributors</div>
-          <i class="network-link l1"></i><i class="network-link l2"></i><i class="network-link l3"></i>
-          <div class="capability-line"><span>Payroll</span><span>Payments</span><span>Trade + FX</span><span>Cards</span><span>Financing</span></div>
+        <div class="network-lead">A corporate relationship becomes an ecosystem when each stakeholder has a relevant banking connection.</div>
+        <div class="network-matrix" aria-label="Corporate client and stakeholder relationship matrix">
+          <div class="matrix-corner">CORPORATE CLIENT</div><div class="matrix-head">Employees</div><div class="matrix-head">Suppliers</div><div class="matrix-head">Distributors</div>
+          <div class="matrix-rowhead">Relationship</div><div>Payroll &amp; benefits</div><div>Payables &amp; trade</div><div>Collections &amp; settlement</div>
+          <div class="matrix-rowhead">City Bank link</div><div>Accounts · cards</div><div>Payments · FX</div><div>POS · working capital</div>
+          <div class="matrix-rowhead">Shared value</div><div>Convenience</div><div>Cash-flow visibility</div><div>Growth insight</div>
         </div>
       </div>`,
     foot:'One relationship · Multiple connected opportunities'
@@ -135,7 +137,7 @@ const slides = [
           <div class="mandate-row"><b>EPMO</b><span>Delivery governance</span></div>
           <div class="mandate-row"><b>Functions</b><span>IT, Operations, CX and Data</span></div>
         </div>
-        <div class="gap-space"><span class="gap-label">The gap<br>sits here</span></div>
+        <div class="gap-space"><i class="gap-bridge" aria-hidden="true"></i><span class="gap-label">The gap<br>sits here</span></div>
         <div class="gap-callout">Cross-bank opportunity.<span>Including AI integration where intelligence from one business or function could create value elsewhere.</span></div>
       </div>`,
     foot:'The gap sits between established mandates'
@@ -153,8 +155,8 @@ const slides = [
           <div class="role-step"><b>Move</b><span>To natural ownership.</span></div>
         </div>
         <div class="role-domains">
-          <div class="role-domain"><b>Horizontal transformation</b><p>Cross-bank opportunities in service, operations, data, AI integration and relationship intelligence.</p></div>
-          <div class="role-domain"><b>Ecosystem transformation</b><p>Connected journeys, partnerships, embedded services and new business opportunities.</p></div>
+          <div class="role-domain"><div class="domain-visual horizontal-visual" aria-hidden="true"><i></i><i></i><i></i><em></em></div><b>Horizontal transformation</b><p>Join capabilities across businesses: service, operations, data, AI and relationship intelligence.</p></div>
+          <div class="role-domain"><div class="domain-visual ecosystem-visual" aria-hidden="true"><i></i><i></i><i></i><em></em></div><b>Ecosystem transformation</b><p>Connect the bank to customer journeys, partners and embedded opportunities.</p></div>
         </div>
       </div>`,
     foot:'Transformation connects · Businesses own · EPMO governs delivery'
@@ -162,7 +164,7 @@ const slides = [
   {
     chapter:'The proposed mandate', tone:'paper', layout:'boundaries', eyebrow:'Clear boundaries',
     title:'The role complements <span class="accent">what already exists.</span>',
-    subtitle:'It should make existing ownership work better across boundaries, not create another layer of ownership.',
+    subtitle:'The transformation role is an opportunity explorer: it discovers cross-bank value, shapes a case and brings it to the natural owner.',
     body:`
       <div class="boundary-scene">
         <div class="boundary-list">
@@ -172,22 +174,22 @@ const slides = [
           <div class="boundary-row"><b>EPMO</b><span>Execution governance</span></div>
           <div class="boundary-row"><b>IT / CX / Operations / Data</b><span>Specialist ownership, including AI and technology capabilities</span></div>
         </div>
-        <div class="boundary-bridge"><div class="bridge-copy">Transformation connects cross-bank opportunities to natural owners</div></div>
+        <div class="boundary-bridge"><div class="bridge-copy"><small>OPPORTUNITY EXPLORER</small>Discover → frame → connect → hand over</div></div>
       </div>`,
     foot:'Subject to internal mandate validation'
   },
   {
     chapter:'Why this leader', tone:'paper', layout:'evidence', eyebrow:'Already happening',
-    title:'I am already doing parts of this, <span class="accent">informally.</span>',
-    subtitle:'These began with a customer or business opportunity and involved connecting the relevant teams.',
+    title:'A substantial transformation portfolio began <span class="accent">without a formal mandate.</span>',
+    subtitle:'Initiatives and proposals I surfaced, shaped or connected across teams — beyond my core remit.',
     body:`
       <div class="evidence-scene">
-        <div class="evidence-item"><b>Service</b><p>DigiBox<br>Traceable courier</p></div>
-        <div class="evidence-item"><b>Digital + sales</b><p>Citytouch features<br>Digital sales<br>Central offer site</p></div>
-        <div class="evidence-item"><b>Ecosystem</b><p>Foreign Education Hub</p></div>
-        <div class="evidence-item"><b>Connection</b><p>Citytouch × Blink</p></div>
+        <div class="evidence-item"><b>Service &amp; operations</b><p>DigiBox · traceable courier<br>Purchase SMS optimisation<br>Removing OTP for City Bank accounts</p></div>
+        <div class="evidence-item"><b>Digital &amp; loyalty</b><p>Citytouch features · digital sales<br>Citytouch loyalty programme<br>Central offer site</p></div>
+        <div class="evidence-item"><b>Merchant &amp; data</b><p>POS information carried from sales software at purchase<br>Citytouch × Blink</p></div>
+        <div class="evidence-item"><b>Ecosystem</b><p>Foreign Education Hub<br>Cross-division propositions</p></div>
       </div>`,
-    foot:'Identify the opportunity · Connect the teams · Help move it forward'
+    foot:'Initiated or proposed by the presenter · Status and ownership vary · Imagine this with an official mandate'
   },
   {
     chapter:'Why this leader', tone:'paper', layout:'shift', eyebrow:'From informal to structured',
@@ -195,9 +197,9 @@ const slides = [
     subtitle:'A structured model creates earlier ownership, clearer handover and measurable outcomes.',
     body:`
       <div class="shift-scene">
-        <section class="shift-column today"><h3>Today</h3><div class="shift-item">Opportunities surface unevenly</div><div class="shift-item">Connections happen informally</div><div class="shift-item">Progress relies on individual coordination</div></section>
-        <div class="shift-transform"><span>SHIFT</span></div>
-        <section class="shift-column structured"><h3>More structured</h3><div class="shift-item">Systematic opportunity discovery</div><div class="shift-item">Business cases shaped early</div><div class="shift-item">Owners connected earlier</div><div class="shift-item">Clear execution handover</div><div class="shift-item">Business outcome tracked</div></section>
+        <section class="shift-column today"><h3>Today <small>Opportunity-led but informal</small></h3><p class="shift-oneliner">Good ideas depend on who happens to connect them.</p><div class="shift-item">Opportunities surface unevenly</div><div class="shift-item">Connections happen informally</div><div class="shift-item">Progress relies on individual coordination</div></section>
+        <div class="shift-transform"><span>→</span><small>SHIFT</small></div>
+        <section class="shift-column structured"><h3>More structured <small>Mandated and measurable</small></h3><p class="shift-oneliner">Opportunity discovery becomes a repeatable bank-wide practice.</p><div class="shift-item">Discover: scan customer and business signals</div><div class="shift-item">Shape: define value and a business case</div><div class="shift-item">Connect: align accountable owners early</div><div class="shift-item">Handover: execute through existing teams</div><div class="shift-item">Measure: track business outcomes</div></section>
       </div>`,
     foot:'AI can help surface changes and connections continuously'
   },
@@ -215,15 +217,22 @@ const slides = [
   },
   {
     chapter:'Why this leader', tone:'red', layout:'reveal', eyebrow:'The opportunity',
-    title:'Invisible Banking becomes real when City Bank works as one around the customer',
+    title:'The case for a formal mandate',
     body:`
       <div class="reveal-scene">
         <p class="reveal-quote">I would like to explore how I can make this more systematic, drawing on the cross-bank perspective developed through my current role, while businesses and functions retain ownership.</p>
         <div class="reveal-rule"></div>
-        <p class="reveal-close">A broader contribution to transformation and business.</p>
+        <p class="reveal-close">One bank. Better-connected opportunities.</p>
       </div>
       <div class="reveal-word" aria-hidden="true">Transform</div>`,
     foot:'The case for a formal mandate'
+  },
+  {
+    chapter:'The possibilities', tone:'dark', layout:'section-intro', eyebrow:'The next frontier',
+    title:'Possible AI prospects. <span class="accent">Driven by transformation.</span>',
+    subtitle:'The following concepts are not claims of live capability. They are opportunities a bank-wide transformation role could explore, validate and connect to accountable owners.',
+    body:`<div class="intro-scene"><div class="intro-number">04</div><div><p>From isolated use cases to a connected opportunity pipeline.</p><div class="intro-path"><span>Explore</span><i></i><span>Validate</span><i></i><span>Pilot</span><i></i><span>Scale with owners</span></div></div></div>`,
+    foot:'Illustrative concepts · Feasibility, consent and controls to validate'
   },
   {
     chapter:'The possibilities', tone:'dark', layout:'prospects', eyebrow:'Internal prospects · 01 + 02',
@@ -255,16 +264,16 @@ const slides = [
   },
   {
     chapter:'Conclusion', tone:'red', layout:'conclusion', eyebrow:'The conclusion',
-    title:'The future of Invisible Banking is connected, intelligent and continuous',
+    title:'Transformation can make Invisible Banking <span class="accent">the way the bank works.</span>',
     body:`
       <div class="conclusion-scene">
         <div class="final-lockup"><h2>Invisible<br>Banking.</h2><p>It just works.</p></div>
         <div>
-          <div class="final-cycle"><div class="final-step"><b>See</b><span>What others may miss</span></div><div class="final-step"><b>Connect</b><span>What already exists</span></div><div class="final-step"><b>Create</b><span>What comes next</span></div></div>
+          <div class="final-cycle"><div class="final-step"><b>Explore</b><span>Find signals and unmet needs across the bank</span></div><div class="final-step"><b>Connect</b><span>Bring capabilities, partners and owners together</span></div><div class="final-step"><b>Prove</b><span>Pilot the value with clear measures and controls</span></div><div class="final-step"><b>Embed</b><span>Hand over to owners and scale what works</span></div></div>
           <div class="audience-row"><div><b>Customers</b><span>A bank that quietly makes life easier.</span></div><div><b>Businesses</b><span>Deeper relationships and new value.</span></div><div><b>Bank</b><span>Capabilities and intelligence working together.</span></div></div>
         </div>
       </div>`,
-    foot:'Technology, data and AI make the complexity increasingly invisible'
+    foot:'The role drives the connection · Businesses and functions own the outcome'
   }
 ];
 
@@ -279,20 +288,31 @@ const prospects = {
   service:{number:'04 / Proactive service',title:'The bank starts fixing things first',summary:'A transaction mismatch can trigger investigation before a customer raises a request.',from:'Payment mismatch',to:'Case initiated',kind:'Customer journey 04 · Proactive service',lede:'The bank can detect a transaction problem, begin investigation and keep the customer informed.',moment:'A payment appears to fail, but the account is debited.',response:'Payment and settlement records are checked. A recovery or investigation opens where appropriate, with clear customer updates through resolution.',value:'Less chasing, lower uncertainty and more trust in the payment experience.',connections:'Payments + Operations + Service + transaction intelligence.',guardrail:'Transaction states can be ambiguous. The bank must distinguish pending, failed and settled payments before promising resolution.'}
 };
 
+const prospectStories = {
+  finance:{scenario:'A market shift changes the numbers after planning is done. Finance sees what moved and how the outlook changed.',benefit:'Decisions can respond sooner, with people still in control.'},
+  trade:{scenario:'A shipping disruption hits a client’s import corridor. Trade and Treasury see the exposure together.',benefit:'The team can contact the client before the disruption becomes a surprise.'},
+  dots:{scenario:'A payroll relationship grows while Retail and Cards plan separately. AI spots the shared opportunity.',benefit:'Owners can shape one joined-up proposition instead of parallel work.'},
+  operations:{scenario:'A lending campaign may exceed processing capacity. The bank sees the bottleneck before launch.',benefit:'Teams can adjust timing or capacity before service suffers.'},
+  health:{scenario:'A customer pays a hospital bill. With consent, City Bank checks whether an eligible benefit can help.',benefit:'The customer spends less effort on administration when it matters most.'},
+  travel:{scenario:'A customer books a flight. A verified itinerary and eligible card privilege meet in one journey.',benefit:'Useful travel services could be arranged without another search.'},
+  coffee:{scenario:'A customer buys their usual coffee. A permitted preference meets an eligible offer at payment.',benefit:'The benefit can be applied without asking them to hunt for it.'},
+  service:{scenario:'A payment appears to fail but the account is debited. City Bank spots the mismatch first.',benefit:'Investigation can start sooner, with clearer updates to the customer.'}
+};
+
 function prospectPair(firstKey,secondKey,takeaway) {
   return `<div class="prospect-scene">${prospectCard(firstKey)}${prospectCard(secondKey)}</div><div class="prospect-takeaway">${takeaway}</div>`;
 }
 
 function prospectCard(key) {
   const p=prospects[key];
-  return `<button class="prospect-card" type="button" data-prospect="${key}"><span class="prospect-number">${p.number}</span><h3>${p.title}</h3><p>${p.summary}</p><div class="causal-flow" aria-hidden="true"><span>${p.from}</span><i class="flow-line"><i></i></i><span>${p.to}</span></div><span class="explore">Explore the prospect</span></button>`;
+  const story=prospectStories[key];
+  return `<button class="prospect-card" type="button" data-prospect="${key}"><span class="prospect-number">${p.number}</span><h3>${p.title}</h3><p class="prospect-story"><b>Scenario</b>${story.scenario}</p><p class="prospect-story prospect-benefit"><b>Benefit</b>${story.benefit}</p><div class="causal-flow" aria-hidden="true"><span>${p.from}</span><i class="flow-line"><i></i></i><span>${p.to}</span></div><span class="explore">Explore the prospect ↗</span></button>`;
 }
 
 let current=0;
 let lastFocus=null;
 let touchX=0;
 let touchY=0;
-let transitionRunning=false;
 const stage=document.getElementById('stage');
 const overview=document.getElementById('overview');
 const detail=document.getElementById('detail');
@@ -315,23 +335,21 @@ function render() {
   document.getElementById('chapter').textContent=slide.chapter;
   document.getElementById('counter').textContent=`${String(current+1).padStart(2,'0')} / ${slides.length}`;
   document.getElementById('progress').style.width=`${((current+1)/slides.length)*100}%`;
+  document.getElementById('slideDots').innerHTML=slides.map((_,index)=>`<button type="button" data-dot="${index}" class="${index===current?'is-active':''}" aria-label="Go to slide ${index+1}" ${index===current?'aria-current="true"':''}></button>`).join('');
+  document.querySelectorAll('.story-rail button').forEach(button=>button.classList.toggle('is-active',Number(button.dataset.target)<=current+1&&(!button.nextElementSibling||Number(button.nextElementSibling.dataset.target)>current+1)));
   document.getElementById('prev').disabled=current===0;
   document.getElementById('next').disabled=current===slides.length-1;
   stage.scrollTop=0;
+  window.scrollTo(0,0);
   history.replaceState(null,'',`#slide-${current+1}`);
   document.dispatchEvent(new CustomEvent('presentation:rendered',{detail:{index:current,slide:stage.querySelector('.slide')}}));
 }
 
 function go(next) {
   const bounded=Math.max(0,Math.min(slides.length-1,next));
-  if(bounded===current||transitionRunning) return;
-  document.documentElement.dataset.direction=bounded>current?'forward':'back';
-  const update=()=>{current=bounded;render();};
-  if(document.startViewTransition) {
-    transitionRunning=true;
-    const transition=document.startViewTransition(update);
-    transition.finished.catch(()=>{}).finally(()=>{transitionRunning=false;});
-  } else update();
+  if(bounded===current) return;
+  current=bounded;
+  render();
 }
 
 function showOverlay(element) {
@@ -366,6 +384,10 @@ document.getElementById('overviewBtn').addEventListener('click',openOverview);
 document.getElementById('fullBtn').addEventListener('click',()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.());
 
 document.addEventListener('click',event=>{
+  const dot=event.target.closest('[data-dot]');
+  if(dot) go(Number(dot.dataset.dot));
+  const chapterTarget=event.target.closest('[data-target]');
+  if(chapterTarget) go(Number(chapterTarget.dataset.target)-1);
   const prospect=event.target.closest('[data-prospect]');
   if(prospect) openProspect(prospect.dataset.prospect);
   const thumb=event.target.closest('[data-slide]');
