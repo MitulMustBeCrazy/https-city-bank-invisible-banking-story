@@ -7,286 +7,926 @@
   <meta name="description" content="City Bank Invisible Banking: a connected, intelligent and proactive transformation story.">
   <title>Invisible Banking | Editorial presentation</title>
   <style>
-    :root{--ink:#10151e;--ink2:#1c2531;--paper:#f4f2ec;--white:#fff;--red:#de343b;--red2:#ff6b67;--muted:#aeb8c2;--line:#ffffff20;--font:Manrope,Arial,sans-serif;--body:'DM Sans',Arial,sans-serif}
-    *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0a0d12;color:#fff;font-family:var(--body)}button{font:inherit}button:focus-visible,a:focus-visible{outline:3px solid #ff847f;outline-offset:3px}body::before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 52% 26%,#263242 0%,#0b0f15 75%);pointer-events:none}
-    .app{position:relative;display:flex;flex-direction:column;height:100dvh;min-height:480px}.topbar{height:60px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,3vw,48px);border-bottom:1px solid #ffffff1b;background:#0b1017d9;backdrop-filter:blur(14px);z-index:10}.brand{display:flex;gap:14px;align-items:center;font:800 13px var(--font);letter-spacing:.18em;text-transform:uppercase;white-space:nowrap}.brandmark{width:27px;height:27px;background:var(--red);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);transform:rotate(45deg);border-radius:4px}.brand small{font:600 10px var(--body);color:#91a0ad;letter-spacing:.2em;padding-left:14px;border-left:1px solid #596573}.top-actions{display:flex;align-items:center;gap:9px}.iconbtn{border:1px solid #ffffff2a;color:#eef1f3;background:#ffffff09;border-radius:8px;min-width:35px;height:35px;padding:0 11px;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:.2s}.iconbtn:hover,.iconbtn.active{background:#ffffff20;border-color:#ffffff58}.iconbtn svg{width:17px;height:17px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.toplabel{font-size:11px;letter-spacing:.14em;color:#b6c0ca;text-transform:uppercase;margin-right:12px}.stage{flex:1;min-height:0;display:grid;place-items:center;padding:14px 24px 12px}.slide{position:relative;overflow:hidden;width:min(100%,calc((100dvh - 143px)*1.77778));aspect-ratio:16/9;max-height:calc(100dvh - 143px);background:#131b25;box-shadow:0 30px 70px #0009;border:1px solid #ffffff18;display:none}.slide.active{display:block}.slide.light{background:var(--paper);color:var(--ink)}.slide.red{background:#b9232d}.slide::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,#ffffff08 1px,transparent 1px),linear-gradient(#ffffff08 1px,transparent 1px);background-size:6.25% 11.11%;mask-image:linear-gradient(90deg,#0009,transparent 85%);pointer-events:none}.slide.light::before{background-image:linear-gradient(90deg,#25354a0a 1px,transparent 1px),linear-gradient(#25354a0a 1px,transparent 1px)}.slide::after{content:"";position:absolute;right:-12%;top:-35%;width:65%;height:130%;border:1px solid #ffffff0b;border-radius:50%;box-shadow:0 0 0 70px #ffffff05,0 0 0 140px #ffffff03;pointer-events:none}.slide.light::after{border-color:#202b3512;box-shadow:0 0 0 70px #25354a05,0 0 0 140px #25354a03}.slide>.inner{position:relative;z-index:2;height:100%;padding:clamp(26px,4.6vw,74px) clamp(28px,5.1vw,84px);display:flex;flex-direction:column}.eyebrow{display:flex;align-items:center;gap:12px;font:800 clamp(9px,.78vw,12px) var(--font);letter-spacing:.2em;text-transform:uppercase;color:#ff7777}.eyebrow:before{content:"";width:22px;height:2px;background:currentColor}.light .eyebrow{color:#c32b35}.title{font:700 clamp(28px,3.25vw,57px)/1.12 var(--font);letter-spacing:-.05em;margin:clamp(15px,2.1vw,30px) 0 0;max-width:950px}.title strong{color:#ff6366;font-weight:800}.light .title strong{color:#cb2634}.subtitle{font-size:clamp(13px,1.2vw,19px);line-height:1.48;color:#bbc6ce;max-width:780px;margin:clamp(12px,1.35vw,20px) 0 0}.light .subtitle{color:#52616c}.main{flex:1;min-height:0;margin-top:clamp(19px,2.5vw,40px);display:flex;flex-direction:column;justify-content:center}.footerline{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;color:#8e9ba7;font-size:clamp(9px,.7vw,11px);letter-spacing:.14em;text-transform:uppercase}.light .footerline{color:#687681}.slide-index{font-weight:700}.bottom{height:60px;flex:none;border-top:1px solid #ffffff1b;background:#0b1017e8;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,3vw,48px);gap:20px;z-index:10}.chapter{font:700 11px var(--font);letter-spacing:.15em;text-transform:uppercase;color:#a2aeb9;min-width:190px}.navgroup{display:flex;align-items:center;gap:12px}.nav{width:38px;height:38px;border:1px solid #ffffff29;border-radius:50%;background:transparent;color:#fff;cursor:pointer;font-size:19px}.nav:hover{background:#ffffff20}.nav:disabled{opacity:.25;cursor:default}.counter{font:700 12px var(--font);letter-spacing:.12em;color:#d8e0e5;min-width:64px;text-align:center}.progress{height:2px;position:absolute;bottom:60px;left:0;right:0;background:#ffffff18;z-index:11}.progress span{height:100%;background:var(--red);display:block;transition:width .3s}.hint{font-size:11px;color:#738392;min-width:190px;text-align:right}.grid{display:grid;gap:clamp(10px,1.5vw,24px)}.cols2{grid-template-columns:repeat(2,1fr)}.cols3{grid-template-columns:repeat(3,1fr)}.cols4{grid-template-columns:repeat(4,1fr)}.panel{position:relative;border:1px solid #ffffff27;background:#ffffff0b;border-radius:3px;padding:clamp(14px,1.55vw,25px);min-height:0}.light .panel{background:#fff;border-color:#d8dcd9;box-shadow:0 12px 35px #1725320c}.panel h3{font:800 clamp(12px,1.05vw,17px) var(--font);letter-spacing:-.02em;margin:0 0 11px}.panel p,.panel li{font-size:clamp(11px,.92vw,15px);line-height:1.5;color:#b9c4cc;margin:0}.light .panel p,.light .panel li{color:#52616c}.panel .num{font:800 clamp(21px,2vw,32px) var(--font);color:#ff6e70;display:block;margin-bottom:14px}.light .panel .num{color:#c82f39}.panel ul{padding-left:17px;margin:0}.panel li+li{margin-top:5px}.tag{display:inline-flex;align-items:center;gap:7px;font:700 clamp(9px,.7vw,11px) var(--font);letter-spacing:.12em;text-transform:uppercase;color:#ff7777}.light .tag{color:#c52b35}.bigline{font:800 clamp(23px,2.35vw,40px)/1.2 var(--font);letter-spacing:-.045em}.takeaway{margin-top:auto;border-top:1px solid #ffffff38;padding-top:clamp(10px,1vw,17px);font:700 clamp(12px,1.15vw,19px) var(--font);letter-spacing:-.025em}.light .takeaway{border-color:#1c2b3a39}.accent{color:#ff6c6d}.light .accent{color:#bf2733}.chiprow{display:flex;flex-wrap:wrap;gap:9px}.chip{border:1px solid #ffffff2b;background:#ffffff0a;border-radius:30px;padding:9px 13px;font:700 clamp(10px,.8vw,13px) var(--font)}.light .chip{border-color:#cbd2d1;background:#fff}.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(15px,2.5vw,40px);align-items:stretch;height:100%}.rule{border-top:1px solid #ffffff3b}.light .rule{border-color:#1c2b3a39}.diagram-center{display:grid;place-items:center;text-align:center;border:1px solid #ff777772;background:radial-gradient(circle,#de343b45,#de343b12 60%,transparent 75%);border-radius:50%;width:clamp(130px,17vw,260px);aspect-ratio:1;margin:auto;font:800 clamp(16px,1.65vw,27px) var(--font);letter-spacing:-.04em}.orbit{position:relative;display:grid;place-items:center;height:100%}.orbit .node{position:absolute;background:#182431;border:1px solid #ffffff43;border-radius:3px;padding:12px 16px;font:700 clamp(10px,.9vw,14px) var(--font);text-transform:uppercase;letter-spacing:.08em}.orbit .node:nth-child(2){top:2%;left:27%}.orbit .node:nth-child(3){right:2%;top:28%}.orbit .node:nth-child(4){right:12%;bottom:4%}.orbit .node:nth-child(5){left:0;bottom:17%}.orbit .node:nth-child(6){left:0;top:20%}.path{display:flex;align-items:stretch;gap:0}.path .step{flex:1;position:relative;border-top:2px solid #dd464f;padding:20px 16px 5px 0}.path .step:before{content:"";position:absolute;top:-7px;left:0;width:12px;height:12px;background:#e0444c;border-radius:50%}.path .step h3{font:800 clamp(14px,1.2vw,20px) var(--font);margin:0 0 9px}.path .step p{font-size:clamp(11px,.9vw,15px);line-height:1.43;color:#54636d;margin:0;max-width:170px}.darkpath .step p{color:#c1cad1}.path .step:last-child{border-top-color:transparent}.path .step:last-child:before{background:#fff;border:3px solid #df434c;top:-9px}.quote{font:700 clamp(22px,2.4vw,41px)/1.25 var(--font);letter-spacing:-.045em}.labelbox{border-left:2px solid #e24b51;padding-left:15px}.labelbox b{font:800 clamp(11px,.9vw,14px) var(--font);text-transform:uppercase;letter-spacing:.08em}.labelbox p{font-size:clamp(11px,.9vw,15px);line-height:1.45;color:#aebbc5;margin:6px 0 0}.light .labelbox p{color:#586775}.matrix{display:grid;grid-template-columns:1fr 1.5fr;border:1px solid #d9dedb;background:#fff}.matrix>div{padding:clamp(9px,1vw,16px);border-bottom:1px solid #d9dedb;font-size:clamp(10px,.85vw,14px);line-height:1.4}.matrix>div:nth-child(odd){font-weight:800;color:#bd2934;border-right:1px solid #d9dedb}.matrix>div:nth-last-child(-n+2){border-bottom:0}.matrix.dark{border-color:#ffffff3a;background:#ffffff08}.matrix.dark>div{border-color:#ffffff28}.matrix.dark>div:nth-child(odd){color:#ff7879}.prospect-layout{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(12px,1.3vw,22px);height:100%}.prospect{border:1px solid #ffffff30;background:#ffffff0b;padding:clamp(14px,1.4vw,24px);display:flex;flex-direction:column;cursor:pointer;text-align:left;color:inherit;position:relative;transition:.2s;min-width:0}.prospect:hover,.prospect:focus-visible{background:#ffffff17;border-color:#ff8987}.prospect .num{color:#fb7776;font:800 clamp(10px,.8vw,13px) var(--font);letter-spacing:.12em}.prospect h3{font:800 clamp(17px,1.55vw,26px)/1.18 var(--font);letter-spacing:-.04em;margin:10px 0}.prospect p{font-size:clamp(11px,.85vw,14px);line-height:1.45;color:#b9c6cd;margin:0}.prospect .more{font:700 clamp(9px,.75vw,12px) var(--font);color:#ff8987;text-transform:uppercase;letter-spacing:.12em;margin-top:auto;padding-top:13px}.light .prospect{border-color:#d5dad8;background:#fff;color:#14202b}.light .prospect:hover{border-color:#d33a42;background:#fff9f7}.light .prospect p{color:#52616b}.light .prospect .num,.light .prospect .more{color:#c82c37}.big-number{font:800 clamp(44px,6vw,100px)/1 var(--font);letter-spacing:-.09em;color:#e4474d}.divider{width:100%;height:1px;background:#ffffff30;margin:20px 0}.overlay{position:fixed;z-index:50;inset:0;background:#090e15ec;backdrop-filter:blur(20px);padding:clamp(18px,4vw,55px);display:none;overflow:auto}.overlay.open{display:block}.overlay-head{max-width:1200px;margin:0 auto 28px;display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.overlay h2{font:800 clamp(25px,3vw,44px) var(--font);letter-spacing:-.05em;margin:0}.overlay p{color:#aebbca;line-height:1.5}.overview-grid{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px}.thumb{height:150px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;background:#192430;border:1px solid #ffffff25;color:white;padding:17px;cursor:pointer}.thumb:hover{border-color:#f66}.thumb span{color:#fb787a;font:800 11px var(--font);letter-spacing:.12em}.thumb strong{font:700 17px/1.24 var(--font);letter-spacing:-.04em}.thumb small{color:#9aa9b5;font:600 10px var(--font);text-transform:uppercase;letter-spacing:.1em}.detail{max-width:850px;margin:4vh auto;background:#f4f2ed;color:#14202b;padding:clamp(25px,4vw,60px);box-shadow:0 30px 90px #0008}.detail .kicker{font:800 11px var(--font);letter-spacing:.18em;color:#c9303b;text-transform:uppercase}.detail h2{font:800 clamp(27px,3vw,43px)/1.1 var(--font);margin:15px 0}.detail .lede{font-size:17px;color:#4d5c66;line-height:1.5;margin-bottom:27px}.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.detail-grid section{border-top:1px solid #bfc6c5;padding-top:13px}.detail-grid h3{font:800 11px var(--font);letter-spacing:.12em;color:#b62c38;text-transform:uppercase}.detail-grid p{font-size:14px;color:#344450;line-height:1.5}.close{border:0;background:#dc3640;color:white;width:37px;height:37px;border-radius:50%;font-size:23px;cursor:pointer;flex:none}.fine{font-size:11px!important;color:#71808c!important;margin-top:28px}.flowbars{display:flex;align-items:center;gap:10px}.flowbars span{flex:1;border:1px solid #ffffff38;padding:16px;text-align:center;font:700 clamp(10px,.85vw,14px) var(--font);position:relative}.flowbars span:not(:last-child):after{content:'→';position:absolute;right:-15px;color:#fa7476;z-index:2;font-size:19px;top:50%;transform:translateY(-50%)}.light .flowbars span{border-color:#c8d1cf;background:#fff}.light .flowbars span:not(:last-child):after{color:#c8333d}.first-hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:25px;height:100%}.first-hero .hero-title{font:800 clamp(55px,7vw,118px)/.96 var(--font);letter-spacing:-.09em;margin:8px 0 23px}.hero-copy{font:500 clamp(14px,1.4vw,23px) var(--font);color:#c3d0d7;max-width:600px}.hero-ring{position:relative;width:85%;aspect-ratio:1;margin:auto;border:1px solid #ffffff32;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle,#d938424d 0%,#d9384210 45%,transparent 67%);box-shadow:0 0 0 50px #ffffff08,0 0 0 100px #ffffff05}.hero-ring:before,.hero-ring:after{content:"";position:absolute;inset:19%;border:1px solid #ee687177;border-radius:50%}.hero-ring:after{inset:37%;background:#d8323d;box-shadow:0 0 45px #db36406b}.hero-ring .dot{position:absolute;width:11px;height:11px;background:#ff7778;border-radius:50%;z-index:2;box-shadow:0 0 17px #ed444b}.hero-ring .dot:nth-child(1){top:14%;left:26%}.hero-ring .dot:nth-child(2){right:3%;top:42%}.hero-ring .dot:nth-child(3){bottom:7%;left:35%}.hero-ring .dot:nth-child(4){left:8%;bottom:31%}.mini-note{font:600 clamp(10px,.8vw,13px) var(--body);color:#8fa0ae;line-height:1.45}.notebadge{position:absolute;right:clamp(28px,5vw,80px);top:clamp(26px,4.5vw,70px);font:800 clamp(9px,.75vw,11px) var(--font);letter-spacing:.14em;color:#fff;text-transform:uppercase;border:1px solid #ffffff55;padding:8px 10px}.light .notebadge{color:#bc2f3a;border-color:#ba9295}.chapterline{font:800 clamp(10px,.8vw,13px) var(--font);letter-spacing:.18em;text-transform:uppercase;color:#ff6e6f}.large-statement{font:800 clamp(27px,3.2vw,54px)/1.13 var(--font);letter-spacing:-.06em}.ghostword{position:absolute;right:2%;bottom:0;font:800 clamp(95px,17vw,280px)/.78 var(--font);letter-spacing:-.12em;color:#ffffff09;pointer-events:none}.light .ghostword{color:#15223209}.final-mark{font:800 clamp(48px,6vw,102px)/.96 var(--font);letter-spacing:-.085em;margin:0}.final-tag{font:700 clamp(23px,2.8vw,46px) var(--font);letter-spacing:-.05em;color:#ff7778;margin:14px 0 0}.small{font-size:clamp(10px,.82vw,13px);line-height:1.44}.text-list{display:grid;gap:10px}.text-list>div{border-bottom:1px solid #ffffff27;padding:5px 0 13px;display:flex;gap:14px;align-items:baseline;font-size:clamp(11px,.92vw,15px);line-height:1.35}.text-list b{color:#ff7778;min-width:125px;font:800 clamp(10px,.8vw,13px) var(--font);letter-spacing:.05em}.light .text-list>div{border-color:#1c293627}.light .text-list b{color:#c12c37}
-    @media(max-width:850px){.toplabel,.hint,.brand small{display:none}.stage{padding:8px}.slide{width:100%;max-height:none}.slide>.inner{padding:3.7% 5%}.title{font-size:clamp(19px,4.2vw,34px);margin-top:8px}.subtitle{font-size:clamp(9px,1.75vw,14px);margin-top:7px}.main{margin-top:10px}.panel{padding:9px}.panel h3{font-size:clamp(9px,1.5vw,13px);margin-bottom:5px}.panel p,.panel li{font-size:clamp(8px,1.32vw,11px)}.panel .num{font-size:16px;margin-bottom:6px}.eyebrow{font-size:8px}.takeaway{font-size:clamp(9px,1.8vw,14px);padding-top:5px}.footerline{font-size:7px;padding-top:4px}.chip{padding:4px 7px;font-size:8px}.path .step{padding:9px 5px 0 0}.path .step h3{font-size:10px;margin-bottom:3px}.path .step p{font-size:8px}.prospect{padding:10px}.prospect h3{font-size:clamp(12px,2.1vw,18px);margin:5px 0}.prospect p{font-size:clamp(8px,1.4vw,11px)}.prospect .more{font-size:8px;padding-top:4px}.notebadge{display:none}.matrix>div{font-size:8px;padding:5px}.labelbox p{font-size:9px}.labelbox b{font-size:9px}.bigline,.quote{font-size:clamp(15px,3vw,25px)}.small{font-size:8px}.text-list>div{font-size:9px;padding:3px 0 6px}.text-list b{font-size:8px;min-width:65px}.flowbars span{font-size:8px;padding:7px}.hero-copy{font-size:11px}.first-hero .hero-title{font-size:clamp(36px,7vw,60px)}.hero-ring{box-shadow:0 0 0 20px #ffffff08,0 0 0 40px #ffffff05}.bottom{height:48px}.progress{bottom:48px}.topbar{height:48px}.slide{max-height:calc(100dvh - 114px);width:min(100%,calc((100dvh - 114px)*1.77778))}.brand{font-size:10px}.brandmark{width:18px;height:18px}.chapter{font-size:9px;min-width:0}.nav{width:30px;height:30px}.counter{font-size:10px;min-width:52px}}
-    @media(max-width:560px){.app{min-height:0}.stage{align-items:start;overflow:auto;padding:10px}.slide{aspect-ratio:auto;width:100%;min-height:calc(100dvh - 128px);max-height:none}.slide>.inner{padding:25px 22px}.slide::after{display:none}.title{font-size:clamp(26px,7vw,37px);line-height:1.12;margin:13px 0 0}.subtitle{font-size:13px;margin:12px 0 0}.main{margin-top:24px;justify-content:flex-start;gap:15px}.grid,.split,.prospect-layout{gap:9px}.cols4{grid-template-columns:repeat(2,1fr)}.cols3{grid-template-columns:1fr}.panel{padding:13px}.panel h3{font-size:13px}.panel p,.panel li{font-size:12px}.panel .num{font-size:21px}.takeaway{font-size:15px;margin-top:16px;padding-top:13px}.footerline{font-size:9px;padding-top:18px}.chip{font-size:10px;padding:7px 9px}.split{grid-template-columns:1fr}.path{display:grid;grid-template-columns:repeat(2,1fr);gap:7px}.path .step{border:1px solid #d8dedc;padding:10px}.path .step:before{display:none}.path .step h3{font-size:12px}.path .step p{font-size:11px}.prospect-layout{grid-template-columns:1fr}.prospect{padding:15px}.prospect h3{font-size:18px}.prospect p{font-size:12px}.prospect .more{font-size:10px}.eyebrow{font-size:10px}.matrix>div{font-size:11px;padding:9px}.labelbox p{font-size:12px}.labelbox b{font-size:11px}.bigline,.quote{font-size:22px}.small{font-size:11px}.text-list>div{font-size:12px}.text-list b{font-size:10px;min-width:85px}.flowbars{flex-wrap:wrap}.flowbars span{min-width:40%;font-size:11px;padding:12px}.flowbars span:after{display:none}.first-hero{grid-template-columns:1fr}.first-hero .hero-title{font-size:clamp(55px,14vw,85px)}.hero-copy{font-size:15px}.hero-ring{max-width:210px}.orbit{height:270px}.diagram-center{width:145px}.orbit .node{font-size:9px;padding:7px}.overlay-head{margin-bottom:20px}.detail-grid{grid-template-columns:1fr}.top-actions .iconbtn{padding:0 7px;min-width:30px}}
-    @media(prefers-reduced-motion:reduce){*{scroll-behaviour:auto!important;transition:none!important}}
-  </style>
-  <style>
 :root {
-  --cb-paper:#f4f0e8; --cb-light:#fcfaf6; --cb-ink:#151515;
-  --cb-muted:#625f59; --cb-red:#d71920; --cb-deep:#b30d15;
-  --cb-white:#fffefb; --cb-rule:rgba(21,21,21,.17);
-  --cb-ease:cubic-bezier(.22,1,.36,1);
+  --paper:#f4f0e8;
+  --paper-light:#fcfaf6;
+  --ink:#151515;
+  --muted:#6d6964;
+  --red:#d71920;
+  --red-deep:#b30d15;
+  --white:#fffefb;
+  --rule:rgba(21,21,21,.16);
+  --rule-light:rgba(255,255,255,.22);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --ui-h:62px;
 }
-html,body { background:var(--cb-paper); color:var(--cb-ink); font-family:"Helvetica Neue",Helvetica,Arial,"Noto Sans Bengali",sans-serif; }
-body::before { display:none; }
-button { font-family:inherit; }
-button:focus-visible,a:focus-visible { outline:2px solid var(--cb-red); outline-offset:3px; }
-.skip-link { position:fixed; z-index:100; top:-100px; left:20px; padding:12px 18px; color:white; background:var(--cb-red); }
-.skip-link:focus { top:10px; }
-.app { background:var(--cb-paper); }
-.topbar { height:62px; padding-inline:clamp(20px,4.8vw,80px); background:var(--cb-paper); border-color:var(--cb-rule); backdrop-filter:none; }
-.brand { color:var(--cb-ink); font-family:inherit; font-size:12px; letter-spacing:.17em; gap:11px; }
-.brandmark { width:5px; height:22px; border-radius:0; clip-path:none; transform:none; background:var(--cb-red); }
-.brand small { border-color:var(--cb-rule); color:var(--cb-muted); font:700 10px inherit; }
-.toplabel { color:var(--cb-muted); font-weight:700; }
-.iconbtn { min-height:44px; min-width:44px; border:1px solid var(--cb-rule); border-radius:999px; color:var(--cb-ink); background:var(--cb-light); }
-.iconbtn:hover,.iconbtn.active { border-color:var(--cb-red); color:var(--cb-red); background:var(--cb-light); }
-.motion-toggle { min-width:104px; padding-inline:13px; font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
-.stage { padding:clamp(10px,2.1vh,20px) clamp(12px,3vw,46px); }
-.slide,.slide.light { background:var(--cb-paper); color:var(--cb-ink); border:1px solid var(--cb-rule); box-shadow:0 19px 60px rgba(47,31,24,.09); }
-.slide { width:min(100%,calc((100dvh - 152px)*1.77778)); max-height:calc(100dvh - 152px); }
-.slide::before,.slide.light::before { display:none; }
-.slide::after,.slide.light::after { width:45%; height:110%; top:-38%; right:-12%; border-color:rgba(215,25,32,.11); box-shadow:0 0 0 48px rgba(215,25,32,.035),0 0 0 96px rgba(215,25,32,.025); animation:ring-breathe 8s ease-in-out infinite; }
-.slide.cinematic { background:#111; color:var(--cb-white); border-color:#222; }
-.slide.cinematic::after { border-color:rgba(255,255,255,.18); box-shadow:0 0 0 48px rgba(255,255,255,.055),0 0 0 96px rgba(255,255,255,.028); }
-.slide.red { background:var(--cb-red); color:var(--cb-white); border-color:var(--cb-red); }
-.slide.red::after { border-color:rgba(255,255,255,.24); box-shadow:0 0 0 48px rgba(255,255,255,.055),0 0 0 96px rgba(255,255,255,.035); }
-.slide>.inner { padding:clamp(27px,4.2vw,72px) clamp(31px,6.4vw,103px); }
-.eyebrow { font-family:inherit; color:var(--cb-red); font-size:clamp(9px,.7vw,11px); letter-spacing:.22em; }
-.eyebrow:before { width:28px; height:1px; }
-.cinematic .eyebrow,.red .eyebrow { color:#fff; }
-.title { max-width:1100px; font-family:inherit; font-weight:800; font-size:clamp(30px,3.7vw,62px); line-height:.99; letter-spacing:-.06em; margin-top:clamp(13px,1.7vw,26px); }
-.title strong,.light .title strong { color:var(--cb-red); font-weight:800; }
-.red .title strong { color:white; }
-.subtitle,.light .subtitle { color:var(--cb-muted); font-size:clamp(13px,1.12vw,18px); max-width:780px; line-height:1.46; }
-.cinematic .subtitle,.red .subtitle { color:rgba(255,255,255,.77); }
-.main { margin-top:clamp(17px,2vw,30px); }
-.footerline,.light .footerline { border-top:1px solid var(--cb-rule); padding-top:13px; color:var(--cb-muted); font-weight:700; letter-spacing:.12em; }
-.cinematic .footerline,.red .footerline { color:rgba(255,255,255,.7); border-color:rgba(255,255,255,.28); }
-.bottom { height:62px; padding-inline:clamp(20px,4.8vw,80px); background:var(--cb-paper); border-color:var(--cb-rule); }
-.chapter,.counter { color:var(--cb-ink); font-family:inherit; }
-.hint { color:var(--cb-muted); }
-.nav { width:44px; height:44px; border:1px solid var(--cb-rule); color:var(--cb-ink); background:var(--cb-light); }
-.nav:not(:disabled):hover { background:var(--cb-red); border-color:var(--cb-red); color:white; }
-.progress { bottom:62px; background:var(--cb-rule); }
-.progress span { background:var(--cb-red); }
-.panel,.light .panel { border:1px solid var(--cb-rule); border-radius:20px; background:rgba(255,255,255,.45); box-shadow:none; }
-.panel h3,.prospect h3,.path .step h3 { font-family:inherit; color:var(--cb-ink); }
-.panel p,.panel li,.light .panel p,.light .panel li,.labelbox p,.light .labelbox p,.path .step p,.darkpath .step p { color:var(--cb-muted); }
-.panel .num,.light .panel .num,.prospect .num,.light .prospect .num { color:var(--cb-red); }
-.tag,.light .tag { color:var(--cb-red); letter-spacing:.17em; }
-.chip,.light .chip { border-color:var(--cb-rule); background:transparent; color:var(--cb-ink); font-weight:700; }
-.takeaway,.light .takeaway { border-color:var(--cb-rule); font-family:inherit; }
-.accent,.light .accent { color:var(--cb-red); }
-.labelbox { border-left:1px solid var(--cb-red); }
-.labelbox b { color:var(--cb-ink); }
-.rule,.light .rule { border-color:var(--cb-rule); }
-.matrix,.matrix.dark { border:0; border-top:1px solid var(--cb-rule); background:transparent; }
-.matrix>div,.matrix.dark>div { border-color:var(--cb-rule); color:var(--cb-ink); }
-.matrix>div:nth-child(odd),.matrix.dark>div:nth-child(odd) { color:var(--cb-red); }
-.flowbars span,.light .flowbars span { border-color:var(--cb-rule); background:transparent; color:var(--cb-ink); }
-.flowbars span:not(:last-child):after,.light .flowbars span:not(:last-child):after { color:var(--cb-red); }
-.text-list>div,.light .text-list>div { border-color:var(--cb-rule); }
-.text-list b,.light .text-list b { color:var(--cb-red); }
-.quote { font-family:inherit; }
-.red .quote,.red .bigline,.red .labelbox b,.red .labelbox p,.red .flowbars span { color:white; }
-.red .flowbars span,.red .divider,.red .takeaway { border-color:rgba(255,255,255,.35); }
-.red .flowbars span:not(:last-child):after { color:white; }
-.red .final-tag { color:white; }
-.red .labelbox { border-color:#fff; }
-.prospect,.light .prospect { border:1px solid var(--cb-rule); border-radius:20px; background:rgba(255,255,255,.48); color:var(--cb-ink); padding:clamp(17px,1.8vw,30px); transition:background .25s,border-color .25s,transform .25s var(--cb-ease); }
-.prospect:hover,.light .prospect:hover { background:var(--cb-light); border-color:var(--cb-red); transform:translateY(-3px); }
-.prospect p,.light .prospect p { color:var(--cb-muted); }
-.prospect .more,.light .prospect .more { color:var(--cb-red); }
-.prospect h3 { font-size:clamp(16px,1.47vw,24px); margin:8px 0; }
-.prospect-layout { gap:clamp(12px,1.5vw,24px); }
-.path .step { border-color:var(--cb-rule); }
-.path .step:before { background:var(--cb-red); }
-.path .step:last-child:before { border-color:var(--cb-red); background:var(--cb-paper); }
-.orbit .node { background:var(--cb-light); border-color:var(--cb-rule); color:var(--cb-ink); border-radius:999px; box-shadow:none; }
-.diagram-center { background:var(--cb-red); color:white; border:0; box-shadow:0 0 0 22px rgba(215,25,32,.08),0 0 0 45px rgba(215,25,32,.045); }
-.first-hero .hero-title { font-family:inherit; font-size:clamp(54px,8.3vw,140px); line-height:.83; letter-spacing:-.082em; }
-.hero-copy { color:rgba(255,255,255,.77); font-family:inherit; }
-.cinematic .labelbox b { color:white; }
-.cinematic .labelbox p { color:rgba(255,255,255,.67); }
-.hero-ring { background:none; box-shadow:0 0 0 48px rgba(255,255,255,.055),0 0 0 96px rgba(255,255,255,.025); animation:ring-breathe 7s ease-in-out infinite; }
-.hero-ring:before,.hero-ring:after { border-color:rgba(255,255,255,.3); }
-.hero-ring:after { background:var(--cb-red); box-shadow:none; }
-.hero-ring .dot { background:var(--cb-red); box-shadow:0 0 0 7px rgba(215,25,32,.16); animation:node-pulse 4s ease-in-out infinite; }
-.hero-ring .dot:nth-child(2) { animation-delay:1s; }.hero-ring .dot:nth-child(3) { animation-delay:2s; }.hero-ring .dot:nth-child(4) { animation-delay:3s; }
-.overlay { background:rgba(21,21,21,.95); }
-.overlay h2,.overlay-head p { color:white; }
-.thumb { background:var(--cb-paper); border-color:var(--cb-rule); color:var(--cb-ink); border-radius:14px; }
-.thumb:hover { border-color:var(--cb-red); }
-.thumb span,.thumb small { color:var(--cb-red); }
-.detail { background:var(--cb-paper); color:var(--cb-ink); border-radius:20px; }
-.detail h2,.detail-grid p { color:var(--cb-ink); }.detail .lede { color:var(--cb-muted); }
-.close { background:var(--cb-red); width:44px; height:44px; }
 
-/* Motion diagrams express a causal step inside each prospective use case. */
-.mini-flow { display:flex; align-items:center; gap:9px; margin:clamp(12px,1.4vw,21px) 0 0; padding:10px 0; border-block:1px solid var(--cb-rule); white-space:nowrap; }
-.mini-flow span:not(.flow-track) { font-size:clamp(8px,.66vw,11px); font-weight:800; letter-spacing:.09em; text-transform:uppercase; color:var(--cb-muted); }
-.flow-track { position:relative; flex:1; height:1px; min-width:25px; background:var(--cb-rule); }
-.flow-track i { position:absolute; top:-3px; left:0; width:7px; height:7px; border-radius:50%; background:var(--cb-red); animation:travel 3.6s ease-in-out infinite; }
-.prospect:nth-child(2) .flow-track i { animation-delay:1.7s; }
-.slide[data-scene="2"] .chip { animation:chip-rise 6s ease-in-out infinite; }.slide[data-scene="2"] .chip:nth-child(3n+2) { animation-delay:1.4s; }.slide[data-scene="2"] .chip:nth-child(3n) { animation-delay:2.8s; }
-.slide[data-scene="3"] .panel,.slide[data-scene="4"] .panel,.slide[data-scene="9"] .panel,.slide[data-scene="12"] .panel,.slide[data-scene="13"] .panel,.slide[data-scene="14"] .panel { animation:card-signal 5s ease-in-out infinite; }
-.slide[data-scene="3"] .panel:nth-child(even),.slide[data-scene="4"] .panel:nth-child(even),.slide[data-scene="9"] .panel:nth-child(even),.slide[data-scene="12"] .panel:nth-child(even),.slide[data-scene="13"] .panel:nth-child(even),.slide[data-scene="14"] .panel:nth-child(even) { animation-delay:2.5s; }
-.slide[data-scene="5"] .diagram-center { animation:node-pulse 5s ease-in-out infinite; }
-.slide[data-scene="5"] .orbit .node { animation:card-signal 5s ease-in-out infinite; }.slide[data-scene="5"] .orbit .node:nth-child(3) { animation-delay:1s; }.slide[data-scene="5"] .orbit .node:nth-child(4) { animation-delay:2s; }.slide[data-scene="5"] .orbit .node:nth-child(5) { animation-delay:3s; }.slide[data-scene="5"] .orbit .node:nth-child(6) { animation-delay:4s; }
-.slide[data-scene="6"] .path .step:before,.slide[data-scene="7"] .path .step:before { animation:node-pulse 4.8s ease-in-out infinite; }
-.slide[data-scene="6"] .path .step:nth-child(2):before,.slide[data-scene="7"] .path .step:nth-child(2):before { animation-delay:1.2s; }.slide[data-scene="6"] .path .step:nth-child(3):before,.slide[data-scene="7"] .path .step:nth-child(3):before { animation-delay:2.4s; }.slide[data-scene="6"] .path .step:nth-child(4):before,.slide[data-scene="7"] .path .step:nth-child(4):before { animation-delay:3.6s; }
-.slide[data-scene="8"] .grid .panel { animation:card-signal 6s ease-in-out infinite; }.slide[data-scene="8"] .grid .panel:nth-child(2) { animation-delay:2s; }.slide[data-scene="8"] .grid .panel:nth-child(3) { animation-delay:4s; }
-.slide[data-scene="10"] .flowbars span,.slide[data-scene="20"] .flowbars span { animation:step-emphasis 6s ease-in-out infinite; }.slide[data-scene="10"] .flowbars span:nth-child(2),.slide[data-scene="20"] .flowbars span:nth-child(2) { animation-delay:1.5s; }.slide[data-scene="10"] .flowbars span:nth-child(3),.slide[data-scene="20"] .flowbars span:nth-child(3) { animation-delay:3s; }.slide[data-scene="10"] .flowbars span:nth-child(4) { animation-delay:4.5s; }
-.slide[data-scene="11"] .matrix>div:nth-last-child(-n+2) { animation:row-emphasis 6s ease-in-out infinite; }
-.slide[data-scene="15"] .quote { animation:quiet-reveal 6s ease-in-out infinite; }
-.slide[data-scene="20"] .final-mark { animation:quiet-reveal 6s ease-in-out infinite; }
-@keyframes ring-breathe { 50% { transform:scale(1.035); opacity:.78; } }
-@keyframes node-pulse { 0%,75%,100% { transform:scale(1); box-shadow:0 0 0 0 rgba(215,25,32,.2); } 15% { transform:scale(1.07); box-shadow:0 0 0 13px rgba(215,25,32,0); } }
-@keyframes travel { 0% { left:0; opacity:0; } 12% { opacity:1; } 80% { left:calc(100% - 7px); opacity:1; } 100% { left:calc(100% - 7px); opacity:0; } }
-@keyframes chip-rise { 0%,75%,100% { border-color:var(--cb-rule); background:transparent; } 15%,35% { border-color:var(--cb-red); background:rgba(215,25,32,.07); } }
-@keyframes card-signal { 0%,70%,100% { border-color:var(--cb-rule); } 20%,40% { border-color:rgba(215,25,32,.62); } }
-@keyframes step-emphasis { 0%,70%,100% { border-color:var(--cb-rule); } 15%,32% { border-color:var(--cb-red); } }
-@keyframes row-emphasis { 0%,60%,100% { background:transparent; } 15%,35% { background:rgba(215,25,32,.09); } }
-@keyframes quiet-reveal { 0%,100% { opacity:1; } 50% { opacity:.78; } }
-.motion-paused *, .motion-paused *::before,.motion-paused *::after { animation-play-state:paused !important; }
+* { box-sizing:border-box; }
+html,body { width:100%; height:100%; margin:0; overflow:hidden; }
+body { background:var(--paper); color:var(--ink); font-family:"Helvetica Neue",Helvetica,Arial,"Noto Sans Bengali",sans-serif; }
+button { font:inherit; }
+button:focus-visible,a:focus-visible { outline:2px solid var(--red); outline-offset:3px; }
+.skip-link { position:fixed; z-index:100; top:-100px; left:20px; padding:12px 18px; background:var(--red); color:white; }
+.skip-link:focus { top:10px; }
+
+.app { height:100dvh; min-height:520px; display:flex; flex-direction:column; background:var(--paper); }
+.topbar,.bottom { flex:none; height:var(--ui-h); display:flex; align-items:center; padding-inline:clamp(20px,4.8vw,80px); background:var(--paper); border-color:var(--rule); z-index:20; }
+.topbar { justify-content:space-between; border-bottom:1px solid var(--rule); }
+.bottom { justify-content:space-between; gap:20px; border-top:1px solid var(--rule); }
+.brand { display:flex; align-items:center; gap:11px; color:var(--ink); font-size:12px; font-weight:800; letter-spacing:.17em; text-transform:uppercase; white-space:nowrap; }
+.brand-rule { width:5px; height:22px; background:var(--red); }
+.brand small { padding-left:14px; border-left:1px solid var(--rule); color:var(--muted); font-size:10px; font-weight:700; letter-spacing:.2em; }
+.top-actions { display:flex; align-items:center; gap:8px; }
+.toplabel { margin-right:11px; color:var(--muted); font-size:10px; font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
+.control,.nav { min-width:44px; height:44px; border:1px solid var(--rule); border-radius:999px; background:var(--paper-light); color:var(--ink); cursor:pointer; transition:border-color .22s,color .22s,background .22s,transform .22s var(--ease); }
+.control:hover,.nav:not(:disabled):hover { border-color:var(--red); background:var(--red); color:white; transform:translateY(-1px); }
+.icon-control { display:grid; place-items:center; }
+.icon-control svg { width:17px; height:17px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
+.motion-toggle { min-width:108px; padding-inline:14px; font-size:9px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+.nav { font-size:18px; }
+.nav:disabled { opacity:.25; cursor:default; }
+.chapter,.counter { color:var(--ink); font-size:10px; font-weight:800; letter-spacing:.15em; text-transform:uppercase; }
+.chapter,.hint { min-width:200px; }
+.hint { color:var(--muted); font-size:10px; text-align:right; }
+.navgroup { display:flex; align-items:center; gap:12px; }
+.counter { min-width:64px; text-align:center; }
+
+.stage { flex:1; min-height:0; display:grid; place-items:center; padding:clamp(10px,2.1vh,20px) clamp(12px,3vw,46px); perspective:1200px; }
+.slide { position:relative; width:min(100%,calc((100dvh - 152px)*1.77778)); max-height:calc(100dvh - 152px); aspect-ratio:16/9; overflow:hidden; border:1px solid var(--rule); box-shadow:0 19px 60px rgba(47,31,24,.09); isolation:isolate; container-type:inline-size; animation:scene-enter .72s var(--ease) both; }
+.slide.tone-paper { background:var(--paper); color:var(--ink); }
+.slide.tone-dark { background:#0d0d0d; color:var(--white); border-color:#222; box-shadow:0 28px 74px rgba(0,0,0,.24); }
+.slide.tone-red { background:var(--red); color:var(--white); border-color:var(--red); box-shadow:0 28px 74px rgba(89,0,3,.18); }
+.slide::after { content:""; position:absolute; z-index:-2; width:58%; aspect-ratio:1; right:-28%; top:-38%; border:1px solid rgba(215,25,32,.13); border-radius:50%; box-shadow:0 0 0 54px rgba(215,25,32,.035),0 0 0 108px rgba(215,25,32,.024); animation:ring-breathe 9s ease-in-out infinite; }
+.tone-dark::after,.tone-red::after { border-color:rgba(255,255,255,.16); box-shadow:0 0 0 54px rgba(255,255,255,.045),0 0 0 108px rgba(255,255,255,.025); }
+.slide-canvas { position:relative; z-index:2; height:100%; padding:clamp(25px,3.7vw,61px) clamp(38px,6vw,98px) clamp(24px,3.2vw,52px); display:flex; flex-direction:column; }
+.signal-rail { position:absolute; z-index:3; left:clamp(20px,2.8vw,44px); top:10%; bottom:10%; width:1px; background:var(--rule); overflow:visible; }
+.tone-dark .signal-rail,.tone-red .signal-rail { background:var(--rule-light); }
+.signal-rail::before { content:""; position:absolute; top:0; left:-2px; width:5px; height:24%; background:linear-gradient(180deg,transparent,var(--red),transparent); animation:rail-travel 4.8s var(--ease) infinite; }
+.tone-red .signal-rail::before { background:linear-gradient(180deg,transparent,#fff,transparent); }
+.signal-rail::after { content:"TRANSFORM"; position:absolute; left:-6px; bottom:-1px; color:var(--muted); font-size:7px; font-weight:800; letter-spacing:.19em; writing-mode:vertical-rl; transform:rotate(180deg); }
+.tone-dark .signal-rail::after,.tone-red .signal-rail::after { color:rgba(255,255,255,.48); }
+
+.scene-header { flex:none; max-width:92%; }
+.eyebrow { display:flex; align-items:center; gap:11px; color:var(--red); font-size:clamp(8px,.74vw,11px); font-weight:800; letter-spacing:.22em; text-transform:uppercase; }
+.eyebrow::before { content:""; width:30px; height:1px; background:currentColor; }
+.tone-dark .eyebrow,.tone-red .eyebrow { color:white; }
+.title { max-width:1040px; margin:clamp(12px,1.55vw,24px) 0 0; font-size:clamp(28px,3.55vw,60px); line-height:.98; font-weight:800; letter-spacing:-.058em; text-wrap:balance; }
+.title .accent { color:var(--red); }
+.tone-red .title .accent { color:white; }
+.subtitle { max-width:780px; margin:clamp(10px,1.2vw,18px) 0 0; color:var(--muted); font-size:clamp(12px,1vw,16px); line-height:1.44; }
+.tone-dark .subtitle,.tone-red .subtitle { color:rgba(255,255,255,.7); }
+.scene-body { flex:1; min-height:0; margin-top:clamp(15px,1.8vw,28px); display:flex; flex-direction:column; justify-content:center; }
+.scene-footer { flex:none; display:flex; justify-content:space-between; align-items:center; gap:20px; margin-top:auto; padding-top:11px; border-top:1px solid var(--rule); color:var(--muted); font-size:clamp(7px,.62vw,10px); font-weight:700; letter-spacing:.12em; text-transform:uppercase; }
+.tone-dark .scene-footer,.tone-red .scene-footer { border-color:var(--rule-light); color:rgba(255,255,255,.6); }
+.progress { position:absolute; z-index:30; left:0; right:0; bottom:var(--ui-h); height:2px; background:var(--rule); }
+.progress span { display:block; height:100%; width:0; background:var(--red); transition:width .52s var(--ease); }
+
+.micro { color:var(--red); font-size:clamp(8px,.7vw,11px); font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
+.tone-dark .micro,.tone-red .micro { color:#fff; }
+.rule-top { border-top:1px solid var(--rule); }
+.tone-dark .rule-top,.tone-red .rule-top { border-color:var(--rule-light); }
+.quiet { color:var(--muted); }
+.tone-dark .quiet,.tone-red .quiet { color:rgba(255,255,255,.65); }
+.red-text { color:var(--red); }
+.tone-red .red-text { color:white; }
+
+/* 01 · Cover */
+.cover .slide-canvas { padding-block:clamp(35px,5vw,80px); }
+.cover .signal-rail { display:none; }
+.cover-grid { height:100%; display:grid; grid-template-columns:1.07fr .93fr; align-items:center; gap:4%; }
+.cover-title { margin:0; font-size:clamp(54px,8.4vw,142px); line-height:.78; font-weight:850; letter-spacing:-.09em; }
+.cover-title span { display:block; color:var(--red); }
+.cover-copy { max-width:560px; margin:clamp(20px,2.2vw,34px) 0 0; color:rgba(255,255,255,.78); font-size:clamp(14px,1.25vw,20px); line-height:1.35; }
+.cover-outcomes { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:clamp(25px,3vw,46px); }
+.cover-outcome { padding-left:14px; border-left:1px solid var(--red); }
+.cover-outcome b { display:block; font-size:clamp(9px,.72vw,12px); letter-spacing:.12em; text-transform:uppercase; }
+.cover-outcome span { display:block; margin-top:7px; color:rgba(255,255,255,.62); font-size:clamp(9px,.78vw,12px); line-height:1.35; }
+.cover-orbit { position:relative; width:min(37vw,430px); aspect-ratio:1; justify-self:center; }
+.cover-orbit .ring { position:absolute; border:1px solid rgba(255,255,255,.2); border-radius:50%; inset:0; animation:orbit-breathe 7s ease-in-out infinite; }
+.cover-orbit .ring:nth-child(2) { inset:17%; animation-delay:-1.5s; }
+.cover-orbit .ring:nth-child(3) { inset:34%; animation-delay:-3s; }
+.cover-orbit .core { position:absolute; inset:43%; border-radius:50%; background:var(--red); animation:core-pulse 4.6s ease-in-out infinite; }
+.cover-orbit .orbit-dot { position:absolute; width:10px; aspect-ratio:1; border-radius:50%; background:var(--red); box-shadow:0 0 0 7px rgba(215,25,32,.16); }
+.cover-orbit .orbit-dot:nth-of-type(1) { top:16%; left:26%; animation:node-pulse 5s ease-in-out infinite; }
+.cover-orbit .orbit-dot:nth-of-type(2) { top:43%; right:0; animation:node-pulse 5s 1.25s ease-in-out infinite; }
+.cover-orbit .orbit-dot:nth-of-type(3) { bottom:9%; left:37%; animation:node-pulse 5s 2.5s ease-in-out infinite; }
+.cover-orbit .orbit-dot:nth-of-type(4) { bottom:29%; left:7%; animation:node-pulse 5s 3.75s ease-in-out infinite; }
+
+/* 02 · Capability field */
+.capability-scene { display:grid; grid-template-columns:.86fr 1.14fr; gap:8%; align-items:center; height:100%; }
+.advantage-line { font-size:clamp(24px,2.6vw,43px); line-height:1.05; font-weight:800; letter-spacing:-.05em; }
+.advantage-line span { display:block; color:var(--red); }
+.capability-field { position:relative; min-height:270px; display:grid; grid-template-columns:repeat(4,1fr); align-content:center; gap:12px; }
+.capability-field::before { content:""; position:absolute; left:0; right:0; top:50%; height:1px; background:var(--rule); }
+.capability { position:relative; z-index:2; padding:13px 11px; border-block:1px solid var(--rule); background:var(--paper); text-align:center; font-size:clamp(9px,.75vw,12px); font-weight:750; animation:capability-align 7.2s var(--ease) infinite; }
+.capability:nth-child(2n) { animation-delay:-1.8s; }
+.capability:nth-child(3n) { animation-delay:-3.6s; }
+.capability.ai { grid-column:2/4; color:white; background:var(--red); border-color:var(--red); animation:ai-connect 5.5s var(--ease) infinite; }
+
+/* 03 · Overlap */
+.overlap-scene { display:grid; grid-template-columns:1fr .4fr 1fr; gap:2.5%; align-items:stretch; height:100%; }
+.service-lane { position:relative; padding:18px 20px; border-top:1px solid var(--rule); }
+.service-lane h3 { margin:8px 0 17px; font-size:clamp(20px,1.8vw,30px); letter-spacing:-.04em; }
+.service-lane ul { margin:0; padding:0; list-style:none; color:var(--muted); font-size:clamp(10px,.82vw,13px); line-height:1.7; }
+.service-lane::after { content:""; position:absolute; top:50%; width:28%; height:1px; background:var(--red); animation:lane-converge 4.5s var(--ease) infinite; }
+.service-lane.left::after { right:-15%; }
+.service-lane.right::after { left:-15%; }
+.overlap-core { align-self:center; justify-self:center; width:min(100%,112px); display:grid; place-items:center; aspect-ratio:1; border-radius:50%; background:var(--red); color:white; text-align:center; font-size:clamp(9px,.74vw,12px); font-weight:800; letter-spacing:.09em; text-transform:uppercase; animation:core-pulse 4.5s var(--ease) infinite; }
+
+/* 04 · Consequence */
+.consequence-scene { display:grid; grid-template-columns:1fr 1px 1fr; gap:5%; align-items:center; height:100%; }
+.consequence-divider { height:82%; background:var(--rule); position:relative; overflow:hidden; }
+.consequence-divider::after { content:""; position:absolute; inset:auto 0 100% 0; height:32%; background:var(--red); animation:vertical-scan 4.8s var(--ease) infinite; }
+.consequence { align-self:stretch; display:flex; flex-direction:column; justify-content:center; }
+.consequence-word { font-size:clamp(48px,7vw,116px); line-height:.8; font-weight:850; letter-spacing:-.085em; }
+.consequence:nth-child(3) .consequence-word { color:var(--red); }
+.consequence h3 { margin:22px 0 7px; font-size:clamp(14px,1.25vw,20px); text-transform:uppercase; letter-spacing:.08em; }
+.consequence p { max-width:360px; margin:0; color:var(--muted); font-size:clamp(10px,.86vw,14px); line-height:1.45; }
+
+/* 05 · Ecosystem */
+.ecosystem-scene { display:grid; grid-template-columns:.74fr 1.26fr; gap:5%; height:100%; align-items:center; }
+.ecosystem-copy { font-size:clamp(22px,2.35vw,40px); line-height:1.07; font-weight:800; letter-spacing:-.05em; }
+.ecosystem-map { position:relative; min-height:310px; display:grid; place-items:center; }
+.ecosystem-map::before,.ecosystem-map::after { content:""; position:absolute; border:1px solid rgba(215,25,32,.22); border-radius:50%; animation:ring-breathe 7s ease-in-out infinite; }
+.ecosystem-map::before { width:53%; aspect-ratio:1; }
+.ecosystem-map::after { width:79%; aspect-ratio:1; animation-delay:-2s; }
+.ecosystem-core { z-index:3; width:31%; aspect-ratio:1; display:grid; place-items:center; border-radius:50%; background:var(--red); color:white; text-align:center; font-size:clamp(12px,1.15vw,19px); font-weight:800; line-height:1.05; animation:core-pulse 5s ease-in-out infinite; }
+.ecosystem-node { position:absolute; z-index:4; min-width:112px; padding:10px 13px; border:1px solid var(--rule); border-radius:999px; background:var(--paper-light); text-align:center; font-size:clamp(8px,.68vw,11px); font-weight:800; letter-spacing:.08em; text-transform:uppercase; animation:node-signal 6s var(--ease) infinite; }
+.ecosystem-node:nth-of-type(2) { top:5%; left:40%; }
+.ecosystem-node:nth-of-type(3) { right:2%; top:43%; animation-delay:1.5s; }
+.ecosystem-node:nth-of-type(4) { bottom:4%; left:38%; animation-delay:3s; }
+.ecosystem-node:nth-of-type(5) { left:1%; top:43%; animation-delay:4.5s; }
+
+/* 06–07 · Journeys */
+.journey-scene { display:flex; flex-direction:column; justify-content:center; height:100%; }
+.journey-track { position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:0; }
+.journey-track::before { content:""; position:absolute; left:0; right:0; top:17px; height:1px; background:var(--rule); }
+.journey-track::after { content:""; position:absolute; left:0; top:14px; width:7px; height:7px; border-radius:50%; background:var(--red); animation:journey-travel 8s var(--ease) infinite; }
+.journey-step { position:relative; padding:43px 18px 0 0; }
+.journey-step::before { content:""; position:absolute; top:12px; left:0; width:11px; height:11px; border-radius:50%; background:var(--paper); border:2px solid var(--red); }
+.journey-step:nth-child(2) { animation:stage-focus 8s 2s ease-in-out infinite; }
+.journey-step:nth-child(3) { animation:stage-focus 8s 4s ease-in-out infinite; }
+.journey-step:nth-child(4) { animation:stage-focus 8s 6s ease-in-out infinite; }
+.journey-step .step-no { color:var(--red); font-size:9px; font-weight:800; letter-spacing:.15em; }
+.journey-step h3 { margin:9px 0 7px; font-size:clamp(16px,1.5vw,25px); letter-spacing:-.04em; }
+.journey-step p { max-width:175px; margin:0; color:var(--muted); font-size:clamp(9px,.76vw,12px); line-height:1.45; }
+.journey-close { margin-top:auto; padding-top:14px; border-top:1px solid var(--rule); font-size:clamp(14px,1.3vw,21px); font-weight:750; }
+.journey-close span { color:var(--red); }
+
+/* 08 · Network */
+.network-scene { display:grid; grid-template-columns:.72fr 1.28fr; gap:7%; height:100%; align-items:center; }
+.network-lead { font-size:clamp(22px,2.4vw,41px); line-height:1.06; font-weight:800; letter-spacing:-.052em; }
+.network-map { position:relative; min-height:300px; display:grid; place-items:center; }
+.network-hub { z-index:3; width:185px; padding:28px 20px; background:var(--ink); color:white; text-align:center; font-size:clamp(12px,1vw,16px); font-weight:800; }
+.network-node { position:absolute; z-index:4; width:135px; padding:13px 10px; border-block:1px solid var(--rule); background:var(--paper); text-align:center; font-size:clamp(9px,.75vw,12px); font-weight:800; animation:node-signal 6s var(--ease) infinite; }
+.network-node:nth-of-type(2) { top:3%; left:7%; }
+.network-node:nth-of-type(3) { right:4%; top:35%; animation-delay:2s; }
+.network-node:nth-of-type(4) { bottom:20%; left:11%; animation-delay:4s; }
+.network-link { position:absolute; z-index:1; left:50%; top:50%; width:39%; height:1px; transform-origin:left; background:var(--rule); overflow:hidden; }
+.network-link::after { content:""; position:absolute; inset:0; background:linear-gradient(90deg,transparent,var(--red),transparent); animation:link-flow 4s linear infinite; }
+.network-link.l1 { transform:rotate(-145deg); }
+.network-link.l2 { transform:rotate(-15deg); animation-delay:1.3s; }
+.network-link.l3 { transform:rotate(142deg); animation-delay:2.6s; }
+.capability-line { position:absolute; left:0; right:0; bottom:0; display:flex; flex-wrap:wrap; justify-content:center; gap:8px; }
+.capability-line span { padding:5px 8px; border:1px solid var(--rule); border-radius:999px; color:var(--muted); font-size:8px; font-weight:800; letter-spacing:.06em; }
+
+/* 09 · Gap */
+.gap-scene { display:grid; grid-template-columns:1fr .6fr 1fr; gap:4%; align-items:center; height:100%; }
+.mandate-stack { display:grid; gap:1px; border-block:1px solid var(--rule); }
+.mandate-row { display:flex; justify-content:space-between; gap:18px; padding:11px 0; border-bottom:1px solid var(--rule); font-size:clamp(9px,.78vw,12px); }
+.mandate-row:last-child { border-bottom:0; }
+.mandate-row b { color:var(--red); font-size:9px; letter-spacing:.1em; text-transform:uppercase; }
+.gap-space { position:relative; display:grid; place-items:center; height:77%; border-inline:1px solid var(--rule); }
+.gap-space::before { content:""; position:absolute; left:15%; right:15%; top:50%; height:1px; background:var(--red); transform:scaleX(.05); animation:bridge-grow 5.6s var(--ease) infinite; }
+.gap-label { z-index:2; padding:12px 9px; background:var(--paper); color:var(--red); text-align:center; font-size:clamp(9px,.78vw,12px); font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.gap-callout { font-size:clamp(21px,2.3vw,39px); line-height:1.08; font-weight:800; letter-spacing:-.05em; }
+.gap-callout span { display:block; margin-top:15px; color:var(--muted); font-size:clamp(10px,.85vw,14px); line-height:1.45; font-weight:450; letter-spacing:0; }
+
+/* 10 · Role */
+.role-scene { display:grid; grid-template-columns:1.25fr .75fr; gap:6%; align-items:center; height:100%; }
+.role-process { position:relative; display:grid; grid-template-columns:repeat(4,1fr); }
+.role-process::before { content:""; position:absolute; left:4%; right:4%; top:26px; height:2px; background:var(--rule); }
+.role-process::after { content:""; position:absolute; left:4%; top:25px; width:9px; height:4px; background:var(--red); animation:role-travel 7s var(--ease) infinite; }
+.role-step { position:relative; padding:57px 12px 0 0; }
+.role-step::before { content:""; position:absolute; top:20px; left:0; width:13px; height:13px; border-radius:50%; background:var(--paper); border:2px solid var(--red); }
+.role-step b { display:block; font-size:clamp(15px,1.4vw,23px); letter-spacing:-.03em; }
+.role-step span { display:block; margin-top:7px; color:var(--muted); font-size:clamp(9px,.75vw,12px); line-height:1.4; }
+.role-domains { display:grid; gap:16px; }
+.role-domain { padding:16px 0; border-block:1px solid var(--rule); }
+.role-domain b { display:block; color:var(--red); font-size:11px; letter-spacing:.12em; text-transform:uppercase; }
+.role-domain p { margin:8px 0 0; color:var(--muted); font-size:clamp(9px,.78vw,13px); line-height:1.42; }
+
+/* 11 · Boundaries */
+.boundary-scene { display:grid; grid-template-columns:1fr 1fr; gap:5%; height:100%; }
+.boundary-list { align-self:center; border-top:1px solid var(--rule); }
+.boundary-row { display:grid; grid-template-columns:.72fr 1.28fr; gap:18px; padding:9px 0; border-bottom:1px solid var(--rule); font-size:clamp(9px,.76vw,12px); line-height:1.35; }
+.boundary-row b { color:var(--red); letter-spacing:.05em; }
+.boundary-bridge { position:relative; align-self:center; min-height:260px; display:grid; place-items:center; }
+.boundary-bridge::before { content:""; position:absolute; inset:8% 4%; border:1px solid var(--rule); border-radius:50%; animation:ring-breathe 6s ease-in-out infinite; }
+.boundary-bridge::after { content:""; position:absolute; left:12%; right:12%; top:50%; height:1px; background:linear-gradient(90deg,transparent,var(--red),transparent); animation:bridge-scan 4.6s ease-in-out infinite; }
+.bridge-copy { z-index:2; width:56%; aspect-ratio:1; display:grid; place-items:center; border-radius:50%; background:var(--red); color:white; padding:16px; text-align:center; font-size:clamp(11px,1vw,16px); font-weight:800; line-height:1.2; }
+
+/* 12 · Evidence */
+.evidence-scene { position:relative; height:100%; display:grid; grid-template-columns:repeat(4,1fr); gap:26px; align-items:center; }
+.evidence-scene::before { content:""; position:absolute; left:0; right:0; top:50%; height:1px; background:var(--rule); }
+.evidence-item { position:relative; z-index:2; min-height:125px; padding:17px 0; border-block:1px solid var(--rule); background:var(--paper); animation:evidence-focus 8s var(--ease) infinite; }
+.evidence-item:nth-child(2) { animation-delay:2s; }
+.evidence-item:nth-child(3) { animation-delay:4s; }
+.evidence-item:nth-child(4) { animation-delay:6s; }
+.evidence-item b { display:block; color:var(--red); font-size:9px; letter-spacing:.14em; text-transform:uppercase; }
+.evidence-item p { margin:13px 0 0; font-size:clamp(13px,1.05vw,17px); line-height:1.45; font-weight:750; }
+.evidence-item::after { content:""; position:absolute; top:50%; right:-18px; width:10px; height:10px; border-radius:50%; background:var(--red); transform:translateY(-50%); }
+
+/* 13 · Before/after */
+.shift-scene { display:grid; grid-template-columns:1fr 90px 1fr; gap:3%; align-items:center; height:100%; }
+.shift-column { align-self:stretch; padding:16px 0; border-block:1px solid var(--rule); }
+.shift-column h3 { margin:0 0 13px; color:var(--red); font-size:10px; letter-spacing:.15em; text-transform:uppercase; }
+.shift-item { padding:9px 0; border-bottom:1px solid var(--rule); color:var(--muted); font-size:clamp(10px,.82vw,13px); animation:shift-order 6.5s var(--ease) infinite; }
+.shift-column.today .shift-item:nth-child(2) { transform:translateX(10px); }
+.shift-column.today .shift-item:nth-child(3) { transform:translateX(-7px); }
+.shift-column.structured .shift-item { color:var(--ink); }
+.shift-column.structured .shift-item:nth-child(2) { animation-delay:1s; }
+.shift-column.structured .shift-item:nth-child(3) { animation-delay:2s; }
+.shift-column.structured .shift-item:nth-child(4) { animation-delay:3s; }
+.shift-column.structured .shift-item:nth-child(5) { animation-delay:4s; }
+.shift-transform { position:relative; height:70%; display:grid; place-items:center; }
+.shift-transform::before { content:""; position:absolute; top:0; bottom:0; left:50%; width:1px; background:var(--rule); }
+.shift-transform span { z-index:2; width:58px; aspect-ratio:1; display:grid; place-items:center; border-radius:50%; background:var(--red); color:white; font-size:8px; font-weight:800; letter-spacing:.08em; transform:rotate(-90deg); animation:core-pulse 5s ease-in-out infinite; }
+
+/* 14 · Outcomes */
+.outcome-scene { display:grid; grid-template-columns:repeat(3,1fr); gap:0; height:100%; align-items:center; }
+.outcome { position:relative; min-height:230px; padding:24px 28px 20px 0; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule); }
+.outcome+.outcome { padding-left:28px; border-left:1px solid var(--rule); }
+.outcome-no { color:var(--red); font-size:clamp(40px,5vw,83px); line-height:.85; font-weight:850; letter-spacing:-.07em; opacity:.9; }
+.outcome h3 { margin:21px 0 8px; font-size:clamp(15px,1.35vw,22px); }
+.outcome p { margin:0; color:var(--muted); font-size:clamp(10px,.8vw,13px); line-height:1.45; }
+.outcome::after { content:""; position:absolute; left:0; right:100%; bottom:-1px; height:2px; background:var(--red); animation:outcome-underline 7.5s var(--ease) infinite; }
+.outcome:nth-child(2)::after { animation-delay:2.5s; }
+.outcome:nth-child(3)::after { animation-delay:5s; }
+
+/* 15 · Reveal */
+.reveal-scene { max-width:900px; margin:auto 0; }
+.reveal-quote { margin:0; font-size:clamp(24px,2.7vw,45px); line-height:1.17; font-weight:750; letter-spacing:-.05em; text-wrap:balance; }
+.reveal-rule { position:relative; height:1px; margin:clamp(22px,2.4vw,38px) 0; background:var(--rule-light); overflow:hidden; }
+.reveal-rule::after { content:""; position:absolute; inset:0 100% 0 0; background:white; animation:reveal-line 5.8s var(--ease) infinite; }
+.reveal-close { margin:0; font-size:clamp(20px,2.1vw,35px); font-weight:800; letter-spacing:-.04em; }
+.reveal-word { position:absolute; right:-2%; bottom:-8%; color:rgba(255,255,255,.07); font-size:clamp(90px,17vw,270px); line-height:.8; font-weight:850; letter-spacing:-.09em; text-transform:uppercase; animation:ghost-shift 8s ease-in-out infinite; }
+
+/* 16–19 · Prospects */
+.prospect-scene { display:grid; grid-template-columns:1fr 1fr; gap:clamp(15px,2vw,28px); height:100%; }
+.prospect-card { position:relative; display:flex; flex-direction:column; min-width:0; padding:clamp(15px,1.65vw,27px); border:1px solid var(--rule); border-radius:20px; background:rgba(255,255,255,.38); color:var(--ink); text-align:left; cursor:pointer; overflow:hidden; transition:transform .28s var(--ease),border-color .28s,background .28s; }
+.tone-dark .prospect-card { border-color:var(--rule-light); background:rgba(255,255,255,.055); color:white; }
+.prospect-card:hover { transform:translateY(-4px); border-color:var(--red); background:var(--paper-light); }
+.tone-dark .prospect-card:hover { background:rgba(255,255,255,.09); border-color:white; }
+.prospect-card::before { content:""; position:absolute; left:0; top:0; bottom:0; width:3px; background:var(--red); transform:scaleY(.08); transform-origin:top; animation:prospect-scan 7s var(--ease) infinite; }
+.prospect-card:nth-child(2)::before { animation-delay:3.5s; }
+.prospect-number { color:var(--red); font-size:clamp(8px,.68vw,11px); font-weight:800; letter-spacing:.14em; }
+.tone-dark .prospect-number { color:#ff777c; }
+.prospect-card h3 { margin:10px 0 7px; font-size:clamp(17px,1.55vw,26px); line-height:1.12; letter-spacing:-.045em; }
+.prospect-card>p { margin:0; color:var(--muted); font-size:clamp(9px,.74vw,12px); line-height:1.45; }
+.tone-dark .prospect-card>p { color:rgba(255,255,255,.65); }
+.causal-flow { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:10px; margin-top:auto; padding-top:15px; }
+.causal-flow span { color:var(--muted); font-size:clamp(7px,.58vw,9px); font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+.tone-dark .causal-flow span { color:rgba(255,255,255,.6); }
+.flow-line { position:relative; height:1px; background:var(--rule); overflow:visible; }
+.tone-dark .flow-line { background:var(--rule-light); }
+.flow-line i { position:absolute; top:-3px; left:0; width:7px; height:7px; border-radius:50%; background:var(--red); animation:signal-travel 3.8s var(--ease) infinite; }
+.prospect-card:nth-child(2) .flow-line i { animation-delay:1.9s; }
+.explore { margin-top:13px; color:var(--red); font-size:8px; font-weight:800; letter-spacing:.14em; text-transform:uppercase; }
+.tone-dark .explore { color:#ff777c; }
+.prospect-takeaway { margin-top:13px; padding-top:11px; border-top:1px solid var(--rule); font-size:clamp(12px,1.05vw,17px); font-weight:750; }
+.tone-dark .prospect-takeaway { border-color:var(--rule-light); }
+
+/* 20 · Conclusion */
+.conclusion-scene { display:grid; grid-template-columns:.82fr 1.18fr; gap:7%; height:100%; align-items:center; }
+.final-lockup h2 { margin:0; font-size:clamp(48px,6.7vw,112px); line-height:.82; font-weight:850; letter-spacing:-.085em; }
+.final-lockup p { margin:14px 0 0; font-size:clamp(22px,2.45vw,42px); font-weight:750; letter-spacing:-.05em; }
+.final-cycle { display:grid; gap:0; border-block:1px solid var(--rule-light); }
+.final-step { position:relative; display:grid; grid-template-columns:84px 1fr; gap:18px; align-items:center; padding:13px 0; border-bottom:1px solid var(--rule-light); }
+.final-step:last-child { border-bottom:0; }
+.final-step b { font-size:9px; letter-spacing:.14em; text-transform:uppercase; }
+.final-step span { font-size:clamp(13px,1.18vw,19px); font-weight:750; }
+.final-step::after { content:""; position:absolute; left:0; bottom:-1px; width:0; height:2px; background:white; animation:final-sequence 7.2s var(--ease) infinite; }
+.final-step:nth-child(2)::after { animation-delay:2.4s; }
+.final-step:nth-child(3)::after { animation-delay:4.8s; }
+.audience-row { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:22px; }
+.audience-row div { padding-left:11px; border-left:1px solid white; }
+.audience-row b { display:block; font-size:8px; letter-spacing:.13em; text-transform:uppercase; }
+.audience-row span { display:block; margin-top:5px; color:rgba(255,255,255,.67); font-size:clamp(8px,.65vw,10px); line-height:1.35; }
+
+/* Overlays */
+.overlay { position:fixed; z-index:60; inset:0; display:none; overflow:auto; padding:clamp(22px,4vw,60px); background:rgba(21,21,21,.96); backdrop-filter:blur(18px); }
+.overlay.open { display:block; animation:overlay-in .35s var(--ease) both; }
+.overlay-head { max-width:1240px; margin:0 auto 28px; display:flex; justify-content:space-between; align-items:flex-start; gap:20px; color:white; }
+.overlay-head h2 { margin:5px 0 0; font-size:clamp(28px,3vw,46px); letter-spacing:-.05em; }
+.overlay-kicker { margin:0; color:#ff777c; font-size:10px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+.close { flex:none; width:44px; height:44px; border:0; border-radius:50%; background:var(--red); color:white; font-size:24px; cursor:pointer; }
+.overview-grid { max-width:1240px; margin:auto; display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:12px; }
+.thumb { min-height:148px; padding:18px; display:flex; flex-direction:column; justify-content:space-between; border:1px solid rgba(255,255,255,.18); border-radius:14px; background:var(--paper); color:var(--ink); text-align:left; cursor:pointer; transition:transform .25s var(--ease),border-color .25s; }
+.thumb:hover { transform:translateY(-3px); border-color:var(--red); }
+.thumb span,.thumb small { color:var(--red); font-size:9px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+.thumb strong { font-size:17px; line-height:1.18; letter-spacing:-.035em; }
+.detail-shell { position:relative; max-width:920px; margin:3vh auto; padding:clamp(30px,5vw,68px); border-radius:22px; background:var(--paper); color:var(--ink); box-shadow:0 30px 90px rgba(0,0,0,.45); }
+.detail-close { position:absolute; top:22px; right:22px; }
+.detail-kicker { color:var(--red); font-size:10px; font-weight:800; letter-spacing:.17em; text-transform:uppercase; }
+.detail-shell h2 { max-width:760px; margin:15px 0; padding-right:40px; font-size:clamp(30px,3vw,48px); line-height:1.04; letter-spacing:-.055em; }
+.detail-lede { max-width:720px; color:var(--muted); font-size:17px; line-height:1.48; }
+.detail-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:30px; }
+.detail-grid section { padding-top:13px; border-top:1px solid var(--rule); }
+.detail-grid h3 { margin:0 0 7px; color:var(--red); font-size:9px; letter-spacing:.14em; text-transform:uppercase; }
+.detail-grid p { margin:0; font-size:14px; line-height:1.5; }
+.detail-fine { margin:28px 0 0; color:var(--muted); font-size:11px; line-height:1.45; }
+
+/* Motion */
+@keyframes scene-enter { from { opacity:0; transform:translateX(28px) rotateY(-1.5deg); } to { opacity:1; transform:none; } }
+@keyframes overlay-in { from { opacity:0; } to { opacity:1; } }
+@keyframes ring-breathe { 50% { transform:scale(1.035); opacity:.76; } }
+@keyframes orbit-breathe { 50% { transform:scale(.965); opacity:.7; } }
+@keyframes core-pulse { 0%,70%,100% { transform:scale(1); } 18%,34% { transform:scale(1.06); } }
+@keyframes node-pulse { 0%,76%,100% { transform:scale(1); box-shadow:0 0 0 0 rgba(215,25,32,.22); } 18% { transform:scale(1.12); box-shadow:0 0 0 14px rgba(215,25,32,0); } }
+@keyframes rail-travel { 0% { top:-20%; opacity:0; } 15% { opacity:1; } 78% { opacity:1; } 100% { top:96%; opacity:0; } }
+@keyframes capability-align { 0%,72%,100% { transform:translateY(0); border-color:var(--rule); } 18%,36% { transform:translateY(-5px); border-color:rgba(215,25,32,.62); } }
+@keyframes ai-connect { 0%,100% { box-shadow:0 0 0 0 rgba(215,25,32,.15); } 40% { box-shadow:0 0 0 15px rgba(215,25,32,0); } }
+@keyframes lane-converge { 0%,100% { transform:scaleX(.25); opacity:.25; } 38%,62% { transform:scaleX(1); opacity:1; } }
+@keyframes vertical-scan { 0% { top:-34%; } 100% { top:110%; } }
+@keyframes node-signal { 0%,68%,100% { border-color:var(--rule); color:var(--ink); } 16%,34% { border-color:var(--red); color:var(--red); } }
+@keyframes journey-travel { 0% { left:0; opacity:0; } 8% { opacity:1; } 88% { left:calc(100% - 7px); opacity:1; } 100% { left:calc(100% - 7px); opacity:0; } }
+@keyframes stage-focus { 0%,72%,100% { transform:translateY(0); } 15%,30% { transform:translateY(-5px); } }
+@keyframes link-flow { from { transform:translateX(-100%); } to { transform:translateX(100%); } }
+@keyframes bridge-grow { 0%,100% { transform:scaleX(.05); opacity:.2; } 35%,68% { transform:scaleX(1); opacity:1; } }
+@keyframes bridge-scan { 0%,100% { transform:scaleX(.15); opacity:.2; } 50% { transform:scaleX(1); opacity:1; } }
+@keyframes role-travel { 0% { left:4%; opacity:0; } 10% { opacity:1; } 90% { opacity:1; } 100% { left:94%; opacity:0; } }
+@keyframes evidence-focus { 0%,72%,100% { border-color:var(--rule); transform:translateY(0); } 16%,34% { border-color:var(--red); transform:translateY(-6px); } }
+@keyframes shift-order { 0%,70%,100% { border-color:var(--rule); } 18%,35% { border-color:var(--red); } }
+@keyframes outcome-underline { 0%,100% { right:100%; } 18%,36% { right:0; } 54% { right:0; left:100%; } 55% { left:0; right:100%; } }
+@keyframes reveal-line { 0%,100% { right:100%; } 35%,70% { right:0; } }
+@keyframes ghost-shift { 50% { transform:translateX(-2.5%); } }
+@keyframes prospect-scan { 0%,100% { transform:scaleY(.08); } 28%,54% { transform:scaleY(1); } }
+@keyframes signal-travel { 0% { left:0; opacity:0; } 12% { opacity:1; } 82% { left:calc(100% - 7px); opacity:1; } 100% { left:calc(100% - 7px); opacity:0; } }
+@keyframes final-sequence { 0%,100% { width:0; } 18%,36% { width:100%; } 52% { width:0; left:100%; } 53% { left:0; } }
+
+::view-transition-old(root) { animation:.32s var(--ease) both vt-old; }
+::view-transition-new(root) { animation:.55s var(--ease) both vt-new; }
+@keyframes vt-old { to { opacity:0; transform:translateX(-18px); } }
+@keyframes vt-new { from { opacity:0; transform:translateX(26px); } }
+
+.motion-paused *, .motion-paused *::before, .motion-paused *::after,
+.tab-hidden *, .tab-hidden *::before, .tab-hidden *::after { animation-play-state:paused !important; }
 
 @media (max-width:900px) {
-  .topbar { height:54px; }.bottom { height:54px; }.progress { bottom:54px; }
+  :root { --ui-h:54px; }
+  .topbar,.bottom { padding-inline:18px; }
   .slide { width:min(100%,calc((100dvh - 130px)*1.77778)); max-height:calc(100dvh - 130px); }
-  .slide>.inner { padding:3.7% 5%; }
-  .title { font-size:clamp(23px,4.3vw,39px); }
-  .panel { border-radius:14px; }
-  .prospect { border-radius:14px; }
-  .motion-toggle { min-width:80px; }
+  .slide-canvas { padding:3.5% 5.8%; }
+  .signal-rail { left:2.6%; }
+  .title { font-size:clamp(22px,4.25vw,39px); }
+  .subtitle { font-size:clamp(9px,1.45vw,13px); }
+  .motion-toggle { min-width:78px; }
+  .capability-field,.network-map,.ecosystem-map { min-height:220px; }
+  .prospect-card { border-radius:14px; }
 }
+
 @media (max-width:600px) {
-  .topbar { padding-inline:16px; }.brand small,.toplabel { display:none; }
-  .top-actions { gap:5px; }.iconbtn { min-width:40px; min-height:40px; height:40px; }
-  .motion-toggle { min-width:55px; font-size:9px; padding:0 8px; }
-  .stage { padding:9px; overflow:auto; align-items:start; }
-  .slide { width:100%; max-height:none; min-height:calc(100dvh - 127px); aspect-ratio:auto; }
-  .slide>.inner { padding:25px 22px; }
-  .slide::after { display:none; }
-  .title { font-size:clamp(29px,8vw,42px); line-height:1.04; }
+  :root { --ui-h:54px; }
+  html,body { overflow:auto; }
+  .app { min-height:100dvh; }
+  .toplabel,.brand small,.hint { display:none; }
+  .top-actions { gap:5px; }
+  .control { min-width:40px; height:40px; }
+  .motion-toggle { min-width:55px; padding-inline:8px; font-size:8px; }
+  .stage { align-items:start; overflow:auto; padding:9px; }
+  .slide { width:100%; max-height:none; min-height:calc(100dvh - 127px); aspect-ratio:auto; container-type:normal; }
+  .slide-canvas { min-height:calc(100dvh - 127px); padding:28px 24px; }
+  .signal-rail,.slide::after { display:none; }
+  .scene-header { max-width:100%; }
+  .title { font-size:clamp(29px,8vw,42px); line-height:1.02; }
   .subtitle { font-size:13px; }
-  .main { margin-top:22px; gap:14px; }
-  .panel { padding:16px; }.panel h3 { font-size:15px; }.panel p,.panel li { font-size:12px; }
-  .cols4 { grid-template-columns:repeat(2,1fr); }.cols3 { grid-template-columns:1fr; }
-  .prospect-layout { grid-template-columns:1fr; }.prospect { padding:18px; }.prospect h3 { font-size:19px; }.prospect p { font-size:12px; }
-  .mini-flow span:not(.flow-track) { font-size:9px; }
-  .path { grid-template-columns:repeat(2,1fr); }.path .step { border:1px solid var(--cb-rule); padding:14px; }.path .step:before { display:none; }
-  .orbit { height:260px; }.orbit .node { font-size:9px; padding:7px; }
-  .diagram-center { width:135px; }
-  .matrix>div { padding:9px; font-size:11px; }
-  .first-hero { grid-template-columns:1fr; }.first-hero .hero-title { font-size:clamp(56px,16vw,90px); }.hero-ring { display:none; }
-  .red .quote { font-size:24px; }.red .bigline { font-size:23px; }
-  .bottom { padding-inline:16px; }.nav { width:40px; height:40px; }
+  .scene-body { margin-top:24px; justify-content:flex-start; }
+  .scene-footer { margin-top:24px; font-size:8px; }
+  .chapter { min-width:0; }
+  .cover-grid,.capability-scene,.ecosystem-scene,.network-scene,.role-scene,.boundary-scene,.conclusion-scene { grid-template-columns:1fr; }
+  .cover-title { font-size:clamp(58px,17vw,90px); }
+  .cover-orbit { display:none; }
+  .cover-outcomes { gap:8px; }
+  .cover-copy { font-size:15px; }
+  .capability-field { grid-template-columns:repeat(2,1fr); min-height:0; }
+  .capability.ai { grid-column:1/3; }
+  .overlap-scene { grid-template-columns:1fr; }
+  .overlap-core { width:100px; justify-self:center; }
+  .service-lane::after { display:none; }
+  .consequence-scene { grid-template-columns:1fr; gap:18px; }
+  .consequence-divider { display:none; }
+  .consequence-word { font-size:64px; }
+  .ecosystem-map,.network-map { min-height:300px; }
+  .journey-track { grid-template-columns:1fr 1fr; gap:9px; }
+  .journey-track::before,.journey-track::after { display:none; }
+  .journey-step { padding:14px; border:1px solid var(--rule); }
+  .journey-step::before { display:none; }
+  .gap-scene { grid-template-columns:1fr; }
+  .gap-space { height:90px; }
+  .role-process { grid-template-columns:1fr 1fr; gap:10px; }
+  .role-process::before,.role-process::after { display:none; }
+  .role-step { padding:14px; border:1px solid var(--rule); }
+  .role-step::before { display:none; }
+  .boundary-bridge { min-height:210px; }
+  .evidence-scene { grid-template-columns:1fr 1fr; gap:9px; }
+  .evidence-scene::before,.evidence-item::after { display:none; }
+  .evidence-item { padding:14px; border:1px solid var(--rule); }
+  .shift-scene { grid-template-columns:1fr; }
+  .shift-transform { height:64px; }
+  .shift-transform::before { top:50%; bottom:auto; left:0; right:0; width:auto; height:1px; }
+  .shift-transform span { transform:none; }
+  .outcome-scene { grid-template-columns:1fr; gap:9px; }
+  .outcome { min-height:0; padding:16px 0; }
+  .outcome+.outcome { padding-left:0; border-left:0; }
+  .outcome-no { font-size:48px; }
+  .prospect-scene { grid-template-columns:1fr; }
+  .prospect-card { min-height:230px; }
+  .audience-row { grid-template-columns:1fr; }
+  .detail-grid { grid-template-columns:1fr; }
 }
+
 @media (prefers-reduced-motion:reduce) {
   *,*::before,*::after { animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; }
 }
 
-</style>
+  </style>
 </head>
 <body>
-<a class="skip-link" href="#stage">Skip to presentation</a>
-<div class="app" id="app">
-  <header class="topbar"><div class="brand"><span class="brandmark" aria-hidden="true"></span><span>City Bank</span><small>Invisible Banking</small></div><div class="top-actions"><span class="toplabel">Transformation story</span><button class="iconbtn" id="overviewBtn" title="Slide overview (O)" aria-label="Open slide overview"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></button><button class="iconbtn" id="fullBtn" title="Full screen (F)" aria-label="Toggle full screen"><svg viewBox="0 0 24 24"><path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"/></svg></button></div></header>
-  <main class="stage" id="stage" aria-live="polite"></main>
-  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
-  <footer class="bottom"><div class="chapter" id="chapter"></div><div class="navgroup"><button class="nav" id="prev" aria-label="Previous slide">←</button><div class="counter" id="counter"></div><button class="nav" id="next" aria-label="Next slide">→</button></div><div class="hint">← → navigate &nbsp; · &nbsp; O overview</div></footer>
-</div>
-<div class="overlay" id="overview" role="dialog" aria-modal="true" aria-label="Slide overview"><div class="overlay-head"><div><h2>The story at a glance</h2><p>Select a slide to jump into the presentation.</p></div><button class="close" data-close aria-label="Close overview">×</button></div><div class="overview-grid" id="overviewGrid"></div></div>
-<div class="overlay" id="detail" role="dialog" aria-modal="true" aria-label="Prospect details"><div class="overlay-head" style="max-width:850px"><span></span><button class="close" data-close aria-label="Close details">×</button></div><div class="detail" id="detailContent"></div></div>
-<script>
-const slides=[
- {chapter:'The vision',theme:'dark',eyebrow:'The transformation ambition',title:'Invisible Banking',body:`<div class="first-hero"><div><h2 class="hero-title">Invisible<br><span class="accent">Banking.</span></h2><p class="hero-copy">Connecting City Bank around customers and businesses.</p><div class="grid cols3" style="margin-top:38px"><div class="labelbox"><b>Customer</b><p>One simple experience.</p></div><div class="labelbox"><b>Business</b><p>More value from each relationship.</p></div><div class="labelbox"><b>Bank</b><p>One connected institution.</p></div></div></div><div class="hero-ring" aria-hidden="true"><i class="dot"></i><i class="dot"></i><i class="dot"></i><i class="dot"></i></div></div>`,foot:'It just works.'},
- {chapter:'The vision',theme:'light',eyebrow:'The starting point',title:'City Bank has built the pieces.<br><strong>The next advantage is connection.</strong>',subtitle:'Transformation is already in motion. The opportunity is to make these strengths work together across City Bank.',body:`<div class="grid cols2" style="align-items:center"><div><span class="tag">Existing capabilities</span><div class="chiprow" style="margin-top:16px"><span class="chip">Citytouch</span><span class="chip">Blink</span><span class="chip">Blueprint</span><span class="chip">Cards + POS</span><span class="chip">Branches + CX</span><span class="chip">Corporate</span><span class="chip">SME + Medium</span><span class="chip">Islamic</span><span class="chip">Treasury</span><span class="chip">Data + IT</span></div></div><div class="panel"><span class="num">+</span><h3>AI adds a new possibility</h3><p>These capabilities can become more intelligent, responsive and connected.</p></div></div><div class="takeaway">More value from what City Bank already has.</div>`,foot:'Existing strengths · New connections'},
- {chapter:'The case for connection',theme:'dark',eyebrow:'A real overlap',title:'Today, one customer service<br>can be built twice.',subtitle:'When channels evolve separately, the same capability can appear in more than one place.',body:`<div class="grid cols2"><div class="panel"><span class="tag">Citytouch</span><h3 style="margin-top:16px">Digital banking services</h3><p>EMI conversion · Cheque book request · Statements · Address update</p></div><div class="panel"><span class="tag">CityAssist</span><h3 style="margin-top:16px">Customer queries and service requests</h3><p>Another route through which customers can ask City Bank to act.</p></div></div><div class="flowbars" style="margin-top:20px"><span>Repeated build</span><span>Two customer routes</span><span>Divided context</span></div>`,foot:'Illustrative overlap for validation'},
- {chapter:'The case for connection',theme:'light',eyebrow:'The business consequence',title:'Disconnected work<br><strong>can cost twice.</strong>',subtitle:'The issue is not only duplication. Useful signals and relationships may also fail to connect to the next business opportunity.',body:`<div class="grid cols2"><div class="panel"><span class="num">01</span><h3>Repeated effort</h3><p>Teams may design, build and maintain similar capabilities more than once.</p></div><div class="panel"><span class="num">02</span><h3>Missed growth</h3><p>POS data, corporate relationships or merchant networks may never connect to the next opportunity.</p></div></div><div class="takeaway">The potential cost: effort, time and revenue.</div>`,foot:'Hypothesis · Internal evidence required'},
- {chapter:'The idea',theme:'dark',eyebrow:'The idea',title:'An ecosystem makes City Bank work as one around a real need.',subtitle:'One relationship outside. Connected capabilities inside.',body:`<div class="split"><div class="orbit"><div class="diagram-center">CUSTOMER<br>NEED</div><div class="node">Businesses</div><div class="node">Channels</div><div class="node">Partners</div><div class="node">Data + AI</div><div class="node">Services</div></div><div style="display:flex;flex-direction:column;justify-content:center;gap:17px"><div class="labelbox"><b>Businesses</b><p>Products, services and financial solutions</p></div><div class="labelbox"><b>Channels</b><p>Digital, physical and assisted experiences</p></div><div class="labelbox"><b>Partners</b><p>Merchants, service providers and external ecosystems</p></div><div class="labelbox"><b>Data + AI</b><p>Shared intelligence, context and proactive assistance</p></div></div></div>`,foot:'One connected ecosystem'},
- {chapter:'Tangible journeys',theme:'light',eyebrow:'Consumer journey · Illustrative',title:'One evening can connect cards, merchants, loyalty and payments.',subtitle:'An anniversary dinner, made simpler at every step.',body:`<div class="path"><div class="step"><h3>01 · Choose</h3><p>Relevant restaurants and card privileges.</p></div><div class="step"><h3>02 · Book</h3><p>Availability and reservation.</p></div><div class="step"><h3>03 · Pay</h3><p>City Bank card and eligible benefit.</p></div><div class="step"><h3>04 · Reward</h3><p>Loyalty updates automatically.</p></div></div><div class="takeaway">One evening. One City Bank journey.</div>`,foot:'A journey concept, not a current service'},
- {chapter:'Tangible journeys',theme:'dark',eyebrow:'Merchant journey · Illustrative',title:'A POS relationship can grow into a merchant ecosystem.',subtitle:'Payment can become the start of a deeper business relationship.',body:`<div class="path darkpath"><div class="step"><h3>Accept</h3><p>Payments.</p></div><div class="step"><h3>Understand</h3><p>Sales, settlements and AI-assisted insights.</p></div><div class="step"><h3>Engage</h3><p>Orders, loyalty and relevant customer opportunities.</p></div><div class="step"><h3>Finance</h3><p>Working capital using verified cash flow.</p></div></div><div class="takeaway">Deepen the relationship and offer finance when evidence supports it.</div>`,foot:'Business-owned proposition · Subject to credit assessment'},
- {chapter:'Tangible journeys',theme:'light',eyebrow:'Corporate ecosystem · Illustrative',title:'One corporate client can open an entire business network.',subtitle:'A corporate relationship can connect employees, suppliers and distributors to multiple City Bank capabilities.',body:`<div style="text-align:center;margin-bottom:20px"><div class="panel" style="display:inline-block;padding:16px 40px;border-color:#cc3942"><span class="tag">Anchor relationship</span><h3 style="margin:6px 0 0">Corporate client</h3></div></div><div class="grid cols3"><div class="panel"><h3>Suppliers</h3><p>Payments · Trade & FX · SME / Medium finance</p></div><div class="panel"><h3>Employees</h3><p>Payroll · Cards · Savings · Finance</p></div><div class="panel"><h3>Distributors</h3><p>Collections · Payments · Working capital</p></div></div>`,foot:'Multi-business opportunity · Ownership to be defined'},
- {chapter:'The missing connection',theme:'dark',eyebrow:'The gap',title:'City Bank already owns the pieces.<br><strong>What is less structured is the connection.</strong>',subtitle:'Opportunities between businesses do not always have a natural first owner.',body:`<div class="grid cols4"><div class="panel"><h3>Businesses</h3><p>Products, customers and P&Ls</p></div><div class="panel"><h3>Blueprint</h3><p>Retail transformation</p></div><div class="panel"><h3>EPMO</h3><p>Delivery governance</p></div><div class="panel"><h3>Functions</h3><p>IT, Operations, CX and Data</p></div></div><div class="takeaway">The opportunity includes cross-bank AI integration, where intelligence in one area can create value elsewhere.</div>`,foot:'Mandate hypothesis · Requires stakeholder testing'},
- {chapter:'The proposed mandate',theme:'light',eyebrow:'A possible role',title:'A bank-wide transformation role can help connect the gaps.',subtitle:'Find the opportunity, shape it, connect the right owners, then move it into execution.',body:`<div class="flowbars"><span>SEE<br><small>Across the bank</small></span><span>SHAPE<br><small>The opportunity</small></span><span>CONNECT<br><small>The right owners</small></span><span>MOVE<br><small>To natural ownership</small></span></div><div class="grid cols2" style="margin-top:18px"><div class="panel"><h3>Horizontal transformation</h3><p>Cross-bank service, operations, data, AI integration and relationship intelligence.</p></div><div class="panel"><h3>Ecosystem transformation</h3><p>Connected journeys, partnerships, embedded services and new business opportunities.</p></div></div><div class="takeaway">Transformation connects. Businesses own. EPMO governs delivery.</div>`,foot:'A mandate to test, not a settled structure'},
- {chapter:'The proposed mandate',theme:'dark',eyebrow:'Clear boundaries',title:'It complements what already exists.',subtitle:'The role should make existing ownership work better across boundaries.',body:`<div class="matrix dark"><div>Business heads</div><div>Customers, products and P&L</div><div>Country Business Manager</div><div>Existing mandate remains intact</div><div>Blueprint</div><div>Retail transformation</div><div>EPMO</div><div>Execution governance</div><div>IT / CX / Operations / Data</div><div>Specialist ownership, including AI and technology capabilities</div><div>Transformation</div><div>Cross-bank opportunities, ecosystem development and AI-enabled business transformation</div></div>`,foot:'Subject to internal mandate validation'},
- {chapter:'Why this leader',theme:'light',eyebrow:'Already happening',title:'I am already doing parts of this, informally.',subtitle:'These began with a customer or business opportunity and involved connecting the relevant teams.',body:`<div class="grid cols4"><div class="panel"><span class="tag">Service</span><h3 style="margin-top:12px">DigiBox<br>Traceable courier</h3></div><div class="panel"><span class="tag">Digital & sales</span><h3 style="margin-top:12px">Citytouch features<br>Digital sales<br>Central offer site</h3></div><div class="panel"><span class="tag">Ecosystem</span><h3 style="margin-top:12px">Foreign Education Hub</h3></div><div class="panel"><span class="tag">Connection</span><h3 style="margin-top:12px">Citytouch × Blink</h3></div></div><div class="takeaway">Identify the opportunity → connect the teams → help move it forward.</div>`,foot:'Examples supplied for the role discussion'},
- {chapter:'Why this leader',theme:'dark',eyebrow:'From informal to structured',title:'What could become different?',subtitle:'The aim is better-connected projects with clear ownership and outcomes.',body:`<div class="grid cols2"><div class="panel"><span class="tag">Today</span><div class="text-list" style="margin-top:12px"><div>Opportunities surface unevenly</div><div>Connections happen informally</div><div>Progress relies on individual coordination</div></div></div><div class="panel"><span class="tag">More structured</span><div class="text-list" style="margin-top:12px"><div>Systematic opportunity discovery</div><div>Business cases shaped early</div><div>Owners connected and execution handover clear</div><div>Business outcome tracked</div></div></div></div><div class="takeaway">AI could help surface changes and connections continuously.</div>`,foot:'Proposed operating shift'},
- {chapter:'Why this leader',theme:'light',eyebrow:'The outcome',title:'Judge the role by whether businesses perform better.',subtitle:'The three outcomes from the opening give the measure.',body:`<div class="grid cols3"><div class="panel"><span class="num">01</span><h3>Customer</h3><p>Simpler, more connected and increasingly proactive journeys.</p></div><div class="panel"><span class="num">02</span><h3>Business</h3><p>Deeper relationships, better-informed decisions and new revenue opportunities.</p></div><div class="panel"><span class="num">03</span><h3>Bank</h3><p>Less duplication, faster execution, better intelligence and greater return on investment.</p></div></div>`,foot:'Proposed outcomes · Metrics to define'},
- {chapter:'Why this leader',theme:'red',eyebrow:'The opportunity',title:'Invisible Banking becomes real when City Bank works as one around the customer.',body:`<div style="max-width:810px;margin:auto 0"><p class="quote">I would like to explore how I can help make this more systematic, drawing on the cross-bank perspective developed through my current role, while businesses and functions retain their ownership.</p><div class="divider"></div><p class="bigline">A broader contribution to transformation and business.</p></div>`,foot:'The case for a formal mandate'},
- {chapter:'The possibilities',theme:'dark',eyebrow:'Internal prospects · 01 & 02',title:'What if the bank’s decisions evolved as fast as the world around it?',subtitle:'AI could turn periodic analysis into continuously updated business intelligence.',body:`<div class="prospect-layout"><button class="prospect" data-prospect="finance"><span class="num">01 / FINANCE</span><h3>A living business outlook</h3><p>Forecasts update as revenue, expenses, deposits, lending and external conditions change, with deviations and options surfaced for decision-makers.</p><span class="more">Explore prospect ↗</span></button><button class="prospect" data-prospect="trade"><span class="num">02 / TRADE & TREASURY</span><h3>Intelligence that follows global developments</h3><p>A shipping disruption triggers a review of affected import transactions, cash flows, finance needs and FX exposures across relevant teams.</p><span class="more">Explore prospect ↗</span></button></div><div class="takeaway">From periodic analysis to continuously informed decisions.</div>`,foot:'Illustrative prospects · Human review and controls required'},
- {chapter:'The possibilities',theme:'light',eyebrow:'Internal prospects · 03 & 04',title:'What if the bank could identify connections people might never discover?',subtitle:'AI could help the institution understand itself as one connected business.',body:`<div class="prospect-layout"><button class="prospect" data-prospect="dots"><span class="num">03 / CROSS-BANK INTELLIGENCE</span><h3>The bank connects its own dots</h3><p>Reused solutions, shared relationships, overlapping investment and combinations of businesses become visible to the right owners.</p><span class="more">Explore prospect ↗</span></button><button class="prospect" data-prospect="operations"><span class="num">04 / PROACTIVE OPERATIONS</span><h3>Problems surfaced before they spread</h3><p>Demand, service trends and capacity are connected so a campaign plan can adjust before processing bottlenecks reach customers.</p><span class="more">Explore prospect ↗</span></button></div><div class="takeaway">From intelligent functions to a more intelligent institution.</div>`,foot:'Illustrative prospects · Data and mandate validation required'},
- {chapter:'The possibilities',theme:'dark',eyebrow:'Customer prospects · 01 & 02',title:'What if City Bank knew what needed to happen next?',subtitle:'AI and ecosystem integration could make banking quietly responsive to real-life events.',body:`<div class="prospect-layout"><button class="prospect" data-prospect="health"><span class="num">01 / HEALTHCARE</span><h3>Help arrives when it is needed</h3><p>After a hospital payment, an eligible insurance benefit could be identified and a claim initiated where permissions, verification and information allow.</p><span class="more">Explore journey ↗</span></button><button class="prospect" data-prospect="travel"><span class="num">02 / TRAVEL</span><h3>The journey organises itself</h3><p>A verified flight purchase prompts eligible airport services and card privileges to be checked and, with permission, arranged to the customer’s preferences.</p><span class="more">Explore journey ↗</span></button></div><div class="takeaway">The customer lives the experience. The bank handles the complexity.</div>`,foot:'Future concepts · Partner and customer consent required'},
- {chapter:'The possibilities',theme:'light',eyebrow:'Customer prospects · 03 & 04',title:'What if banking quietly made everyday life better?',subtitle:'Relevant moments, existing benefits and the next permitted action connect.',body:`<div class="prospect-layout"><button class="prospect" data-prospect="coffee"><span class="num">03 / EVERYDAY LIFESTYLE</span><h3>The right benefit, without searching</h3><p>With permission, a favourite coffee shop becomes a cue for an eligible merchant-funded benefit to apply automatically at payment.</p><span class="more">Explore journey ↗</span></button><button class="prospect" data-prospect="service"><span class="num">04 / PROACTIVE SERVICE</span><h3>The bank starts fixing things first</h3><p>A failed payment with a debit is detected; reconciliation and investigation begin, and the customer receives an update before raising a request.</p><span class="more">Explore journey ↗</span></button></div><div class="takeaway">From responding to requests to anticipating needs.</div>`,foot:'Future concepts · Subject to feasibility and controls'},
- {chapter:'Conclusion',theme:'red',eyebrow:'The conclusion',title:'The future of Invisible Banking is connected, intelligent and continuous.',body:`<div class="grid cols3" style="margin-bottom:28px"><div class="labelbox"><b>Customers</b><p>A bank that understands needs and quietly makes life easier.</p></div><div class="labelbox"><b>Businesses</b><p>New opportunities and deeper relationships.</p></div><div class="labelbox"><b>Bank</b><p>Capabilities, intelligence and investment working together.</p></div></div><div class="flowbars"><span>See what others may miss</span><span>Connect what already exists</span><span>Create what comes next</span></div><div style="margin-top:auto"><h2 class="final-mark">Invisible Banking.</h2><p class="final-tag">It just works.</p></div>`,foot:'A proposition to test, build and own across City Bank'}
+  <a class="skip-link" href="#stage">Skip to presentation</a>
+
+  <div class="app" id="app">
+    <header class="topbar">
+      <div class="brand" aria-label="City Bank Invisible Banking">
+        <span class="brand-rule" aria-hidden="true"></span>
+        <span>City Bank</span>
+        <small>Invisible Banking</small>
+      </div>
+      <div class="top-actions">
+        <span class="toplabel">Transformation story</span>
+        <button class="control motion-toggle" id="motionBtn" type="button" aria-label="Pause animation" aria-pressed="false">Pause motion</button>
+        <button class="control icon-control" id="overviewBtn" type="button" title="Slide overview (O)" aria-label="Open slide overview">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        </button>
+        <button class="control icon-control" id="fullBtn" type="button" title="Full screen (F)" aria-label="Toggle full screen">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5M16 3h5v5M21 16v5h-5M8 21H3v-5"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="stage" id="stage" tabindex="-1" aria-live="polite"></main>
+
+    <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+    <footer class="bottom">
+      <div class="chapter" id="chapter"></div>
+      <div class="navgroup">
+        <button class="nav" id="prev" type="button" aria-label="Previous slide">←</button>
+        <span class="counter" id="counter"></span>
+        <button class="nav" id="next" type="button" aria-label="Next slide">→</button>
+      </div>
+      <div class="hint">← → navigate &nbsp; · &nbsp; O overview</div>
+    </footer>
+  </div>
+
+  <div class="overlay" id="overview" role="dialog" aria-modal="true" aria-labelledby="overviewTitle">
+    <div class="overlay-head">
+      <div><p class="overlay-kicker">20-slide narrative</p><h2 id="overviewTitle">Presentation overview</h2></div>
+      <button class="close" type="button" data-close aria-label="Close overview">×</button>
+    </div>
+    <div class="overview-grid" id="overviewGrid"></div>
+  </div>
+
+  <div class="overlay" id="detail" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+    <div class="detail-shell">
+      <button class="close detail-close" type="button" data-close aria-label="Close detail">×</button>
+      <div id="detailContent"></div>
+    </div>
+  </div>
+  <script>
+const slides = [
+  {
+    chapter:'The vision', tone:'dark', layout:'cover', eyebrow:'', title:'Invisible Banking',
+    body:`
+      <div class="cover-grid">
+        <div>
+          <h1 class="cover-title">Invisible<span>Banking.</span></h1>
+          <p class="cover-copy">Connecting City Bank around customers and businesses.</p>
+          <div class="cover-outcomes">
+            <div class="cover-outcome"><b>Customer</b><span>One simple experience.</span></div>
+            <div class="cover-outcome"><b>Business</b><span>More value from each relationship.</span></div>
+            <div class="cover-outcome"><b>Bank</b><span>One connected institution.</span></div>
+          </div>
+        </div>
+        <div class="cover-orbit" aria-hidden="true">
+          <i class="ring"></i><i class="ring"></i><i class="ring"></i><i class="core"></i>
+          <i class="orbit-dot"></i><i class="orbit-dot"></i><i class="orbit-dot"></i><i class="orbit-dot"></i>
+        </div>
+      </div>`,
+    foot:'It just works'
+  },
+  {
+    chapter:'The opportunity', tone:'paper', layout:'capabilities', eyebrow:'The starting point',
+    title:'City Bank has built the pieces. <span class="accent">The next advantage is connection.</span>',
+    subtitle:'Transformation is already in motion. The opportunity is to make these strengths work together across City Bank.',
+    body:`
+      <div class="capability-scene">
+        <div>
+          <div class="advantage-line">More value from<br><span>what already exists.</span></div>
+          <p class="quiet">The next opportunity is not another platform. AI can make existing capabilities more intelligent, responsive and connected.</p>
+        </div>
+        <div class="capability-field" aria-label="Existing City Bank capabilities">
+          <div class="capability">Citytouch</div><div class="capability">Blink</div><div class="capability">Blueprint</div><div class="capability">Cards + POS</div>
+          <div class="capability">Branches + CX</div><div class="capability">Corporate</div><div class="capability">SME + Medium</div><div class="capability">Treasury</div>
+          <div class="capability ai">Data + AI + IT connect the field</div>
+        </div>
+      </div>`,
+    foot:'Existing capabilities · Connected value'
+  },
+  {
+    chapter:'The opportunity', tone:'paper', layout:'overlap', eyebrow:'A real overlap',
+    title:'Today, one customer service can be <span class="accent">built twice.</span>',
+    subtitle:'When channels evolve separately, the same capability can appear in more than one place.',
+    body:`
+      <div class="overlap-scene">
+        <section class="service-lane left"><span class="micro">Citytouch</span><h3>Digital banking services</h3><ul><li>EMI conversion</li><li>Cheque book request</li><li>Statements</li><li>Address update</li></ul></section>
+        <div class="overlap-core">Repeated<br>build</div>
+        <section class="service-lane right"><span class="micro">CityAssist</span><h3>Customer support</h3><ul><li>Customer queries</li><li>Service requests</li><li>Assisted resolution</li><li>Relationship context</li></ul></section>
+      </div>`,
+    foot:'Two customer routes · Divided context'
+  },
+  {
+    chapter:'The opportunity', tone:'paper', layout:'consequence', eyebrow:'The business consequence',
+    title:'Disconnected work can <span class="accent">cost twice.</span>',
+    subtitle:'The issue is not only duplication. Useful signals and relationships may also fail to connect to the next business opportunity.',
+    body:`
+      <div class="consequence-scene">
+        <section class="consequence"><div class="consequence-word">Repeat</div><h3>Repeated effort</h3><p>Teams may design, build and maintain similar capabilities more than once.</p></section>
+        <div class="consequence-divider" aria-hidden="true"></div>
+        <section class="consequence"><div class="consequence-word">Miss</div><h3>Missed growth</h3><p>POS data, corporate relationships or merchant networks may never connect to the next opportunity.</p></section>
+      </div>`,
+    foot:'Lost effort · Lost time · Lost potential'
+  },
+  {
+    chapter:'The ecosystem idea', tone:'paper', layout:'ecosystem', eyebrow:'The idea',
+    title:'One relationship outside. <span class="accent">Connected capabilities inside.</span>',
+    subtitle:'An ecosystem makes City Bank work as one around a real need.',
+    body:`
+      <div class="ecosystem-scene">
+        <div class="ecosystem-copy">The City Bank ecosystem organises complexity around the customer.</div>
+        <div class="ecosystem-map" aria-label="City Bank ecosystem model">
+          <div class="ecosystem-core">Customer<br>need</div>
+          <div class="ecosystem-node">Businesses</div><div class="ecosystem-node">Channels</div><div class="ecosystem-node">Partners</div><div class="ecosystem-node">Data + AI</div>
+        </div>
+      </div>`,
+    foot:'Shared intelligence · Contextual understanding · Proactive assistance'
+  },
+  {
+    chapter:'The ecosystem idea', tone:'paper', layout:'journey', eyebrow:'Consumer journey',
+    title:'One evening can connect cards, merchants, loyalty and payments',
+    subtitle:'Illustrative journey: an anniversary dinner.',
+    body:`
+      <div class="journey-scene">
+        <div class="journey-track">
+          <section class="journey-step"><span class="step-no">01</span><h3>Choose</h3><p>Relevant restaurants and card privileges.</p></section>
+          <section class="journey-step"><span class="step-no">02</span><h3>Book</h3><p>Availability and reservation.</p></section>
+          <section class="journey-step"><span class="step-no">03</span><h3>Pay</h3><p>City Bank card and eligible benefit.</p></section>
+          <section class="journey-step"><span class="step-no">04</span><h3>Reward</h3><p>Loyalty updates automatically.</p></section>
+        </div>
+        <div class="journey-close">One evening. <span>One City Bank journey.</span></div>
+      </div>`,
+    foot:'Illustrative connected journey'
+  },
+  {
+    chapter:'The ecosystem idea', tone:'paper', layout:'journey', eyebrow:'Merchant journey',
+    title:'A POS relationship can grow into a <span class="accent">merchant ecosystem.</span>',
+    subtitle:'Payment can become the start of a deeper business relationship.',
+    body:`
+      <div class="journey-scene">
+        <div class="journey-track">
+          <section class="journey-step"><span class="step-no">01</span><h3>Accept</h3><p>Payments and settlement.</p></section>
+          <section class="journey-step"><span class="step-no">02</span><h3>Understand</h3><p>Sales, settlements and AI-assisted business insights.</p></section>
+          <section class="journey-step"><span class="step-no">03</span><h3>Engage</h3><p>Orders, loyalty and relevant customer opportunities.</p></section>
+          <section class="journey-step"><span class="step-no">04</span><h3>Finance</h3><p>Working capital using verified cash flow.</p></section>
+        </div>
+        <div class="journey-close">The same relationship can deepen engagement and support finance <span>when the evidence supports it.</span></div>
+      </div>`,
+    foot:'Payment · Intelligence · Engagement · Finance'
+  },
+  {
+    chapter:'The ecosystem idea', tone:'paper', layout:'network', eyebrow:'Corporate ecosystem',
+    title:'One corporate client can open an <span class="accent">entire business network.</span>',
+    subtitle:'A corporate relationship can connect employees, suppliers and distributors to multiple City Bank capabilities.',
+    body:`
+      <div class="network-scene">
+        <div class="network-lead">A relationship becomes more valuable when the whole network becomes visible.</div>
+        <div class="network-map" aria-label="Corporate ecosystem network">
+          <div class="network-hub">Corporate<br>client</div>
+          <div class="network-node">Suppliers</div><div class="network-node">Employees</div><div class="network-node">Distributors</div>
+          <i class="network-link l1"></i><i class="network-link l2"></i><i class="network-link l3"></i>
+          <div class="capability-line"><span>Payroll</span><span>Payments</span><span>Trade + FX</span><span>Cards</span><span>Financing</span></div>
+        </div>
+      </div>`,
+    foot:'One relationship · Multiple connected opportunities'
+  },
+  {
+    chapter:'The proposed mandate', tone:'paper', layout:'gap', eyebrow:'The gap',
+    title:'City Bank owns the pieces. <span class="accent">The connection is less structured.</span>',
+    subtitle:'Opportunities between businesses do not always have a natural first owner.',
+    body:`
+      <div class="gap-scene">
+        <div class="mandate-stack">
+          <div class="mandate-row"><b>Businesses</b><span>Products, customers and P&amp;Ls</span></div>
+          <div class="mandate-row"><b>Blueprint</b><span>Retail transformation</span></div>
+          <div class="mandate-row"><b>EPMO</b><span>Delivery governance</span></div>
+          <div class="mandate-row"><b>Functions</b><span>IT, Operations, CX and Data</span></div>
+        </div>
+        <div class="gap-space"><span class="gap-label">The gap<br>sits here</span></div>
+        <div class="gap-callout">Cross-bank opportunity.<span>Including AI integration where intelligence from one business or function could create value elsewhere.</span></div>
+      </div>`,
+    foot:'The gap sits between established mandates'
+  },
+  {
+    chapter:'The proposed mandate', tone:'paper', layout:'role', eyebrow:'A possible role',
+    title:'A bank-wide transformation role can <span class="accent">connect the gaps.</span>',
+    subtitle:'Simple by design: find the opportunity, shape it, connect the right owners, then move it into execution.',
+    body:`
+      <div class="role-scene">
+        <div class="role-process">
+          <div class="role-step"><b>See</b><span>Across the bank.</span></div>
+          <div class="role-step"><b>Shape</b><span>The opportunity.</span></div>
+          <div class="role-step"><b>Connect</b><span>The right owners.</span></div>
+          <div class="role-step"><b>Move</b><span>To natural ownership.</span></div>
+        </div>
+        <div class="role-domains">
+          <div class="role-domain"><b>Horizontal transformation</b><p>Cross-bank opportunities in service, operations, data, AI integration and relationship intelligence.</p></div>
+          <div class="role-domain"><b>Ecosystem transformation</b><p>Connected journeys, partnerships, embedded services and new business opportunities.</p></div>
+        </div>
+      </div>`,
+    foot:'Transformation connects · Businesses own · EPMO governs delivery'
+  },
+  {
+    chapter:'The proposed mandate', tone:'paper', layout:'boundaries', eyebrow:'Clear boundaries',
+    title:'The role complements <span class="accent">what already exists.</span>',
+    subtitle:'It should make existing ownership work better across boundaries, not create another layer of ownership.',
+    body:`
+      <div class="boundary-scene">
+        <div class="boundary-list">
+          <div class="boundary-row"><b>Business heads</b><span>Customers, products and P&amp;L</span></div>
+          <div class="boundary-row"><b>Country Business Manager</b><span>Existing mandate remains intact</span></div>
+          <div class="boundary-row"><b>Blueprint</b><span>Retail transformation</span></div>
+          <div class="boundary-row"><b>EPMO</b><span>Execution governance</span></div>
+          <div class="boundary-row"><b>IT / CX / Operations / Data</b><span>Specialist ownership, including AI and technology capabilities</span></div>
+        </div>
+        <div class="boundary-bridge"><div class="bridge-copy">Transformation connects cross-bank opportunities to natural owners</div></div>
+      </div>`,
+    foot:'Subject to internal mandate validation'
+  },
+  {
+    chapter:'Why this leader', tone:'paper', layout:'evidence', eyebrow:'Already happening',
+    title:'I am already doing parts of this, <span class="accent">informally.</span>',
+    subtitle:'These began with a customer or business opportunity and involved connecting the relevant teams.',
+    body:`
+      <div class="evidence-scene">
+        <div class="evidence-item"><b>Service</b><p>DigiBox<br>Traceable courier</p></div>
+        <div class="evidence-item"><b>Digital + sales</b><p>Citytouch features<br>Digital sales<br>Central offer site</p></div>
+        <div class="evidence-item"><b>Ecosystem</b><p>Foreign Education Hub</p></div>
+        <div class="evidence-item"><b>Connection</b><p>Citytouch × Blink</p></div>
+      </div>`,
+    foot:'Identify the opportunity · Connect the teams · Help move it forward'
+  },
+  {
+    chapter:'Why this leader', tone:'paper', layout:'shift', eyebrow:'From informal to structured',
+    title:'The aim is not more projects. <span class="accent">It is better-connected projects.</span>',
+    subtitle:'A structured model creates earlier ownership, clearer handover and measurable outcomes.',
+    body:`
+      <div class="shift-scene">
+        <section class="shift-column today"><h3>Today</h3><div class="shift-item">Opportunities surface unevenly</div><div class="shift-item">Connections happen informally</div><div class="shift-item">Progress relies on individual coordination</div></section>
+        <div class="shift-transform"><span>SHIFT</span></div>
+        <section class="shift-column structured"><h3>More structured</h3><div class="shift-item">Systematic opportunity discovery</div><div class="shift-item">Business cases shaped early</div><div class="shift-item">Owners connected earlier</div><div class="shift-item">Clear execution handover</div><div class="shift-item">Business outcome tracked</div></section>
+      </div>`,
+    foot:'AI can help surface changes and connections continuously'
+  },
+  {
+    chapter:'Why this leader', tone:'paper', layout:'outcomes', eyebrow:'The outcome',
+    title:'Judge the role by whether <span class="accent">businesses perform better.</span>',
+    subtitle:'The same three outcomes from the opening provide the measure.',
+    body:`
+      <div class="outcome-scene">
+        <section class="outcome"><div class="outcome-no">01</div><h3>Customer</h3><p>Simpler, more connected and increasingly proactive journeys.</p></section>
+        <section class="outcome"><div class="outcome-no">02</div><h3>Business</h3><p>Deeper relationships, better-informed decisions and new revenue opportunities.</p></section>
+        <section class="outcome"><div class="outcome-no">03</div><h3>Bank</h3><p>Less duplication, faster execution, better intelligence and greater return on investment.</p></section>
+      </div>`,
+    foot:'Proposed outcomes · Metrics to define'
+  },
+  {
+    chapter:'Why this leader', tone:'red', layout:'reveal', eyebrow:'The opportunity',
+    title:'Invisible Banking becomes real when City Bank works as one around the customer',
+    body:`
+      <div class="reveal-scene">
+        <p class="reveal-quote">I would like to explore how I can make this more systematic, drawing on the cross-bank perspective developed through my current role, while businesses and functions retain ownership.</p>
+        <div class="reveal-rule"></div>
+        <p class="reveal-close">A broader contribution to transformation and business.</p>
+      </div>
+      <div class="reveal-word" aria-hidden="true">Transform</div>`,
+    foot:'The case for a formal mandate'
+  },
+  {
+    chapter:'The possibilities', tone:'dark', layout:'prospects', eyebrow:'Internal prospects · 01 + 02',
+    title:'What if the bank’s decisions evolved as fast as the world around it?',
+    subtitle:'AI could turn periodic analysis into continuously updated business intelligence.',
+    body:()=>prospectPair('finance','trade','From periodic analysis to continuously informed decisions.'),
+    foot:'Illustrative prospects · Human review and controls required'
+  },
+  {
+    chapter:'The possibilities', tone:'paper', layout:'prospects', eyebrow:'Internal prospects · 03 + 04',
+    title:'What if the bank could identify connections people might never discover?',
+    subtitle:'AI could help the institution understand itself as one connected business.',
+    body:()=>prospectPair('dots','operations','From intelligent functions to a more intelligent institution.'),
+    foot:'Illustrative prospects · Data and mandate validation required'
+  },
+  {
+    chapter:'The possibilities', tone:'dark', layout:'prospects', eyebrow:'Customer prospects · 01 + 02',
+    title:'What if City Bank knew what needed to happen next?',
+    subtitle:'AI and ecosystem integration could make banking quietly responsive to real-life events.',
+    body:()=>prospectPair('health','travel','The customer lives the experience. The bank handles the complexity.'),
+    foot:'Future concepts · Partner and customer consent required'
+  },
+  {
+    chapter:'The possibilities', tone:'paper', layout:'prospects', eyebrow:'Customer prospects · 03 + 04',
+    title:'What if banking quietly made everyday life better?',
+    subtitle:'Relevant moments, existing benefits and the next permitted action connect.',
+    body:()=>prospectPair('coffee','service','From responding to requests to anticipating needs.'),
+    foot:'Future concepts · Subject to feasibility and controls'
+  },
+  {
+    chapter:'Conclusion', tone:'red', layout:'conclusion', eyebrow:'The conclusion',
+    title:'The future of Invisible Banking is connected, intelligent and continuous',
+    body:`
+      <div class="conclusion-scene">
+        <div class="final-lockup"><h2>Invisible<br>Banking.</h2><p>It just works.</p></div>
+        <div>
+          <div class="final-cycle"><div class="final-step"><b>See</b><span>What others may miss</span></div><div class="final-step"><b>Connect</b><span>What already exists</span></div><div class="final-step"><b>Create</b><span>What comes next</span></div></div>
+          <div class="audience-row"><div><b>Customers</b><span>A bank that quietly makes life easier.</span></div><div><b>Businesses</b><span>Deeper relationships and new value.</span></div><div><b>Bank</b><span>Capabilities and intelligence working together.</span></div></div>
+        </div>
+      </div>`,
+    foot:'Technology, data and AI make the complexity increasingly invisible'
+  }
 ];
-const prospects={
- finance:{kind:'Internal prospect 01 · Finance',title:'A living business outlook',lede:'A continuously refreshed view of the business, with changes highlighted for accountable decision-makers.',moment:'Revenue, expenses, deposits, lending, market movements and trends change after the planning snapshot.',response:'Models update projections, show drivers of variance and present options for Finance to review, challenge and act on.',value:'More timely decisions, improved resource deployment and potential profitability gains. Impact requires baseline and pilot measurement.',connections:'Finance + business data + market data + model governance.',guardrail:'Forecasts and recommendations need data quality checks, explainability and human ownership of decisions.'},
- trade:{kind:'Internal prospect 02 · Trade & Treasury',title:'Intelligence that follows global developments',lede:'Global developments can be mapped against affected clients and transactions as conditions change.',moment:'A shipping disruption, tariff change, commodity move or FX shock affects an import corridor.',response:'Potentially affected transactions, cash-flow expectations, finance needs and FX exposures are flagged to Trade, Treasury, Corporate, Credit and relationship managers for review.',value:'Earlier intervention, clearer risk awareness and more relevant client solutions.',connections:'Trade + Treasury + Corporate + Credit + external intelligence.',guardrail:'External signals may be incomplete. Credit, suitability and market decisions remain with authorised teams.'},
- dots:{kind:'Internal prospect 03 · Cross-bank intelligence',title:'The bank connects its own dots',lede:'Shared intelligence can surface useful relationships between work that would otherwise remain separate.',moment:'A corporate payroll relationship expands while Retail, Cards and savings teams develop related propositions.',response:'A governed capability identifies the overlap, relevant existing solutions, dependencies and possible cross-business proposition for owners to assess.',value:'Potentially less duplication, more cross-sell and greater value from existing capabilities.',connections:'Corporate + Retail + Cards + Data + relevant control functions.',guardrail:'Access must respect need-to-know, customer permissions and product ownership. A shared view is not a licence to share all data.'},
- operations:{kind:'Internal prospect 04 · Operations',title:'Problems surfaced before they spread',lede:'Demand signals and operational capacity could inform business decisions before customers feel a bottleneck.',moment:'A lending campaign is expected to create more applications than current processing capacity.',response:'The business, Marketing and Operations receive an early scenario showing capacity options, campaign timing and likely service effects.',value:'Better allocation, steadier execution and fewer avoidable customer issues.',connections:'Business + Marketing + Operations + service and capacity data.',guardrail:'Forecast uncertainty should be visible. Operational decisions remain with accountable owners.'},
- health:{kind:'Customer journey 01 · Healthcare',title:'Help arrives when it is needed',lede:'The hospital payment could start a coordinated benefit journey, subject to explicit permissions and partner integration.',moment:'A customer is hospitalised and makes a payment.',response:'An eligible insurance benefit is checked. With prior authorisation, verified information and insurer support, a claim can be initiated and status tracked.',value:'Less administrative burden in a difficult moment, and greater value from an eligible benefit.',connections:'Payments + Cards + insurer + hospital + consented coordination.',guardrail:'A payment alone cannot establish hospitalisation or coverage. Insurance, privacy, consent and claim rules must govern the journey.'},
- travel:{kind:'Customer journey 02 · Travel',title:'The journey organises itself',lede:'A verified flight purchase could activate eligible services without a separate search and booking process.',moment:'A customer purchases a flight ticket.',response:'Card privileges are checked, and with the customer’s saved preferences and authorisation, meet-and-greet or airport services can be arranged. Changes can trigger updates.',value:'Eligible benefits become easier to use and reinforce the card relationship.',connections:'Cards + airlines + airport and travel partners + preference management.',guardrail:'A card transaction may not contain a verified itinerary. Inventory, eligibility and partner confirmation are essential.'},
- coffee:{kind:'Customer journey 03 · Everyday lifestyle',title:'The right benefit, without searching',lede:'Everyday merchant activity could make benefits more relevant and simpler to redeem.',moment:'A customer regularly buys coffee at a preferred merchant.',response:'With permission, the bank recognises a preference and applies an eligible merchant-funded or loyalty benefit automatically at payment.',value:'A useful customer benefit, more merchant engagement and potentially deeper payment preference.',connections:'Cards + POS + merchant partners + loyalty + consented personalisation.',guardrail:'Preferences should not become intrusive surveillance. Funding, eligibility, consent and fairness need testing.'},
- service:{kind:'Customer journey 04 · Proactive service',title:'The bank starts fixing things first',lede:'The bank can detect a transaction problem, begin investigation and keep the customer informed.',moment:'A payment appears to fail, but the account is debited.',response:'Payment and settlement records are checked; a recovery or investigation is opened where appropriate, with clear customer updates through resolution.',value:'Less chasing, lower uncertainty and more trust in the payment experience.',connections:'Payments + Operations + Service + transaction intelligence.',guardrail:'Transaction states can be ambiguous. The bank must distinguish pending, failed and settled payments before promising resolution.'}
-};
-let current=0, lastFocus=null;
-const stage=document.getElementById('stage'), overview=document.getElementById('overview'), detail=document.getElementById('detail');
-function render(){const s=slides[current];stage.innerHTML=`<article class="slide ${s.theme==='light'?'light':s.theme==='red'?'red':''} active" aria-label="Slide ${current+1}: ${s.title.replace(/<[^>]*>/g,'')}"><div class="inner">${current!==0?`<div class="eyebrow">${s.eyebrow}</div><h1 class="title">${s.title}</h1>${s.subtitle?`<p class="subtitle">${s.subtitle}</p>`:''}`:''}<div class="main">${s.body}</div><div class="footerline"><span>${s.foot||''}</span><span class="slide-index">${String(current+1).padStart(2,'0')} / ${slides.length}</span></div></div></article>`;document.getElementById('chapter').textContent=s.chapter;document.getElementById('counter').textContent=`${String(current+1).padStart(2,'0')} / ${slides.length}`;document.getElementById('progress').style.width=`${(current+1)/slides.length*100}%`;document.getElementById('prev').disabled=current===0;document.getElementById('next').disabled=current===slides.length-1;stage.scrollTop=0;history.replaceState(null,'',`#slide-${current+1}`);}
-function go(n){current=Math.max(0,Math.min(slides.length-1,n));render()}
-function show(el){lastFocus=document.activeElement;el.classList.add('open');document.body.style.overflow='hidden';el.querySelector('.close').focus()}
-function close(){const opened=document.querySelector('.overlay.open');if(opened){opened.classList.remove('open');document.body.style.overflow='';lastFocus?.focus()}}
-document.getElementById('prev').onclick=()=>go(current-1);document.getElementById('next').onclick=()=>go(current+1);
-document.getElementById('overviewBtn').onclick=()=>{document.getElementById('overviewGrid').innerHTML=slides.map((s,i)=>`<button class="thumb" data-slide="${i}"><span>${String(i+1).padStart(2,'0')} / ${slides.length}</span><strong>${s.title.replace(/<[^>]*>/g,'')}</strong><small>${s.chapter}</small></button>`).join('');show(overview)};
-document.getElementById('fullBtn').onclick=()=>{if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen?.()};
-document.addEventListener('click',e=>{const prospect=e.target.closest('[data-prospect]');if(prospect){const p=prospects[prospect.dataset.prospect];document.getElementById('detailContent').innerHTML=`<div class="kicker">${p.kind}</div><h2>${p.title}</h2><p class="lede">${p.lede}</p><div class="detail-grid"><section><h3>The moment</h3><p>${p.moment}</p></section><section><h3>Behind the scenes</h3><p>${p.response}</p></section><section><h3>Potential value</h3><p>${p.value}</p></section><section><h3>Connected capabilities</h3><p>${p.connections}</p></section><section style="grid-column:1/-1"><h3>What needs validation</h3><p>${p.guardrail}</p></section></div><p class="fine">Illustrative future concept. No City Bank capability, partner integration or customer outcome is asserted as live.</p>`;show(detail)}const thumb=e.target.closest('[data-slide]');if(thumb){close();go(Number(thumb.dataset.slide))}if(e.target.matches('[data-close]'))close();if(e.target.classList.contains('overlay'))close()});
-document.addEventListener('keydown',e=>{if(document.querySelector('.overlay.open')){if(e.key==='Escape')close();return}if(['ArrowRight','PageDown',' '].includes(e.key)){e.preventDefault();go(current+1)}else if(['ArrowLeft','PageUp'].includes(e.key)){e.preventDefault();go(current-1)}else if(e.key==='Home')go(0);else if(e.key==='End')go(slides.length-1);else if(e.key.toLowerCase()==='o')document.getElementById('overviewBtn').click();else if(e.key.toLowerCase()==='f')document.getElementById('fullBtn').click()});
-let touchX=0,touchY=0;stage.addEventListener('touchstart',e=>{touchX=e.changedTouches[0].screenX;touchY=e.changedTouches[0].screenY},{passive:true});stage.addEventListener('touchend',e=>{if(window.innerWidth<=560)return;const dx=e.changedTouches[0].screenX-touchX,dy=e.changedTouches[0].screenY-touchY;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)go(current+(dx<0?1:-1))},{passive:true});
-const hash=location.hash.match(/^#slide-(\d+)$/);current=hash?Math.max(0,Math.min(slides.length-1,Number(hash[1])-1)):0;render();window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#slide-(\d+)$/);if(m&&Number(m[1])-1!==current)go(Number(m[1])-1)});
-</script>
-<script>
-/* Editorial treatment and compact causal motion diagrams for the preserved story. */
-const flowLabels = {
-  finance:['New signals','Forecast review'],
-  trade:['Global event','Exposure review'],
-  dots:['Shared clue','New proposition'],
-  operations:['Demand signal','Capacity plan'],
-  health:['Hospital payment','Benefit check'],
-  travel:['Flight booking','Service arranged'],
-  coffee:['Usual purchase','Benefit applied'],
-  service:['Payment mismatch','Case initiated']
+
+const prospects = {
+  finance:{number:'01 / Finance',title:'A living business outlook',summary:'Forecasts update as business and external conditions change.',from:'New signals',to:'Forecast review',kind:'Internal prospect 01 · Finance',lede:'A continuously refreshed view of the business, with changes highlighted for accountable decision-makers.',moment:'Revenue, expenses, deposits, lending, market movements and trends change after the planning snapshot.',response:'Models update projections, show drivers of variance and present options for Finance to review, challenge and act on.',value:'More timely decisions, improved resource deployment and potential profitability gains. Impact requires baseline and pilot measurement.',connections:'Finance + business data + market data + model governance.',guardrail:'Forecasts and recommendations need data quality checks, explainability and human ownership of decisions.'},
+  trade:{number:'02 / Trade + Treasury',title:'Intelligence that follows global developments',summary:'A global event prompts a review of affected clients and transactions.',from:'Global event',to:'Exposure review',kind:'Internal prospect 02 · Trade & Treasury',lede:'Global developments can be mapped against affected clients and transactions as conditions change.',moment:'A shipping disruption, tariff change, commodity move or FX shock affects an import corridor.',response:'Potentially affected transactions, cash-flow expectations, finance needs and FX exposures are flagged to Trade, Treasury, Corporate, Credit and relationship managers for review.',value:'Earlier intervention, clearer risk awareness and more relevant client solutions.',connections:'Trade + Treasury + Corporate + Credit + external intelligence.',guardrail:'External signals may be incomplete. Credit, suitability and market decisions remain with authorised teams.'},
+  dots:{number:'03 / Cross-bank intelligence',title:'The bank connects its own dots',summary:'Shared clues reveal reusable work and a coordinated proposition.',from:'Shared clue',to:'New proposition',kind:'Internal prospect 03 · Cross-bank intelligence',lede:'Shared intelligence can surface useful relationships between work that would otherwise remain separate.',moment:'A corporate payroll relationship expands while Retail, Cards and savings teams develop related propositions.',response:'A governed capability identifies the overlap, relevant existing solutions, dependencies and possible cross-business proposition for owners to assess.',value:'Potentially less duplication, more cross-sell and greater value from existing capabilities.',connections:'Corporate + Retail + Cards + Data + relevant control functions.',guardrail:'Access must respect need-to-know, customer permissions and product ownership. A shared view is not a licence to share all data.'},
+  operations:{number:'04 / Proactive operations',title:'Problems surfaced before they spread',summary:'Demand signals reach accountable owners before capacity becomes a customer issue.',from:'Demand signal',to:'Capacity plan',kind:'Internal prospect 04 · Operations',lede:'Demand signals and operational capacity could inform business decisions before customers feel a bottleneck.',moment:'A lending campaign is expected to create more applications than current processing capacity.',response:'The business, Marketing and Operations receive an early scenario showing capacity options, campaign timing and likely service effects.',value:'Better allocation, steadier execution and fewer avoidable customer issues.',connections:'Business + Marketing + Operations + service and capacity data.',guardrail:'Forecast uncertainty should be visible. Operational decisions remain with accountable owners.'},
+  health:{number:'01 / Healthcare',title:'Help arrives when it is needed',summary:'A hospital payment can prompt a permitted benefit check and coordinated claim journey.',from:'Hospital payment',to:'Benefit check',kind:'Customer journey 01 · Healthcare',lede:'The hospital payment could start a coordinated benefit journey, subject to explicit permissions and partner integration.',moment:'A customer is hospitalised and makes a payment.',response:'An eligible insurance benefit is checked. With prior authorisation, verified information and insurer support, a claim can be initiated and status tracked.',value:'Less administrative burden in a difficult moment, and greater value from an eligible benefit.',connections:'Payments + Cards + insurer + hospital + consented coordination.',guardrail:'A payment alone cannot establish hospitalisation or coverage. Insurance, privacy, consent and claim rules must govern the journey.'},
+  travel:{number:'02 / Travel',title:'The journey organises itself',summary:'A verified itinerary can connect eligible privileges to saved preferences.',from:'Flight booking',to:'Service arranged',kind:'Customer journey 02 · Travel',lede:'A verified flight purchase could activate eligible services without a separate search and booking process.',moment:'A customer purchases a flight ticket.',response:'Card privileges are checked, and with the customer’s saved preferences and authorisation, meet-and-greet or airport services can be arranged. Changes can trigger updates.',value:'Eligible benefits become easier to use and reinforce the card relationship.',connections:'Cards + airlines + airport and travel partners + preference management.',guardrail:'A card transaction may not contain a verified itinerary. Inventory, eligibility and partner confirmation are essential.'},
+  coffee:{number:'03 / Everyday lifestyle',title:'The right benefit, without searching',summary:'A permitted preference can connect an everyday purchase to an eligible benefit.',from:'Usual purchase',to:'Benefit applied',kind:'Customer journey 03 · Everyday lifestyle',lede:'Everyday merchant activity could make benefits more relevant and simpler to redeem.',moment:'A customer regularly buys coffee at a preferred merchant.',response:'With permission, the bank recognises a preference and applies an eligible merchant-funded or loyalty benefit automatically at payment.',value:'A useful customer benefit, more merchant engagement and potentially deeper payment preference.',connections:'Cards + POS + merchant partners + loyalty + consented personalisation.',guardrail:'Preferences should not become intrusive surveillance. Funding, eligibility, consent and fairness need testing.'},
+  service:{number:'04 / Proactive service',title:'The bank starts fixing things first',summary:'A transaction mismatch can trigger investigation before a customer raises a request.',from:'Payment mismatch',to:'Case initiated',kind:'Customer journey 04 · Proactive service',lede:'The bank can detect a transaction problem, begin investigation and keep the customer informed.',moment:'A payment appears to fail, but the account is debited.',response:'Payment and settlement records are checked. A recovery or investigation opens where appropriate, with clear customer updates through resolution.',value:'Less chasing, lower uncertainty and more trust in the payment experience.',connections:'Payments + Operations + Service + transaction intelligence.',guardrail:'Transaction states can be ambiguous. The bank must distinguish pending, failed and settled payments before promising resolution.'}
 };
 
-const renderStory = render;
-render = function () {
-  renderStory();
-  const slide = stage.querySelector('.slide');
-  slide.classList.remove('light','red');
-  slide.classList.add(current === 0 ? 'cinematic' : [14,19].includes(current) ? 'red' : 'light');
-  slide.dataset.scene = String(current + 1);
-  slide.querySelectorAll('[data-prospect]').forEach(card => {
-    const labels = flowLabels[card.dataset.prospect];
-    if (!labels) return;
-    const diagram = document.createElement('div');
-    diagram.className = 'mini-flow';
-    diagram.setAttribute('aria-hidden','true');
-    diagram.innerHTML = `<span>${labels[0]}</span><span class="flow-track"><i></i></span><span>${labels[1]}</span>`;
-    card.insertBefore(diagram,card.querySelector('.more'));
-  });
-};
+function prospectPair(firstKey,secondKey,takeaway) {
+  return `<div class="prospect-scene">${prospectCard(firstKey)}${prospectCard(secondKey)}</div><div class="prospect-takeaway">${takeaway}</div>`;
+}
+
+function prospectCard(key) {
+  const p=prospects[key];
+  return `<button class="prospect-card" type="button" data-prospect="${key}"><span class="prospect-number">${p.number}</span><h3>${p.title}</h3><p>${p.summary}</p><div class="causal-flow" aria-hidden="true"><span>${p.from}</span><i class="flow-line"><i></i></i><span>${p.to}</span></div><span class="explore">Explore the prospect</span></button>`;
+}
+
+let current=0;
+let lastFocus=null;
+let touchX=0;
+let touchY=0;
+let transitionRunning=false;
+const stage=document.getElementById('stage');
+const overview=document.getElementById('overview');
+const detail=document.getElementById('detail');
+
+function textOnly(markup) {
+  const box=document.createElement('div');
+  box.innerHTML=markup;
+  return box.textContent.trim();
+}
+
+function slideMarkup(slide,index) {
+  const header=index===0?'':`<header class="scene-header"><div class="eyebrow">${slide.eyebrow}</div><h1 class="title">${slide.title}</h1>${slide.subtitle?`<p class="subtitle">${slide.subtitle}</p>`:''}</header>`;
+  const body=typeof slide.body==='function'?slide.body():slide.body;
+  return `<article class="slide tone-${slide.tone} ${slide.layout}" data-scene="${index+1}" data-layout="${slide.layout}" aria-label="Slide ${index+1}: ${textOnly(slide.title)}"><i class="signal-rail" aria-hidden="true"></i><div class="slide-canvas">${header}<div class="scene-body">${body}</div><footer class="scene-footer"><span>${slide.foot||''}</span><span>${String(index+1).padStart(2,'0')} / ${slides.length}</span></footer></div></article>`;
+}
+
+function render() {
+  const slide=slides[current];
+  stage.innerHTML=slideMarkup(slide,current);
+  document.getElementById('chapter').textContent=slide.chapter;
+  document.getElementById('counter').textContent=`${String(current+1).padStart(2,'0')} / ${slides.length}`;
+  document.getElementById('progress').style.width=`${((current+1)/slides.length)*100}%`;
+  document.getElementById('prev').disabled=current===0;
+  document.getElementById('next').disabled=current===slides.length-1;
+  stage.scrollTop=0;
+  history.replaceState(null,'',`#slide-${current+1}`);
+  document.dispatchEvent(new CustomEvent('presentation:rendered',{detail:{index:current,slide:stage.querySelector('.slide')}}));
+}
+
+function go(next) {
+  const bounded=Math.max(0,Math.min(slides.length-1,next));
+  if(bounded===current||transitionRunning) return;
+  document.documentElement.dataset.direction=bounded>current?'forward':'back';
+  const update=()=>{current=bounded;render();};
+  if(document.startViewTransition) {
+    transitionRunning=true;
+    const transition=document.startViewTransition(update);
+    transition.finished.catch(()=>{}).finally(()=>{transitionRunning=false;});
+  } else update();
+}
+
+function showOverlay(element) {
+  lastFocus=document.activeElement;
+  element.classList.add('open');
+  document.body.style.overflow='hidden';
+  element.querySelector('.close').focus();
+}
+
+function closeOverlay() {
+  const opened=document.querySelector('.overlay.open');
+  if(!opened) return;
+  opened.classList.remove('open');
+  document.body.style.overflow='';
+  lastFocus?.focus();
+}
+
+function openOverview() {
+  document.getElementById('overviewGrid').innerHTML=slides.map((slide,index)=>`<button class="thumb" type="button" data-slide="${index}"><span>${String(index+1).padStart(2,'0')} / ${slides.length}</span><strong>${textOnly(slide.title)}</strong><small>${slide.chapter}</small></button>`).join('');
+  showOverlay(overview);
+}
+
+function openProspect(key) {
+  const p=prospects[key];
+  document.getElementById('detailContent').innerHTML=`<div class="detail-kicker">${p.kind}</div><h2 id="detailTitle">${p.title}</h2><p class="detail-lede">${p.lede}</p><div class="detail-grid"><section><h3>The moment</h3><p>${p.moment}</p></section><section><h3>Behind the scenes</h3><p>${p.response}</p></section><section><h3>Potential value</h3><p>${p.value}</p></section><section><h3>Connected capabilities</h3><p>${p.connections}</p></section><section style="grid-column:1/-1"><h3>What needs validation</h3><p>${p.guardrail}</p></section></div><p class="detail-fine">Illustrative future concept. No City Bank capability, partner integration or customer outcome is asserted as live.</p>`;
+  showOverlay(detail);
+}
+
+document.getElementById('prev').addEventListener('click',()=>go(current-1));
+document.getElementById('next').addEventListener('click',()=>go(current+1));
+document.getElementById('overviewBtn').addEventListener('click',openOverview);
+document.getElementById('fullBtn').addEventListener('click',()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.());
+
+document.addEventListener('click',event=>{
+  const prospect=event.target.closest('[data-prospect]');
+  if(prospect) openProspect(prospect.dataset.prospect);
+  const thumb=event.target.closest('[data-slide]');
+  if(thumb) { closeOverlay(); go(Number(thumb.dataset.slide)); }
+  if(event.target.matches('[data-close]')||event.target.classList.contains('overlay')) closeOverlay();
+});
+
+document.addEventListener('keydown',event=>{
+  if(document.querySelector('.overlay.open')) { if(event.key==='Escape') closeOverlay(); return; }
+  if(['ArrowRight','PageDown',' '].includes(event.key)) { event.preventDefault(); go(current+1); }
+  else if(['ArrowLeft','PageUp'].includes(event.key)) { event.preventDefault(); go(current-1); }
+  else if(event.key==='Home') go(0);
+  else if(event.key==='End') go(slides.length-1);
+  else if(event.key.toLowerCase()==='o') openOverview();
+  else if(event.key.toLowerCase()==='f') document.getElementById('fullBtn').click();
+});
+
+stage.addEventListener('touchstart',event=>{touchX=event.changedTouches[0].screenX;touchY=event.changedTouches[0].screenY;},{passive:true});
+stage.addEventListener('touchend',event=>{if(window.innerWidth<=600)return;const dx=event.changedTouches[0].screenX-touchX;const dy=event.changedTouches[0].screenY-touchY;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)go(current+(dx<0?1:-1));},{passive:true});
+
+window.addEventListener('hashchange',()=>{const match=location.hash.match(/^#slide-(\d+)$/);if(match&&Number(match[1])-1!==current)go(Number(match[1])-1);});
+const initial=location.hash.match(/^#slide-(\d+)$/);
+current=initial?Math.max(0,Math.min(slides.length-1,Number(initial[1])-1)):0;
 render();
 
-const motionBtn = document.getElementById('motionBtn');
-function toggleMotion() {
-  const paused = document.body.classList.toggle('motion-paused');
-  motionBtn.textContent = paused ? 'Play motion' : 'Pause motion';
-  motionBtn.setAttribute('aria-label',paused ? 'Play animation' : 'Pause animation');
-  motionBtn.setAttribute('aria-pressed',String(paused));
+  </script>
+  <script>
+const motionButton=document.getElementById('motionBtn');
+let motionPaused=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function applyMotionState() {
+  document.body.classList.toggle('motion-paused',motionPaused);
+  motionButton.textContent=motionPaused?'Play motion':'Pause motion';
+  motionButton.setAttribute('aria-label',motionPaused?'Play animation':'Pause animation');
+  motionButton.setAttribute('aria-pressed',String(motionPaused));
 }
-motionBtn.addEventListener('click',toggleMotion);
-document.addEventListener('keydown',event => {
-  if (event.key.toLowerCase() === 'm' && !event.altKey && !event.ctrlKey && !event.metaKey && !document.querySelector('.overlay.open')) {
+
+function toggleMotion() {
+  motionPaused=!motionPaused;
+  applyMotionState();
+}
+
+motionButton.addEventListener('click',toggleMotion);
+document.addEventListener('keydown',event=>{
+  if(event.key.toLowerCase()==='m'&&!event.altKey&&!event.ctrlKey&&!event.metaKey&&!document.querySelector('.overlay.open')) {
     event.preventDefault();
     toggleMotion();
   }
 });
 
-</script>
+document.addEventListener('visibilitychange',()=>{
+  document.body.classList.toggle('tab-hidden',document.hidden);
+});
+
+applyMotionState();
+
+  </script>
 </body>
 </html>
