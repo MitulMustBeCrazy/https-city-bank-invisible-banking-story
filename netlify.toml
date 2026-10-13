@@ -1,0 +1,5 @@
+[build]
+  publish = "v2"
+
+[build.environment]
+  NODE_VERSION = "20"
